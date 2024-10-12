@@ -1,0 +1,37 @@
+name: Auto actualizar BOEs
+on:
+  push:
+  schedule:
+    - cron: '0 1 * * *'
+
+jobs:
+  run:
+    name: Actualizar BOE
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repo
+        uses: actions/checkout@v4
+
+      - name: Instalar NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.3.0
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Obtener nuevos BOEs
+        run: npm run boe
+
+      - name: Extraer precios de los BOEs
+        run: npm run parse
+
+      - name: Guardar cambios
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions
+          author_email: actions@github.com
+          message: 'Actualizados precios de pipas'
+          add: '*'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

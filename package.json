@@ -1,0 +1,26 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "boe": "ts-node lib/extractNewBOEs.ts",
+    "parse": "ts-node lib/parseHTMLs.ts"
+  },
+  "dependencies": {
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.45",
+    "@types/sharp": "^0.32.0",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "sharp": "^0.33.4",
+    "tailwindcss": "^2.2.4",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5",
+    "vite": "^2.3.8"
+  }
+}

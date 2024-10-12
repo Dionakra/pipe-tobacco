@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "pipa-cd25f"
+  },
+  "targets": {
+    "pipa-cd25f": {
+      "hosting": {
+        "tabacos": [
+          "tabacos"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
