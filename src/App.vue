@@ -32,7 +32,7 @@
           </select>
 
           <select aria-label="Tamaño" v-model="selectedSize" class="px-2 py-1 border border-gray-300 rounded-md"
-            :class="selectedSize == '0' ? 'text-gray-500' : 'text-gray-900'">
+            :class="selectedSize == 0 ? 'text-gray-500' : 'text-gray-900'">
             <option value="0" class="text-gray-500">Tamaño</option>
             <option class="text-gray-900" v-for="size in sizes" :key="size" :value="size">{{ size }} g</option>
           </select>
@@ -52,14 +52,15 @@
           class="cursor-pointer rounded shadow-md border border-gray-100 hover:-translate-y-1 transition transform hover:shadow-lg m-2">
           <div class="p-2">
             <p class="pl-1 text-xl" v-html="tobacco.brand"></p>
-            <p class="pl-2 text-gray-600  " v-html="tobacco.blend"></p>
+            <p class="pl-2 text-gray-600 " v-html="tobacco.blend"></p>
 
-            <div class="w-full flex" v-for="size in tobacco.sizes.sort((a, b) => a.grams - b.grams)">
+            <div class="w-full grid grid-cols-2" v-for="size in tobacco.sizes.sort((a, b) => a.grams - b.grams)">
               <div class="flex my-auto gap-2 px-2">
-                <img src="/size.svg" class="h-8 my-auto"> <span class="my-auto text-lg"> {{ size.grams }} g</span>
+                <img src="/size.svg" class="h-6 my-auto"> <span class="my-auto"> {{ size.grams }} g</span>
               </div>
               <div class="flex my-auto gap-2 pl-2">
-                <img src="/price.svg" class="h-6"> <span class="my-auto text-lg"> {{ size.currentPrice.toFixed(2) }}
+                <img src="/price.svg" class="h-5 my-auto"> <span class="my-auto "> {{
+                  size.currentPrice.toFixed(2) }}
                 </span>
               </div>
             </div>
@@ -80,12 +81,12 @@
               <div class="">
                 <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                   <h3 class="text-xl leading-6 text-gray-900" id="modal-title">
-                    Evolución de precios para el <span class="font-semibold">{{ selectedTobacco.brand }} {{
+                    <span class="font-semibold">{{ selectedTobacco.brand }} {{
                       selectedTobacco.blend }}</span>
                   </h3>
                   <div v-for="size in selectedTobacco.sizes.sort((a, b) => a.grams - b.grams)">
                     <div class="flex my-auto  px-2 font-bold py-2">
-                      <img src="/size.svg" class="h-8 my-auto"> <span class="my-auto text-lg pl-2"> {{ size.grams }}
+                      <img src="/size.svg" class="h-6 my-auto"> <span class="my-auto pl-2"> {{ size.grams }}
                         g</span>
                     </div>
                     <div class=" px-2 gap-2 justify-start grid grid-cols-2 grid-flow-col auto-cols-max"
@@ -190,7 +191,6 @@ export default {
   },
   methods: {
     fetchTobaccos() {
-
       fetch(`https://raw.githubusercontent.com/Dionakra/pipe-tobacco/refs/heads/main/public/${this.selectedRegion}.json`)
         .then((response) => response.json())
         .then((data) => {

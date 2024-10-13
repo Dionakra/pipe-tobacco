@@ -1,6 +1,5 @@
 name: Auto actualizar BOEs
 on:
-  push:
   schedule:
     - cron: '0 1 * * *'
 
@@ -19,6 +18,7 @@ jobs:
 
       - name: Instalar dependencias
         run: npm install
+
       - name: Obtener lista completa de tabacos
         run: sh get-tobaccos.sh
 

@@ -14,13 +14,15 @@ export interface PriceHistory {
     price: number
 }
 
-export interface TobaccoPrice {
-    name: string
-    price: number
-}
-
-export interface TobaccoBlendPrice {
+export interface TobaccoBlendSize {
     brand: string
     blend: string
     grams: number
+}
+
+export interface TobaccoPrice {
+    brand: string
+    blend: string
+    grams: number
+    price: number
 }
