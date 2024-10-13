@@ -84,6 +84,7 @@ async function main() {
     ceutaDB = updateTobaccos(ceutaDB, ceutaTobaccos, boe)
   }
 
+  console.info('Obteniendo tabacos que no han cambiado de precio pero aparecen en la lista de tabacos')
   peninsulaDB = fillMissingFromDB(peninsulaDB)
   ceutaDB = fillMissingFromDB(ceutaDB)
 
@@ -103,13 +104,13 @@ function fillMissingFromDB(db: Tobacco[]): Tobacco[] {
 }
 
 function updateTobaccos(tobaccos: Tobacco[], tobaccoPrices: TobaccoPrice[], boe?: BOEEntry): Tobacco[] {
-  const date = boe ? `${boe.day}/${boe.month}/${boe.year}` : '12/09/2024'
+  const date = boe ? `${boe.day}/${boe.month}/${boe.year}` : '00/00/0000'
   tobaccoPrices.forEach(tp => {
     const blendPrice = parseTobacco(tp.name)
     if (blendPrice == undefined) return
     let tobaccoIndex = tobaccos.findIndex(t => t.brand == blendPrice.brand && t.blend == blendPrice.blend)
     if (tobaccoIndex == -1) {
-      console.info(`Adding new tobacco: ${blendPrice.brand} ${blendPrice.blend} ${blendPrice.grams}`)
+      console.info(`  Adding new tobacco: ${blendPrice.brand} ${blendPrice.blend} ${blendPrice.grams}`)
       const tobacco = {
         brand: blendPrice.brand,
         blend: blendPrice.blend,
@@ -124,7 +125,7 @@ function updateTobaccos(tobaccos: Tobacco[], tobaccoPrices: TobaccoPrice[], boe?
     } else {
       const sizeIndex = tobaccos[tobaccoIndex].sizes.findIndex(s => s.grams == blendPrice.grams)
       if (sizeIndex == -1) {
-        console.info(`Adding new size: ${blendPrice.brand} ${blendPrice.blend} ${blendPrice.grams}`)
+        console.info(`  Adding new size: ${blendPrice.brand} ${blendPrice.blend} ${blendPrice.grams}`)
         tobaccos[tobaccoIndex].sizes.push({
           grams: blendPrice.grams,
           currentPrice: tp.price,
@@ -132,7 +133,7 @@ function updateTobaccos(tobaccos: Tobacco[], tobaccoPrices: TobaccoPrice[], boe?
           priceHistory: [{ date: date, price: tp.price }]
         })
       } else {
-        console.info(`Updating Tobacco Price: ${blendPrice.brand} ${blendPrice.blend} ${blendPrice.grams}`)
+        console.info(`  Updating Tobacco Price: ${blendPrice.brand} ${blendPrice.blend} ${blendPrice.grams}`)
         tobaccos[tobaccoIndex].sizes[sizeIndex].priceHistory.push({ date: date, price: tp.price })
       }
     }

@@ -19,6 +19,8 @@ jobs:
 
       - name: Instalar dependencias
         run: npm install
+      - name: Obtener lista completa de tabacos
+        run: sh get-tobaccos.sh
 
       - name: Obtener nuevos BOEs
         run: npm run boe
