@@ -18,7 +18,7 @@
         </div>
         <!-- END REGION -->
         <!-- BRAND, BLEND AND SIZE -->
-        <div class="flex flex-wrap gap-2 justify-center">
+        <div class="flex flex-wrap gap-2 justify-center mb-2">
           <select aria-label="Fabricante" v-model="selectedBrand" class="px-2 py-1 border border-gray-300 rounded-md"
             :class="selectedBrand == '' ? 'text-gray-500' : 'text-gray-900'">
             <option value="" class="text-gray-500">Fabricante</option>
@@ -38,6 +38,30 @@
           </select>
         </div>
         <!-- END BRAND, BLEND AND SIZE -->
+        <!-- SORT -->
+        <div class="flex flex-wrap gap-2 justify-center">
+          <div @click="sort = ''" :class="{ 'bg-yellow-100': sort == '' }"
+            class="cursor-pointer hover:bg-yellow-100 rounded-md shadow-sm hover:shadow-lg border border-gray-300 px-2 py-1">
+            Act. Reciente
+          </div>
+          <div @click="sort = 'ascKg'" :class="{ 'bg-yellow-100': sort == 'ascKg' }"
+            class="cursor-pointer hover:bg-yellow-100 rounded-md shadow-sm hover:shadow-lg border border-gray-300 px-2 py-1">
+            Más baratos (kg)
+          </div>
+          <div @click="sort = 'descKg'" :class="{ 'bg-yellow-100': sort == 'descKg' }"
+            class="cursor-pointer hover:bg-yellow-100 rounded-md shadow-sm hover:shadow-lg border border-gray-300 px-2 py-1">
+            Más caros (kg)
+          </div>
+          <div @click="sort = 'asc'" :class="{ 'bg-yellow-100': sort == 'asc' }"
+            class="cursor-pointer hover:bg-yellow-100 rounded-md shadow-sm hover:shadow-lg border border-gray-300 px-2 py-1">
+            Más baratos
+          </div>
+          <div @click="sort = 'desc'" :class="{ 'bg-yellow-100': sort == 'desc' }"
+            class="cursor-pointer hover:bg-yellow-100 rounded-md shadow-sm hover:shadow-lg border border-gray-300 px-2 py-1">
+            Más caros
+          </div>
+        </div>
+        <!-- END SORT -->
       </div>
     </div>
     <!-- END FILTERS -->
@@ -134,7 +158,8 @@ export default {
       totalPages: number,
       currentPage: number,
       selectedRegion: string,
-      selectedTobacco?: Tobacco
+      selectedTobacco?: Tobacco,
+      sort: string
     } = {
       tobaccos: [],
       brands: [],
@@ -145,7 +170,8 @@ export default {
       selectedBlend: "",
       selectedSize: 0,
       selectedRegion: "",
-      selectedTobacco: undefined
+      selectedTobacco: undefined,
+      sort: ""
     }
     return data
   },
@@ -221,7 +247,7 @@ export default {
       return tobaccos.slice((this.currentPage - 1) * ITEMS_PER_PAGE, this.currentPage * ITEMS_PER_PAGE)
     },
     filterTobaccos(): Tobacco[] {
-      return this.tobaccos
+      let filteredTobaccos = this.tobaccos
         .filter(t => {
           let res = true
           if (this.selectedBrand != "") {
@@ -238,6 +264,22 @@ export default {
           return res
         })
 
+      if (this.sort != "") {
+        filteredTobaccos = filteredTobaccos.sort((a, b) => {
+          let priceA = Math.max(...a.sizes.map(s => s.currentPrice))
+          let priceB = Math.max(...b.sizes.map(s => s.currentPrice))
+
+          if (this.sort.endsWith("Kg")) {
+            priceA = Math.max(...a.sizes.map(s => s.currentPrice / s.grams))
+            priceB = Math.max(...b.sizes.map(s => s.currentPrice / s.grams))
+          }
+
+          const res = priceA - priceB
+          return this.sort.startsWith("asc") ? res : -res
+        })
+      }
+
+      return filteredTobaccos;
     }
   },
   watch: {

@@ -50,7 +50,8 @@ const brandMaps: Map<string | RegExp, string> = new Map<string | RegExp, string>
     [/^The Planters Purpure/g, "Bentley The Planters Purpure"],
     [/^The Royal Gold/g, "Bentley The Royal Gold"],
     [/^The Virginia Ruby/g, "Bentley The Virginia Ruby"],
-    [/CM$/g, ""]
+    [/CM$/g, ""],
+    ["Peterson Surtido (5)", "Peterson Surtido"]
 ])
 
 export function parseTobacco(name: string, exhaustive: boolean = false): TobaccoBlendSize | undefined {
