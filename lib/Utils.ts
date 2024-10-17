@@ -72,7 +72,7 @@ export function parseTobacco(name: string, exhaustive: boolean = false): Tobacco
 
     const blend = name.replace(brand, "").replace(/\(\d+.*?gr*\)*/i, "").trim()
     let maybeGrams = /\((\d+).*?gr*\)*/i.exec(name)
-    let grams = 0
+    let grams = 50 // By default
     if (maybeGrams == null) {
         if (!exhaustive) {
             return undefined
