@@ -6,7 +6,7 @@ const shishaBrands: string[] = ["187", "Adalya", "Afendi", "Al-Waha", "Al Fakher
     "SB Starbuzz", "Savacco", "Privilege", "Prestige", "Overdozz", "Os", "Neo", "Nash", "Nativo", "Natur", "Nameless", "Nakhla", "Musth", "Mr. Shisha", "Moe's", "Mazaya", "Marif", "Mammut", "Mala Vida", "Le Baron",
     "Layalina", "Kooliche", "Kismet", "Khaleej", "Kalout", "Kalam", "John Brooks", "Indian Summer", "Ibiza Essence", "Hookain", "Holster", "Haze", "Hater", "Fumari", "Forever", "Flame", "Eternal", "Ernest", "Erasmus",
     "Element", "Dumanji", "Duft", "Dschinni", "Drugoy", "Dozaj", "Delta", "Del Mar", "Darkside", "Dark Smoke", "Cornell & Diehl", "Cleopatra Molasses", "Chronos", "Chaos", "Chillma", "Capital", "Cannibal", "Candelas",
-    "Camino", "Camel Vapeleaf Bolsa", "Sindbad Mint Water Pipe Tobacco", "Capìtal Bra Lecker Lecker", "Mayflower"]
+    "Camino", "Camel Vapeleaf Bolsa", "Sindbad Mint Water Pipe Tobacco", "Capìtal Bra Lecker Lecker", "Mayflower", "Tabacco Way - D'Ora"]
 const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Van Dijck", "Trucco", "Troost", "Trébol", "Touareg", "Tilbury", "Texas Republic", "Thomas Radford", "Sweet Dublin", "Sting", "Stanwell", "Stanley", "Stanislaw",
     "St. Bruno", "Special Star", "Solani", "Smokers Freedom", "Smokers Choice", "Skull", "Skandinavik", "Sioux Original", "Sillem's", "Selesta", "Scottish Corner", "Scaferlati", "Savinelli", "Samuel Gawith", "Sailor´s Pride",
     "Sahara", "Sacramento", "Robert Lewis", "Retro", "Redfield", "Red Wolf", "Rattray's", "Planta", "El Abuelo", "Peterson", "Peter Clark", "Olsen", "Oboe", "Nording", "Moon Habana", "Missisipi", "Mcconnell", "Master Cut",
@@ -14,7 +14,7 @@ const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Van Dijck", "Trucco", "T
     "Golden Blend's", "Gladora Pesse Canoe", "G.L. Pease", "G. Hoggarth", "Fribourg & Treyer", "Frérot", "Exclusiv Mixture", "Erinmore", "Elixyr", "El Puerto", "El Burladero", "El Bruc", "Eastwood", "Dunhill", "Duende",
     "DJ Pipe Tobacco", "Davidoff", "Danske Club", "Danish Blend", "Dan Tobacco", "Cuzco", "Condor", "Comoys", "Colts", "Colonial Dan Tobacco", "Clan", "Chacom", "Cellini", "Capstan", "Calumé Pipa", "Bullbrand", "Brujito",
     "Brookfield", "Brigg", "Bravo", "Borkum Riff", "Black V.", "Black Jack", "Big Chief", "Big Ben", "Bentley", "Bellini", "Bayside", "Barsdorf's Bester", "Bakerstreet", "Backwoods", "Astleys", "Ashton",
-    "Apache", "Amsterdamer", "Amphora", "American Street", "Alsbo", "Alpha", "Alonso", "Absolutely Special", "Eastenders"]
+    "Apache", "Amsterdamer", "Amphora", "American Street", "Alsbo", "Alpha", "Alonso", "Absolutely Special", "Eastenders", "Tabacco Way"]
 
 const brandMaps: Map<string | RegExp, string> = new Map<string | RegExp, string>([
     ["&amp;", "&"],
@@ -51,7 +51,10 @@ const brandMaps: Map<string | RegExp, string> = new Map<string | RegExp, string>
     [/^The Royal Gold/g, "Bentley The Royal Gold"],
     [/^The Virginia Ruby/g, "Bentley The Virginia Ruby"],
     [/CM$/g, ""],
-    ["Peterson Surtido (5)", "Peterson Surtido"]
+    ["Peterson Surtido (5)", "Peterson Surtido"],
+    [/ - Bolsa\.$/g, ""],
+    [/ - Petaca\.$/g, ""],
+    [/ - Lata\.$/g, ""]
 ])
 
 export function parseTobacco(name: string, exhaustive: boolean = false): TobaccoBlendSize | undefined {
