@@ -51,7 +51,7 @@ export default class BOEService {
     }
 
     private async fetchBOESearchPage(page: number): Promise<string> {
-        return this.fetchBoePage(`https://www.boe.es/buscar/legislacion_ava.php?accion=Mas&id_busqueda=dVJYcytEemZtMUlYeERVUWtJQ3ltSngwbGtZekFCWEtxbzVmbnJTbVRrQ0hYTFVKcmhDVHd0Ym5OUHdqSkJ3dGlVRkFoNWNHeHdYZmhPN2pCemJvYVlMckFjWE41MVRNRGkvV1A0VmRLREs4bk5QRDkxMnBxWU5aOFFUalVzNEhzc0hiOEtoUlZzelc5eTV5Z1Nma2trbXRHY1VRcE9MQTlMcFY4Q2tsRndKbmQ3UUtHMlJsUkdpMzAvU1QrQzZDa3oveG5zUmhKUSt4OWhzdDYzUWxqblV1a3NNajR2SGRUK0xjUU9FVWFYUGloQ2Y4QWwyd3E3VWpCb1Q1T0dpNUFad0wyckduQjFiZUloWmhYeTRiK2c9PQ,,-${page * 50}-50`)
+        return this.fetchBoePage(`https://www.boe.es/buscar/legislacion_ava.php?accion=Mas&id_busqueda=ZVR6dlhiaDhselhrQ1JXVGdTQy9uZGZEZ1BWV08weFpkU21QdnBDbEQxRVByOXEyMHJISUxJRzV5UFY5OU5Fd1NUMDlZenl3RVpwZnlxb2dHcmpmMUtvNG93WlVzNGxTdThOMlViVURLZTdvMDFqN0pxblJjOFlWZWhmMmdkWHI1b2VZK0tNVkVGZnR4WVgvS0VpY3hvWlI5QWcrTW5ta3ZXbXM3TDhSUU9QbzRuakZVVDJlcGJlajRIT2R3cGNBekFyM1dRRTZxcTl6d1dUcDJtOEtmYVRQRUVVd25tMDV6MjdncDB1MkNWa2grYU1NbDUrV3o3RFhvSkU0M3dDZnFublhhN3dJK25WRzV5MDlrUytMY1E9PQ,,-${page * 50}-50`)
     }
 
     private async fetchBoePage(url: string): Promise<string> {
