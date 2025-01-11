@@ -94,9 +94,9 @@ Adalya Waterlon Kizz (50 g) CM;2,1;2,4
 Adalya Waterloo Kizz (200g) CM;8;9,2
 Al Fakher Amber Rise (100 g) CM;6,5;7,5
 Al Fakher Apple (50 g) CM;1,9;2,2
-Al Fakher Big Green (1000 g) CM;34;39,1
-Al Fakher Big Green (50 g) CM;2;2,3
-Al Fakher Big Green (5000 g) CM;170;195,5
+Al Fakher Big Green (1000 g) CM;35;40,25
+Al Fakher Big Green (50 g) CM;2,2;2,55
+Al Fakher Big Green (5000 g) CM;175;201,25
 Al Fakher Black Mist (1000 g) CM;32;36,8
 Al Fakher Blueberry (50 g) CM;1,9;2,2
 Al Fakher Blueberry Mint (50 g) CM;1,9;2,2
@@ -125,8 +125,8 @@ Al Fakher Fusión White Flash (50 g) CM;2,3;2,65
 Al Fakher Grapes (50 g) CM;1,9;2,2
 Al Fakher Grapes-Mint (50 g) CM;1,9;2,2
 Al Fakher Grapio Night (250 g) CM;10,5;12,1
-Al Fakher Green Chu (1000 g) CM;36;41,4
-Al Fakher Green Chu (50 g) CM;2;2,3
+Al Fakher Green Chu (1000 g) CM;35;40,25
+Al Fakher Green Chu (50 g) CM;2,2;2,55
 Al Fakher Green Velvet (1000 g) CM;34;39,1
 Al Fakher Gum (50 g) CM;1,9;2,2
 Al Fakher Ivory Gold (100 g) CM;6,5;7,5
@@ -237,9 +237,9 @@ Al Fakher Special Edition Tangerine Twist (250 g) CM;16,5;19
 Al Fakher Special Edition Virgin Grape (250 g) CM;16,5;19
 Al Fakher Special Edition Watermelon Splash (250 g) CM;16,5;19
 Al Fakher Strawberry (50 g) CM;1,9;2,2
-Al Fakher The Double Crunch (1000 g) CM;34;39,1
-Al Fakher The Double Crunch (50 g) CM;2;2,3
-Al Fakher The Double Crunch (5000 g) CM;170;195,5
+Al Fakher The Double Crunch (1000 g) CM;35;40,25
+Al Fakher The Double Crunch (50 g) CM;2,2;2,55
+Al Fakher The Double Crunch (5000 g) CM;175;201,25
 Al Fakher Watermelon (50 g) CM;1,9;2,2
 Al Fakher Watermelon-Mint (50 g) CM;1,9;2,2
 Al Fakher Wicked Emerald (100 g) CM;6,5;7,5
@@ -983,74 +983,84 @@ Haze Subzero (200 g) CM;11,5;13,2
 Haze Subzero (50 g) CM;3,35;3,85
 Haze Wam (200 g) CM;11,5;13,2
 Haze Wam (50 g) CM;3,35;3,85
-Hookain American Pei (50 g) CM;3,2;3,7
+Hookain American Pei (50 g) CM;3,6;4,15
+Hookain Angry Dragon (200 g) CM;12,5;14,4
+Hookain Angry Dragon (50 g) CM;3,6;4,15
+Hookain Angry Green Dragon (200 g) CM;12,5;14,4
+Hookain Angry Green Dragon (50 g) CM;3,6;4,15
+Hookain Angry Piç Dragon (200 g) CM;12,5;14,4
+Hookain Angry Piç Dragon (50 g) CM;3,6;4,15
+Hookain Angry Red Dragon (200 g) CM;12,5;14,4
+Hookain Angry Red Dragon (50 g) CM;3,6;4,15
 Hookain Bär Lean (50 g) CM;3,2;3,7
-Hookain Big Black Barries (200 g) CM;12,3;14,15
-Hookain Big Black Barries (50 g) CM;3,2;3,7
+Hookain Big Black Barries (200 g) CM;12,5;14,4
+Hookain Big Black Barries (50 g) CM;3,6;4,15
 Hookain Blaze Baba Gamma (50 g) CM;3,85;4,45
 Hookain Blaze Batluva (50 g) CM;3,85;4,45
 Hookain Blaze Koka Koala (50 g) CM;3,85;4,45
 Hookain Blaze Lym Hype (50 g) CM;3,85;4,45
 Hookain Blaze Nana (50 g) CM;3,85;4,45
 Hookain Blaze White Heaven (50 g) CM;3,85;4,45
-Hookain Blowtus (200 g) CM;12,3;14,15
-Hookain Blowtus (50 g) CM;3,2;3,7
-Hookain Bubblenciaga (200 g) CM;12,3;14,15
-Hookain Bubblenciaga (50 g) CM;3,2;3,7
-Hookain Cactopus (50 g) CM;3,2;3,7
-Hookain Cheri Zkittlez (50 g) CM;3,2;3,7
-Hookain Code in Love (50 g) CM;3,2;3,7
-Hookain Cotton Cndy Craem (200 g) CM;12,3;14,15
-Hookain Cotton Cndy Craem (50 g) CM;3,2;3,7
-Hookain Eyez Kalt (50 g) CM;3,2;3,7
+Hookain Blowtus (200 g) CM;12,5;14,4
+Hookain Blowtus (50 g) CM;3,6;4,15
+Hookain Bubblenciaga (200 g) CM;12,5;14,4
+Hookain Bubblenciaga (50 g) CM;3,6;4,15
+Hookain C C C (200 g) CM;12,5;14,4
+Hookain Cactopus (50 g) CM;3,6;4,15
+Hookain Cheri Zkittlez (50 g) CM;3,6;4,15
+Hookain Code in Love (50 g) CM;3,6;4,15
+Hookain Cotton Cndy Craem (50 g) CM;3,6;4,15
+Hookain Dubai Stachio (200 g) CM;12,5;14,4
+Hookain Dubai Stachio (50 g) CM;3,6;4,15
+Hookain Eyez Kalt (50 g) CM;3,6;4,15
 Hookain Fellatio (200 g) CM;12,3;14,15
-Hookain Fellatio (50 g) CM;3,2;3,7
-Hookain Fyl Big Toy (200 g) CM;12,3;14,15
-Hookain Fyl Big Toy (50 g) CM;3,2;3,7
-Hookain Fyl Cactuz CNDY (200 g) CM;12,3;14,15
-Hookain Fyl Cactuz Cndy (50 g) CM;3,2;3,7
-Hookain Fyl Clitrus (200 g) CM;12,3;14,15
-Hookain Fyl Clitrus (50 g) CM;3,2;3,7
-Hookain Fyl Über (200 g) CM;12,3;14,15
-Hookain Fyl Über (50 g) CM;3,2;3,7
-Hookain Green Crack (50 g) CM;3,2;3,7
-Hookain Green Lean (200 g) CM;12,3;14,15
-Hookain Green Lean (50 g) CM;3,2;3,7
-Hookain Hijo de Prut (50 g) CM;3,2;3,7
-Hookain Jizzy Pia (50 g) CM;3,2;3,7
-Hookain Kaffa Yayo (200 g) CM;12,3;14,15
-Hookain Kaffa Yayo (50 g) CM;3,2;3,7
-Hookain Kivy King (50 g) CM;3,2;3,7
-Hookain Kw King (200 g) CM;12,3;14,15
-Hookain Laoz (200 g) CM;12,3;14,15
-Hookain Laoz (50 g) CM;3,2;3,7
-Hookain Lemenciaga (200 g) CM;12,3;14,15
-Hookain Lemenciaga (50 g) CM;3,2;3,7
-Hookain Millionair (50 g) CM;3,2;3,7
-Hookain Mng Loco (50 g) CM;3,2;3,7
-Hookain Original Vanta Zotic (50 g) CM;3,2;3,7
+Hookain Fellatio (50 g) CM;3,6;4,15
+Hookain Fyl Big Toy (200 g) CM;12,5;14,4
+Hookain Fyl Big Toy (50 g) CM;3,6;4,15
+Hookain Fyl Cactuz CNDY (200 g) CM;12,5;14,4
+Hookain Fyl Cactuz Cndy (50 g) CM;3,6;4,15
+Hookain Fyl Clitrus (200 g) CM;12,5;14,4
+Hookain Fyl Clitrus (50 g) CM;3,6;4,15
+Hookain Fyl Über (200 g) CM;12,5;14,4
+Hookain Fyl Über (50 g) CM;3,6;4,15
+Hookain Green Crack (50 g) CM;3,6;4,15
+Hookain Green Lean (200 g) CM;12,5;14,4
+Hookain Green Lean (50 g) CM;3,6;4,15
+Hookain Hijo de Prut (50 g) CM;3,6;4,15
+Hookain Jizzy Pia (50 g) CM;3,6;4,15
+Hookain Kaffa Yayo (200 g) CM;12,5;14,4
+Hookain Kaffa Yayo (50 g) CM;3,6;4,15
+Hookain Kivy King (50 g) CM;3,6;4,15
+Hookain Kw King (200 g) CM;12,5;14,4
+Hookain Laoz (200 g) CM;12,5;14,4
+Hookain Laoz (50 g) CM;3,6;4,15
+Hookain Lemenciaga (200 g) CM;12,5;14,4
+Hookain Lemenciaga (50 g) CM;3,6;4,15
+Hookain Mega Loco (50 g) CM;3,6;4,15
+Hookain Millionair (50 g) CM;3,6;4,15
+Hookain Original Vanta Zotic (50 g) CM;3,6;4,15
 Hookain Orog!na (50 g) CM;3,2;3,7
 Hookain Pa Ya Mongo (50 g) CM;3,2;3,7
 Hookain Pic Zkittlez (50 g) CM;3,2;3,7
 Hookain Pink Lemenciaga (200 g) CM;12,3;14,15
-Hookain Pink Lemenciaga (50 g) CM;3,2;3,7
-Hookain Punani (50 g) CM;3,2;3,7
-Hookain Sm!nt (50 g) CM;3,2;3,7
-Hookain Soleiro Spliff (50 g) CM;3,2;3,7
+Hookain Pink Lemenciaga (50 g) CM;3,6;4,15
+Hookain Punani (50 g) CM;3,6;4,15
+Hookain Sm!nt (50 g) CM;3,6;4,15
+Hookain Soleiro Spliff (50 g) CM;3,6;4,15
 Hookain Spiced Lean (50 g) CM;3,2;3,7
-Hookain Swii Ti (50 g) CM;3,2;3,7
+Hookain Swii Ti (50 g) CM;3,6;4,15
 Hookain Vantanaz (200 g) CM;12,3;14,15
 Hookain Vantanaz (50 g) CM;3,2;3,7
-Hookain Virgin Batluva (50 g) CM;3,2;3,7
-Hookain White Brown (200 g) CM;12,3;14,15
-Hookain White Brown (50 g) CM;3,2;3,7
-Hookain White Caek (200 g) CM;12,3;14,15
-Hookain White Caek (50 g) CM;3,2;3,7
-Hookain White Caek (950 g) CM;46,9;53,95
-Hookain White Caek Alman (200 g) CM;12,3;14,15
-Hookain White Caek Alman (50 g) CM;3,2;3,7
-Hookain X-Treme Blue Bay (50 g) CM;3,2;3,7
-Hookain Zenter Schox (50 g) CM;3,2;3,7
+Hookain Virgin Batluva (50 g) CM;3,6;4,15
+Hookain White (200 g) CM;12,5;14,4
+Hookain White (50 g) CM;3,6;4,15
+Hookain White (950 g) CM;52;59,8
+Hookain White Brown (200 g) CM;12,5;14,4
+Hookain White Brown (50 g) CM;3,6;4,15
+Hookain White Caek Alman (200 g) CM;12,5;14,4
+Hookain White Caek Alman (50 g) CM;3,6;4,15
+Hookain X-Treme Blue Bay (50 g) CM;3,6;4,15
+Hookain Zenter Schox (50 g) CM;3,6;4,15
 Indian Summer (50 g) CM;6,3;7,25
 Kentucky Bird (50 g) CM;5,5;6,3
 Kooliche (200 g) CM;8,95;10,3
@@ -1631,34 +1641,34 @@ Shisha Kartel Sexy Sheba (50 g) CM;1,9;2,2
 Shisha Kartel Sexy Sheba (950 g) CM;35;40,25
 Skandinavik Mixture (50 g) CM;6,5;7,5
 Skandinavik Navy (50 g) CM;6,7;7,7
-Social Smoke Absolute Zero (200 g) CM;12,5;14,4
-Social Smoke Absolute Zero (50 g) CM;3,3;3,8
-Social Smoke C Roll (200 g) CM;12,5;14,4
-Social Smoke C Roll (50 g) CM;3,3;3,8
-Social Smoke CA Chill (200 g) CM;12,5;14,4
-Social Smoke CA Chill (50 g) CM;3,3;3,8
-Social Smoke CU Chill (200 g) CM;12,5;14,4
-Social Smoke CU Chill (50 g) CM;3,3;3,8
-Social Smoke D D L (200 g) CM;12,5;14,4
-Social Smoke D D L (50 g) CM;3,3;3,8
-Social Smoke Gumtastic (200 g) CM;12,5;14,4
-Social Smoke Gumtastic (50 g) CM;3,3;3,8
-Social Smoke H CTA (200 g) CM;12,5;14,4
-Social Smoke H CTA (50 g) CM;3,3;3,8
-Social Smoke HD M Chill (200 g) CM;12,5;14,4
-Social Smoke HD M Chill (50 g) CM;3,3;3,8
-Social Smoke L Chill (200 g) CM;12,5;14,4
-Social Smoke L Chill (50 g) CM;3,3;3,8
-Social Smoke P Chill (200 g) CM;12,5;14,4
-Social Smoke P Chill (50 g) CM;3,3;3,8
-Social Smoke PST BRZ (200 g) CM;12,5;14,4
-Social Smoke PST BRZ (50 g) CM;3,3;3,8
-Social Smoke Twisted (200 g) CM;12,5;14,4
-Social Smoke Twisted (50 g) CM;3,3;3,8
-Social Smoke White Bear (200 g) CM;12,5;14,4
-Social Smoke White Bear (50 g) CM;3,3;3,8
-Social Smoke WM Chill (200 g) CM;12,5;14,4
-Social Smoke WM Chill (50 g) CM;3,3;3,8
+Social Smoke Absolute Zero (200 g) CM;13,95;16,05
+Social Smoke Absolute Zero (50 g) CM;3,75;4,3
+Social Smoke C Roll (200 g) CM;13,95;16,05
+Social Smoke C Roll (50 g) CM;3,75;4,3
+Social Smoke CA Chill (200 g) CM;13,95;16,05
+Social Smoke CA Chill (50 g) CM;3,75;4,3
+Social Smoke CU Chill (200 g) CM;13,95;16,05
+Social Smoke CU Chill (50 g) CM;3,75;4,3
+Social Smoke D D L (200 g) CM;13,95;16,05
+Social Smoke D D L (50 g) CM;3,75;4,3
+Social Smoke Gumtastic (200 g) CM;13,95;16,05
+Social Smoke Gumtastic (50 g) CM;3,75;4,3
+Social Smoke H CTA (200 g) CM;13,95;16,05
+Social Smoke H CTA (50 g) CM;3,75;4,3
+Social Smoke HD M Chill (200 g) CM;13,95;16,05
+Social Smoke HD M Chill (50 g) CM;3,75;4,3
+Social Smoke L Chill (200 g) CM;13,95;16,05
+Social Smoke L Chill (50 g) CM;3,75;4,3
+Social Smoke P Chill (200 g) CM;13,95;16,05
+Social Smoke P Chill (50 g) CM;3,75;4,3
+Social Smoke PST BRZ (200 g) CM;13,95;16,05
+Social Smoke PST BRZ (50 g) CM;3,75;4,3
+Social Smoke Twisted (200 g) CM;13,95;16,05
+Social Smoke Twisted (50 g) CM;3,75;4,3
+Social Smoke White Bear (200 g) CM;13,95;16,05
+Social Smoke White Bear (50 g) CM;3,75;4,3
+Social Smoke WM Chill (200 g) CM;13,95;16,05
+Social Smoke WM Chill (50 g) CM;3,75;4,3
 Special Star de Luxe (90 g) CM;3,3;3,8
 Stanwell Melange (50 g) CM;7;8,05
 Stanwell Sungold (50 g) CM;7;8,05
