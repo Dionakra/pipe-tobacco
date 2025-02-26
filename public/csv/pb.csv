@@ -189,6 +189,12 @@ Afendi The Hilands (950 g);62,95;72,4
 Afendi Tuscany Breeze (200 g);17,6;20,25
 Afendi Tuscany Breeze (50 g);4,85;5,6
 Afendi Tuscany Breeze (950 g);62,95;72,4
+Afzal Hookah Tobacco 1001 Nights (200 g);13,9;16
+Afzal Hookah Tobacco Bombay Nights (200 g);13,9;16
+Afzal Hookah Tobacco Ecstasy (200 g);13,9;16
+Afzal Hookah Tobacco ICY LT (200 g);13,9;16
+Afzal Hookah Tobacco Tropical Explosion (200 g);13,9;16
+Afzal Hookah Tobacco White Beach (200 g);13,9;16
 Al Andalus 2Apps (50 g);3;3,45
 Al Andalus Blue Frost (50 g);3;3,45
 Al Andalus Fresa (100 g);7,9;9,1
@@ -578,6 +584,7 @@ Almassiva Black Lebanese (200 g);16,5;19
 Almassiva Black Lebanese (50 g);4,4;5,05
 Almassiva Bluelight (200 g);16,5;19
 Almassiva Bluelight (50 g);4,4;5,05
+Almassiva Brotherheart (200 g);16,5;19
 Almassiva Come To Dubai (50 g);4,4;5,05
 Almassiva Summer In Beyrut (50 g);4,4;5,05
 Almassiva The Big M (50 g);3,85;4,45
@@ -923,14 +930,17 @@ Black Jack Life's a gamble (125 g);4;4,6
 Black Jack Life's a Gamble (200 g);8;9,2
 Black Jack Life's a Gamble Blue (40 g);1,75;2
 Black Jack Life's a Gamble Virginia Blend (40 g);1,75;2
-Black Jack Original Blend (100 g);6,95;8
+Black Jack Original Blend (100 g);7,5;8,6
 Black Jack Original Blend (20 g);1,5;1,7
-Black Jack Original Blend (200 g);13,5;15,5
+Black Jack Original Blend (200 g);13,95;16,05
 Black V. Original Danish Mixture (40 g);3,9;4,5
 Blackburn Anans Shok (100 g);15,95;18,35
 Blackburn Bapai Dnner (100 g);15,95;18,35
 Blackburn Celebricrisp (100 g);15,95;18,35
 Blackburn Chupper Grupper (100 g);15,95;18,35
+Blackburn Donatella (100 g);15,95;18,35
+Blackburn Ekzotic M (100 g);15,95;18,35
+Blackburn Epic Guru (100 g);15,95;18,35
 Blackburn Frostpeak (100 g);15,95;18,35
 Blackburn Glacial Tot (100 g);15,95;18,35
 Blackburn Green Stoner (100 g);15,95;18,35
@@ -938,9 +948,12 @@ Blackburn Green T (100 g);15,95;18,35
 Blackburn Haribon (100 g);15,95;18,35
 Blackburn Kram Shok (100 g);15,95;18,35
 Blackburn Lemn Shok (100 g);15,95;18,35
+Blackburn Malibu (100 g);15,95;18,35
+Blackburn Na Chille (100 g);15,95;18,35
 Blackburn Raserry (100 g);15,95;18,35
 Blackburn Real P.F. (100 g);15,95;18,35
 Blackburn Summer Basket (100 g);15,95;18,35
+Blackburn Vallas Las (100 g);15,95;18,35
 Blackburn Zestybliss (100 g);15,95;18,35
 Blaze Baba Gamma (200 g);19,5;22,4
 Blaze Baba Gamma (50 g);5,7;6,55
@@ -1085,6 +1098,8 @@ Cannibal Uh Mamy (50 g);3,95;4,55
 Cannibal White Panther (180 g);13,9;16
 Cannibal White Panther (45 g);3,3;3,8
 Cannibal White Panther (50 g);3,95;4,55
+Cannibal Wild (180 g);15,9;18,3
+Cannibal Wild (50 g);4,5;5,2
 Cannibal Wild (60 g);4,5;5,2
 Capital Bra 365 Tage (200 g);16,5;19
 Capital Bra 365 Tage (50 g);4,5;5,2
@@ -1637,7 +1652,7 @@ Element Yangtze (40 g);4,1;4,7
 Element Zonda (40 g);4,1;4,7
 Elixyr Maxx Pipe (140 g);11,5;13,2
 Elixyr Maxx Pipe (20 g);1,5;1,7
-Elixyr Maxx Pipe 1 kg (1000 g);70;80,5
+Elixyr Maxx Pipe (999 g);70;80,5
 Erasmus  Amsterdam (50 g);3,75;4,3
 Erasmus  Athenas (50 g);3,75;4,3
 Erasmus  Berlin (50 g);3,75;4,3
@@ -2182,7 +2197,7 @@ Layalina Raspberry Lemon (50 g);3;3,45
 Layalina Strawberry (50 g);3;3,45
 Layalina Watermelon (50 g);3;3,45
 Le Baron (100 g);6,9;7,95
-Le Baron (150 g);10;11,5
+Le Baron (150 g);10,5;12,1
 Le Baron (30 g);2,5;2,9
 Le Baron Menthol (30 g);2,5;2,9
 Le Baron Vanilla (30 g);2,5;2,9
@@ -2422,8 +2437,8 @@ Nakhla Crystal Classic Yellow (50 g);2,7;3,1
 Nakhla Crystal Duet Red (50 g);2,7;3,1
 Nakhla Crystal Pastel Red (50 g);2,7;3,1
 Nakhla Dark Green (50 g);2,95;3,4
-Nakhla Double Red (250 g);13,95;16,05
-Nakhla Double Red (50 g);2,95;3,4
+Nakhla Double Red (250 g);16,95;19,5
+Nakhla Double Red (50 g);3,5;4
 Nakhla El Basha Capuchino (50 g);2,6;3
 Nakhla El Basha Caramelo (50 g);2,6;3
 Nakhla El Nakhla Coco (50 g);2,6;3
@@ -2435,11 +2450,13 @@ Nakhla El Nakhla Plátano (50 g);2,6;3
 Nakhla El Nakhla Vainilla (50 g);2,6;3
 Nakhla Fakhfakhina Mango (50 g);2,6;3
 Nakhla Fakhfakhina Naranja (50 g);2,6;3
+Nakhla Grand Green (250 g);16,95;19,5
+Nakhla Grand Green (50 g);3,5;4
 Nakhla Ice Apple (50 g);2,75;3,15
 Nakhla Ice Grape Mint (50 g);2,6;3
 Nakhla Ice Raspberry Mint (50 g);2,75;3,15
-Nakhla Misty Black (250 g);8,5;9,8
-Nakhla Misty Black (50 g);2,95;3,4
+Nakhla Misty Black (250 g);14,95;17,2
+Nakhla Misty Black (50 g);3,5;4
 Nakhla Mizo Cereza (250 g);13;14,95
 Nakhla Mizo Cereza (50 g);2,75;3,15
 Nakhla Mizo Manzana (250 g);13;14,95
@@ -2462,7 +2479,6 @@ Nakhla Sheherazade Choco Menta (50 g);2,6;3
 Nakhla Sheherazade Margarita (50 g);2,6;3
 Nakhla Shisha on the Beach (50 g);2,75;3,15
 Nakhla Spark Green (250 g);13,95;16,05
-Nakhla Spark Green (50 g);2,95;3,4
 Nakhla Sparkly Red (50 g);2,95;3,4
 Nakhla Tobac Molasses Surt.1 (500 g);26;29,9
 Nakhla Tobacco Fresa (250 g);12;13,8
