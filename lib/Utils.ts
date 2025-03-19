@@ -14,7 +14,7 @@ const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Van Dijck", "Trucco", "T
     "Golden Blend's", "Gladora Pesse Canoe", "G.L. Pease", "G. Hoggarth", "Fribourg & Treyer", "Frérot", "Exclusiv Mixture", "Erinmore", "Elixyr", "El Puerto", "El Burladero", "El Bruc", "Eastwood", "Dunhill", "Duende",
     "DJ Pipe Tobacco", "Davidoff", "Danske Club", "Danish Blend", "Dan Tobacco", "Cuzco", "Condor", "Comoys", "Colts", "Colonial Dan Tobacco", "Clan", "Chacom", "Cellini", "Capstan", "Calumé Pipa", "Bullbrand", "Brujito",
     "Brookfield", "Brigg", "Bravo", "Borkum Riff", "Black V.", "Black Jack", "Big Chief", "Big Ben", "Bentley", "Bellini", "Bayside", "Barsdorf's Bester", "Bakerstreet", "Backwoods", "Astleys", "Ashton",
-    "Apache", "Amsterdamer", "Amphora", "American Street", "Alsbo", "Alpha", "Alonso", "Absolutely Special", "Eastenders", "Tabacco Way"]
+    "Apache", "Amsterdamer", "Amphora", "American Street", "Alsbo", "Alpha", "Alonso", "Absolutely Special", "Eastenders", "Tabacco Way", "Baraka"]
 
 const brandMaps: Map<string | RegExp, string> = new Map<string | RegExp, string>([
     ["&amp;", "&"],
