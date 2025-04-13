@@ -96,7 +96,7 @@ Al Fakher Amber Rise (100 g) CM;6,5;7,5
 Al Fakher Apple (50 g) CM;1,9;2,2
 Al Fakher Big Green (1000 g) CM;35;40,25
 Al Fakher Big Green (50 g) CM;2,2;2,55
-Al Fakher Big Green (5000 g) CM;175;201,25
+Al Fakher Big Green (5000 g) CM;195;224,25
 Al Fakher Big Red Splash (200 g) CM;9,95;11,45
 Al Fakher Black Mist (1000 g) CM;32;36,8
 Al Fakher Blueberry (50 g) CM;1,9;2,2
@@ -241,7 +241,7 @@ Al Fakher Special Edition Watermelon Splash (250 g) CM;16,5;19
 Al Fakher Strawberry (50 g) CM;1,9;2,2
 Al Fakher The Double Crunch (1000 g) CM;35;40,25
 Al Fakher The Double Crunch (50 g) CM;2,2;2,55
-Al Fakher The Double Crunch (5000 g) CM;175;201,25
+Al Fakher The Double Crunch (5000 g) CM;195;224,25
 Al Fakher Watermelon (50 g) CM;1,9;2,2
 Al Fakher Watermelon-Mint (50 g) CM;1,9;2,2
 Al Fakher Wicked Emerald (100 g) CM;6,5;7,5
@@ -1298,8 +1298,8 @@ Os Disco (200 g) CM;12,3;14,15
 Os Disco (50 g) CM;3,2;3,7
 Os Lucifero (50 g) CM;3,2;3,7
 Os Tobacco Bonnie'n Clyde (200 g) CM;12,3;14,15
+Os Tobacco Casanova (50 g) CM;3,2;3,7
 Os Tobacco Cosanostra (50 g) CM;3,2;3,7
-Os Tobacco Cosanova (50 g) CM;3,2;3,7
 Os Unknown (50 g) CM;3,2;3,7
 Overdozz 1St Love (60 g) CM;2,8;3,2
 Overdozz 24 Karatine (60 g) CM;2,8;3,2
@@ -1666,6 +1666,7 @@ Social Smoke L Chill (200 g) CM;13,95;16,05
 Social Smoke L Chill (50 g) CM;3,75;4,3
 Social Smoke P Chill (200 g) CM;13,95;16,05
 Social Smoke P Chill (50 g) CM;3,75;4,3
+Social Smoke P Chill (999 g) CM;59,9;68,9
 Social Smoke PST BRZ (200 g) CM;13,95;16,05
 Social Smoke PST BRZ (50 g) CM;3,75;4,3
 Social Smoke Twisted (200 g) CM;13,95;16,05
