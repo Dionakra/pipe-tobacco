@@ -94,9 +94,9 @@ Adalya Waterlon Kizz (50 g) CM;2,2;2,55
 Adalya Waterloo Kizz (200g) CM;8;9,2
 Al Fakher Amber Rise (100 g) CM;6,5;7,5
 Al Fakher Apple (50 g) CM;1,9;2,2
-Al Fakher Big Green (1000 g) CM;35;40,25
+Al Fakher Big Green (1000 g) CM;38;43,7
 Al Fakher Big Green (50 g) CM;2,2;2,55
-Al Fakher Big Green (5000 g) CM;175;201,25
+Al Fakher Big Green (5000 g) CM;195;224,25
 Al Fakher Big Red Splash (200 g) CM;9,95;11,45
 Al Fakher Black Mist (1000 g) CM;32;36,8
 Al Fakher Blueberry (50 g) CM;1,9;2,2
@@ -126,7 +126,7 @@ Al Fakher Fusión White Flash (50 g) CM;2,3;2,65
 Al Fakher Grapes (50 g) CM;1,9;2,2
 Al Fakher Grapes-Mint (50 g) CM;1,9;2,2
 Al Fakher Grapio Night (250 g) CM;10,5;12,1
-Al Fakher Green Chu (1000 g) CM;37;42,55
+Al Fakher Green Chu (1000 g) CM;38;43,7
 Al Fakher Green Chu (50 g) CM;2,2;2,55
 Al Fakher Green Velvet (1000 g) CM;34;39,1
 Al Fakher Gum (50 g) CM;1,9;2,2
@@ -239,9 +239,9 @@ Al Fakher Special Edition Tangerine Twist (250 g) CM;16,5;19
 Al Fakher Special Edition Virgin Grape (250 g) CM;16,5;19
 Al Fakher Special Edition Watermelon Splash (250 g) CM;16,5;19
 Al Fakher Strawberry (50 g) CM;1,9;2,2
-Al Fakher The Double Crunch (1000 g) CM;35;40,25
+Al Fakher The Double Crunch (1000 g) CM;38;43,7
 Al Fakher The Double Crunch (50 g) CM;2,2;2,55
-Al Fakher The Double Crunch (5000 g) CM;175;201,25
+Al Fakher The Double Crunch (5000 g) CM;195;224,25
 Al Fakher Watermelon (50 g) CM;1,9;2,2
 Al Fakher Watermelon-Mint (50 g) CM;1,9;2,2
 Al Fakher Wicked Emerald (100 g) CM;6,5;7,5
@@ -433,12 +433,12 @@ Al-Waha 66 (200 g) CM;8,4;9,65
 Al-Waha 66 (50 g) CM;2,1;2,4
 Al-Waha Amor (200 g) CM;8,4;9,65
 Al-Waha Amor (50 g) CM;2,1;2,4
-Al-Waha Big Boy (200 g) CM;8,4;9,65
-Al-Waha Big Boy (50 g) CM;2,1;2,4
+Al-Waha Big Boy (200 g) CM;13,35;15,35
+Al-Waha Big Boy (50 g) CM;3,35;3,85
 Al-Waha Blue Van Cre (200 g) CM;8,4;9,65
 Al-Waha Blue Van Crea (50 g) CM;2,1;2,4
-Al-Waha Casper  (50 g) CM;2,1;2,4
-Al-Waha Casper (200 g) CM;8,4;9,65
+Al-Waha Casper (200 g) CM;13,35;15,35
+Al-Waha Casper (50 g) CM;3,35;3,85
 Al-Waha Dirty Thirty (200 g) CM;8,4;9,65
 Al-Waha Dirty Thirty (50 g) CM;2,1;2,4
 Al-Waha Dólar (200 g) CM;8,4;9,65
@@ -730,9 +730,9 @@ Darkside Tear Base (30 g) CM;3,15;3,6
 Davidoff Scottish Mixture (50g) CM;13,12;15,1
 Del Mar North Blue (20 g) CM;1,2;1,4
 Del Mar South Red (20 g) CM;1,2;1,4
-Dozaj 90+ (50 g) CM;2,4;2,75
-Dozaj Amnesia (200 g) CM;7,95;9,15
-Dozaj Amnesia (50 g) CM;2,4;2,75
+Dozaj 90+ (50 g) CM;2,7;3,1
+Dozaj Amnesia (200 g) CM;9,9;11,4
+Dozaj Amnesia (50 g) CM;2,7;3,1
 Dozaj Black ¡Joe Que Frio! (50 g) CM;3,1;3,55
 Dozaj Black Berga (50 g) CM;3,1;3,55
 Dozaj Black Blast (50 g) CM;3,1;3,55
@@ -752,60 +752,69 @@ Dozaj Black Star (50 g) CM;2,4;2,75
 Dozaj Black Suka (50 g) CM;3,1;3,55
 Dozaj Black Terry Miss You (50 g) CM;3,1;3,55
 Dozaj Black Vampiro (50 g) CM;3,1;3,55
-Dozaj Blade (50 g) CM;2,4;2,75
-Dozaj Buf (50 g) CM;2,4;2,75
-Dozaj Bumbum (200g) CM;7,95;9,15
-Dozaj Bumbum (50 g) CM;2,4;2,75
-Dozaj Bumbum (950 g) CM;39,5;45,4
-Dozaj Carnival (200 g) CM;7,95;9,15
-Dozaj Carnival (50 g) CM;2,4;2,75
-Dozaj Carnival (950 g) CM;39,5;45,4
-Dozaj Casablanca (200 g) CM;7,95;9,15
-Dozaj Casablanca (50 g) CM;2,4;2,75
-Dozaj Chef (50 g) CM;2,4;2,75
-Dozaj Cuba Dream (50 g) CM;2,4;2,75
-Dozaj Dead Sea (200 g) CM;7,95;9,15
-Dozaj Dead Sea (50 g) CM;2,4;2,75
-Dozaj Eternal (200 g) CM;7,95;9,15
-Dozaj Eternal (50 g) CM;2,4;2,75
-Dozaj Euphoria (200 g) CM;7,95;9,15
-Dozaj Euphoria (50 g) CM;2,4;2,75
-Dozaj Euphoria (950 g) CM;39,5;45,4
-Dozaj Excalibur (50 g) CM;2,4;2,75
-Dozaj Filomena (200 g) CM;7,95;9,15
-Dozaj Filomena (50 g) CM;2,4;2,75
-Dozaj Huracan (200 g) CM;7,95;9,15
-Dozaj Huracan (50 g) CM;2,4;2,75
-Dozaj Huracan (950 g) CM;39,5;45,4
-Dozaj Invisible (200 g) CM;7,95;9,15
-Dozaj Invisible (50 g) CM;2,4;2,75
-Dozaj Jelly Bear (50 g) CM;2,4;2,75
-Dozaj Krasava (200 g) CM;7,95;9,15
-Dozaj Krasava (50 g) CM;2,4;2,75
-Dozaj Lambada (200 g) CM;7,95;9,15
-Dozaj Lambada (50 g) CM;2,4;2,75
-Dozaj Land of Fire (50 g) CM;2,4;2,75
-Dozaj Lava (50 g) CM;2,4;2,75
-Dozaj Marshall (50 g) CM;2,4;2,75
-Dozaj Mito (50 g) CM;2,4;2,75
-Dozaj Orko (200 g) CM;7,95;9,15
-Dozaj Orko (50 g) CM;2,4;2,75
-Dozaj Purple (50 g) CM;2,4;2,75
-Dozaj R.I.P. Nairobi (200 g) CM;7,95;9,15
-Dozaj R.I.P. Nairobi (50 g) CM;2,4;2,75
-Dozaj Rio Lady (50 g) CM;2,4;2,75
-Dozaj Royal Style (50 g) CM;2,4;2,75
-Dozaj Sweet Night (50 g) CM;2,4;2,75
-Dozaj Timeless (50 g) CM;2,4;2,75
-Dozaj Tokyo (200 g) CM;7,95;9,15
-Dozaj Tokyo (50 g) CM;2,4;2,75
-Dozaj Tokyo (950 g) CM;39,5;45,4
-Dozaj Touch (50 g) CM;2,4;2,75
-Dozaj Uff (200g) CM;7,95;9,15
-Dozaj Uff (50 g) CM;2,4;2,75
-Dozaj Uff (950 g) CM;39,5;45,4
-Dozaj Utopia (50 g) CM;2,4;2,75
-Dozaj Vip 44 (50 g) CM;2,4;2,75
+Dozaj Blade (50 g) CM;2,7;3,1
+Dozaj Buf (50 g) CM;2,7;3,1
+Dozaj Bumbum (200g) CM;9,9;11,4
+Dozaj Bumbum (50 g) CM;2,7;3,1
+Dozaj Bumbum (950 g) CM;41,9;48,2
+Dozaj Carnival (200 g) CM;9,9;11,4
+Dozaj Carnival (50 g) CM;2,7;3,1
+Dozaj Carnival (950 g) CM;41,9;48,2
+Dozaj Casablanca (200 g) CM;9,9;11,4
+Dozaj Casablanca (50 g) CM;2,7;3,1
+Dozaj Chef (50 g) CM;2,7;3,1
+Dozaj Cuba Dream (50 g) CM;2,7;3,1
+Dozaj Dead Sea (200 g) CM;9,9;11,4
+Dozaj Dead Sea (50 g) CM;2,7;3,1
+Dozaj Eternal (200 g) CM;9,9;11,4
+Dozaj Eternal (50 g) CM;2,7;3,1
+Dozaj Euphoria (200 g) CM;9,9;11,4
+Dozaj Euphoria (50 g) CM;2,7;3,1
+Dozaj Euphoria (950 g) CM;41,9;48,2
+Dozaj Excalibur (50 g) CM;2,7;3,1
+Dozaj Filomena (200 g) CM;9,9;11,4
+Dozaj Filomena (50 g) CM;2,7;3,1
+Dozaj Huracan (200 g) CM;9,9;11,4
+Dozaj Huracan (50 g) CM;2,7;3,1
+Dozaj Huracan (950 g) CM;41,9;48,2
+Dozaj Invisible (200 g) CM;9,9;11,4
+Dozaj Invisible (50 g) CM;2,7;3,1
+Dozaj Jelly Bear (50 g) CM;2,7;3,1
+Dozaj Krasava (200 g) CM;9,9;11,4
+Dozaj Krasava (50 g) CM;2,7;3,1
+Dozaj Lambada (200 g) CM;9,9;11,4
+Dozaj Lambada (50 g) CM;2,7;3,1
+Dozaj Land of Fire (50 g) CM;2,7;3,1
+Dozaj Lava (50 g) CM;2,7;3,1
+Dozaj Lio (200 g) CM;9,9;11,4
+Dozaj Lio (50 g) CM;2,7;3,1
+Dozaj Marshall (50 g) CM;2,7;3,1
+Dozaj Mito (200 g) CM;9,9;11,4
+Dozaj Mito (50 g) CM;2,7;3,1
+Dozaj Old School (200 g) CM;9,9;11,4
+Dozaj Old School (50 g) CM;2,7;3,1
+Dozaj Orko (200 g) CM;9,9;11,4
+Dozaj Orko (50 g) CM;2,7;3,1
+Dozaj Purple (200 g) CM;9,9;11,4
+Dozaj Purple (50 g) CM;2,7;3,1
+Dozaj R.I.P. Nairobi (200 g) CM;9,9;11,4
+Dozaj R.I.P. Nairobi (50 g) CM;2,7;3,1
+Dozaj Rio Lady (50 g) CM;2,7;3,1
+Dozaj Royal Style (200 g) CM;9,9;11,4
+Dozaj Royal Style (50 g) CM;2,7;3,1
+Dozaj Solo (200 g) CM;9,9;11,4
+Dozaj Solo (50 g) CM;2,7;3,1
+Dozaj Sweet Night (50 g) CM;2,7;3,1
+Dozaj Timeless (50 g) CM;2,7;3,1
+Dozaj Tokyo (200 g) CM;9,9;11,4
+Dozaj Tokyo (50 g) CM;2,7;3,1
+Dozaj Tokyo (950 g) CM;41,9;48,2
+Dozaj Touch (50 g) CM;2,7;3,1
+Dozaj Uff (200g) CM;9,9;11,4
+Dozaj Uff (50 g) CM;2,7;3,1
+Dozaj Uff (950 g) CM;41,9;48,2
+Dozaj Utopia (50 g) CM;2,7;3,1
+Dozaj Vip 44 (50 g) CM;2,7;3,1
 Drugoy Smoke B Chill (50 g) CM;3,5;4
 Drugoy Smoke Bigway (50 g) CM;3,5;4
 Drugoy Smoke Blue Mix (50 g) CM;3,5;4
@@ -1298,8 +1307,8 @@ Os Disco (200 g) CM;12,3;14,15
 Os Disco (50 g) CM;3,2;3,7
 Os Lucifero (50 g) CM;3,2;3,7
 Os Tobacco Bonnie'n Clyde (200 g) CM;12,3;14,15
+Os Tobacco Casanova (50 g) CM;3,2;3,7
 Os Tobacco Cosanostra (50 g) CM;3,2;3,7
-Os Tobacco Cosanova (50 g) CM;3,2;3,7
 Os Unknown (50 g) CM;3,2;3,7
 Overdozz 1St Love (60 g) CM;2,8;3,2
 Overdozz 24 Karatine (60 g) CM;2,8;3,2
@@ -1666,6 +1675,7 @@ Social Smoke L Chill (200 g) CM;13,95;16,05
 Social Smoke L Chill (50 g) CM;3,75;4,3
 Social Smoke P Chill (200 g) CM;13,95;16,05
 Social Smoke P Chill (50 g) CM;3,75;4,3
+Social Smoke P Chill (999 g) CM;59,9;68,9
 Social Smoke PST BRZ (200 g) CM;13,95;16,05
 Social Smoke PST BRZ (50 g) CM;3,75;4,3
 Social Smoke Twisted (200 g) CM;13,95;16,05
@@ -2063,23 +2073,6 @@ Titanium Michigan (100 g) CM;6,65;7,65
 Titanium Stuttgart (100 g) CM;6,65;7,65
 Touareg (40 g) CM;2,8;3,2
 Touareg (60 g) CM;5;5,75
-True Passion Artic Line (50 g) CM;2,25;2,6
-True Passion Cinderella (50 g) CM;2,25;2,6
-True Passion Daf (200 g) CM;8,45;9,7
-True Passion Daf (50 g) CM;2,25;2,6
-True Passion Daf (950 g) CM;32,6;37,5
-True Passion Le Chill (50 g) CM;2,25;2,6
-True Passion Love Story (200 g) CM;8,45;9,7
-True Passion Love Story (50 g) CM;2,25;2,6
-True Passion Love Story (950 g) CM;32,6;37,5
-True Passion Okolom Original (50 g) CM;2,25;2,6
-True Passion Pure Green (200 g) CM;8,45;9,7
-True Passion Pure Green (50 g) CM;2,25;2,6
-True Passion Pure Green (950 g) CM;32,6;37,5
-True Passion Ringle Rangle (50 g) CM;2,25;2,6
-True Passion Summer Breeze (200 g) CM;8,45;9,7
-True Passion Summer Breeze (50 g) CM;2,25;2,6
-True Passion Vaja Blue (50 g) CM;2,25;2,6
 W.O .Larsen A True Delight (50 g) CM;5,15;5,9
 W.O .Larsen Simply Unique (50 g) CM;5,15;5,9
 W.O. Larsen 1864 (100 g) CM;18,4;21,15
@@ -2102,6 +2095,10 @@ Zain New Green (50 g) CM;2,4;2,75
 Zain Pasion Froot (50 g) CM;2,4;2,75
 Zain Water Mlon (50 g) CM;2,4;2,75
 Zain Yellow Lenon (50 g) CM;2,4;2,75
+Ziggy Amazon Breeze (250 g) CM;16,25;18,7
+Ziggy Amazon Breeze (50 g) CM;3,4;3,9
+Ziggy Beach Crush (250 g) CM;16,25;18,7
+Ziggy Beach Crush (50 g) CM;3,4;3,9
 Ziggy Brazilian Gold (250 g) CM;16,25;18,7
 Ziggy Brazilian Gold (50 g) CM;3,4;3,9
 Ziggy Green Hapocalyx (250 g) CM;16,25;18,7
@@ -2111,19 +2108,41 @@ Ziggy Love Diamond (250 g) CM;16,25;18,7
 Ziggy Love Diamond (50 g) CM;3,4;3,9
 Ziggy Lust Crown (250 g) CM;16,25;18,7
 Ziggy Lust Crown (50 g) CM;3,4;3,9
+Ziggy Lust Queen (250 g) CM;16,25;18,7
+Ziggy Lust Queen (50 g) CM;3,4;3,9
+Ziggy Morning Glance (250 g) CM;16,25;18,7
+Ziggy Morning Glance (50 g) CM;3,4;3,9
+Ziggy Native Lines (250 g) CM;16,25;18,7
+Ziggy Native Lines (50 g) CM;3,4;3,9
+Ziggy Pool Party (250 g) CM;16,25;18,7
+Ziggy Pool Party (50 g) CM;3,4;3,9
 Ziggy Purple Starburst (250 g) CM;16,25;18,7
 Ziggy Purple Starburst (50 g) CM;3,4;3,9
 Ziggy Rainbow Blast (250 g) CM;16,25;18,7
 Ziggy Rainbow Blast (50 g) CM;3,4;3,9
 Ziggy Red Starburst (250 g) CM;16,25;18,7
 Ziggy Red Starburst (50 g) CM;3,4;3,9
+Ziggy Rocket Flame (250 g) CM;16,25;18,7
+Ziggy Rocket Flame (50 g) CM;3,4;3,9
 Ziggy Rubi Shade (250 g) CM;16,25;18,7
 Ziggy Rubi Shade (50 g) CM;3,4;3,9
+Ziggy Show Dream (250 g) CM;16,25;18,7
+Ziggy Show Dream (50 g) CM;3,4;3,9
 Ziggy Summer Sunrise (250 g) CM;16,25;18,7
 Ziggy Summer Sunrise (50 g) CM;3,4;3,9
 Ziggy Summer Sunrise (990 g) CM;63,6;73,15
+Ziggy Thrill Hunter (250 g) CM;16,25;18,7
+Ziggy Thrill Hunter (50 g) CM;3,4;3,9
 Ziggy Tropical (250 g) CM;16,25;18,7
 Ziggy Tropical (50 g) CM;3,4;3,9
+Ziggy Valentine's Kiss (250 g) CM;16,25;18,7
+Ziggy Valentine's Kiss (50 g) CM;3,4;3,9
+Ziggy Velvet Petals (250 g) CM;16,25;18,7
+Ziggy Velvet Petals (50 g) CM;3,4;3,9
+Ziggy Wild Dive (250 g) CM;16,25;18,7
+Ziggy Wild Dive (50 g) CM;3,4;3,9
+Ziggy Yellow Hype (250 g) CM;16,25;18,7
+Ziggy Yellow Hype (50 g) CM;3,4;3,9
 Zomo Bana Cin (50 g) CM;2;2,3
 Zomo Dragon Wall (50 g) CM;2,03;2,35
 Zomo Dry Sahara (50 g) CM;2,03;2,35
