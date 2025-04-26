@@ -659,15 +659,15 @@ Al-Waha 66 (200 g);15,45;17,75
 Al-Waha 66 (50 g);3,85;4,45
 Al-Waha Amor (200 g);15,45;17,75
 Al-Waha Amor (50 g);3,85;4,45
-Al-Waha Big Boy (200 g);15,45;17,75
-Al-Waha Big Boy (50 g);3,85;4,45
+Al-Waha Big Boy (200 g);15,95;18,35
+Al-Waha Big Boy (50 g);4,2;4,85
 Al-Waha Big Boy Groz (50 g);3,85;4,45
 Al-Waha Blue Lion (200 g);15,45;17,75
 Al-Waha Blue Lion (50 g);3,85;4,45
 Al-Waha Blue Van Cre (200 g);15,45;17,75
 Al-Waha Blue Van Crea (50 g);3,85;4,45
-Al-Waha Casper (200 g);15,45;17,75
-Al-Waha Casper (50 g);3,85;4,45
+Al-Waha Casper (200 g);15,95;18,35
+Al-Waha Casper (50 g);4,2;4,85
 Al-Waha Casper Groz (50 g);3,85;4,45
 Al-Waha Dirty Thirty (200 g);15,45;17,75
 Al-Waha Dirty Thirty (50 g);3,85;4,45
@@ -1680,6 +1680,7 @@ Element Volta (40 g);4,1;4,7
 Element Xlokk (40 g);4,1;4,7
 Element Yangtze (40 g);4,1;4,7
 Element Zonda (40 g);4,1;4,7
+Elixyr Ice Pipe (120 g);10;11,5
 Elixyr Maxx Pipe (140 g);11,5;13,2
 Elixyr Maxx Pipe (20 g);1,5;1,7
 Elixyr Maxx Pipe (999 g);70;80,5
@@ -2429,8 +2430,12 @@ Musth Aluva (200 g);31,5;36,2
 Musth Amazonia (125 g);21,9;25,2
 Musth Amazonia (200 g);31,5;36,2
 Musth APL Drops (200 g);31,5;36,2
+Musth Bam Mam (125 g);21,9;25,2
+Musth Bam Mam (200 g);31,5;36,2
 Musth Bass Hlls (200 g);31,5;36,2
 Musth Berri Hols (200 g);31,5;36,2
+Musth Blvck Bros (125 g);21,9;25,2
+Musth Blvck Bros (200 g);31,5;36,2
 Musth Chisi Pi (125 g);21,9;25,2
 Musth Chry Col (125 g);21,9;25,2
 Musth Cosmos (200 g);31,5;36,2
@@ -2438,6 +2443,7 @@ Musth Djumngo (125 g);21,9;25,2
 Musth Djumngo (200 g);31,5;36,2
 Musth Eclipse (200 g);31,5;36,2
 Musth Exotic Pum (125 g);21,9;25,2
+Musth Gap Fut (125 g);21,9;25,2
 Musth Kendi Co (125 g);21,9;25,2
 Musth Kendi Co (200 g);31,5;36,2
 Musth Koko Dream (200 g);31,5;36,2
@@ -3876,6 +3882,10 @@ Zain New Green (50 g);2,9;3,35
 Zain Pasion Froot (50 g);2,9;3,35
 Zain Water Mlon (50 g);2,9;3,35
 Zain Yellow Lenon (50 g);2,9;3,35
+Ziggy Amazon Breeze (250 g);20,3;23,35
+Ziggy Amazon Breeze (50 g);4,25;4,9
+Ziggy Beach Crush (250 g);20,3;23,35
+Ziggy Beach Crush (50 g);4,25;4,9
 Ziggy Brazilian Gold (250 g);20,3;23,35
 Ziggy Brazilian Gold (50 g);4,25;4,9
 Ziggy Green Hapocalyx (250 g);20,3;23,35
@@ -3885,19 +3895,41 @@ Ziggy Love Diamond (250 g);20,3;23,35
 Ziggy Love Diamond (50 g);4,25;4,9
 Ziggy Lust Crown (250 g);20,3;23,35
 Ziggy Lust Crown (50 g);4,25;4,9
+Ziggy Lust Queen (250 g);20,3;23,35
+Ziggy Lust Queen (50 g);4,25;4,9
+Ziggy Morning Glance (250 g);20,3;23,35
+Ziggy Morning Glance (50 g);4,25;4,9
+Ziggy Native Lines (250 g);20,3;23,35
+Ziggy Native Lines (50 g);4,25;4,9
+Ziggy Pool Party (250 g);20,3;23,35
+Ziggy Pool Party (50 g);4,25;4,9
 Ziggy Purple Starburst (250 g);20,3;23,35
 Ziggy Purple Starburst (50 g);4,25;4,9
 Ziggy Rainbow Blast (250 g);20,3;23,35
 Ziggy Rainbow Blast (50 g);4,25;4,9
 Ziggy Red Starburst (250 g);20,3;23,35
 Ziggy Red Starburst (50 g);4,25;4,9
+Ziggy Rocket Flame (250 g);20,3;23,35
+Ziggy Rocket Flame (50 g);4,25;4,9
 Ziggy Rubi Shade (250 g);20,3;23,35
 Ziggy Rubi Shade (50 g);4,25;4,9
+Ziggy Show Dream (250 g);20,3;23,35
+Ziggy Show Dream (50 g);4,25;4,9
 Ziggy Summer Sunrise (250 g);20,3;23,35
 Ziggy Summer Sunrise (50 g);4,25;4,9
 Ziggy Summer Sunrise (990 g);79,5;91,4
+Ziggy Thrill Hunter (250 g);20,3;23,35
+Ziggy Thrill Hunter (50 g);4,25;4,9
 Ziggy Tropical (250 g);20,3;23,35
 Ziggy Tropical (50 g);4,25;4,9
+Ziggy Valentine's Kiss (250 g);20,3;23,35
+Ziggy Valentine's Kiss (50 g);4,25;4,9
+Ziggy Velvet Petals (250 g);20,3;23,35
+Ziggy Velvet Petals (50 g);4,25;4,9
+Ziggy Wild Dive (250 g);20,3;23,35
+Ziggy Wild Dive (50 g);4,25;4,9
+Ziggy Yellow Hype (250 g);20,3;23,35
+Ziggy Yellow Hype (50 g);4,25;4,9
 Zomo Bana Cin (50 g);3,2;3,7
 Zomo Carneiros (200 g);14,85;17,1
 Zomo Carneiros (50 g);3,7;4,25
