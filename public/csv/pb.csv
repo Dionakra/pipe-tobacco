@@ -857,13 +857,13 @@ Arábica Molasses Strawberry Flavour (200 g);9,5;10,9
 Arábica Molasses Strawberry Flavour (50 g);2,4;2,75
 Arábica Molasses Watermelon Flavour (200 g);9,5;10,9
 Arábica Molasses Watermelon Flavour (50 g);2,4;2,75
-Ashton Artisan's Blend (50 g);16,3;18,75
-Ashton Consummate Gentleman (50 g);15,8;18,15
-Ashton Gold Rush (50 g);15,8;18,15
-Ashton Guilty Pleasure (50 g);15,9;18,3
-Ashton Rainy Day (50 g);15,9;18,3
-Ashton Smooth Sailing (50 g);15,8;18,15
-Ashton Winding Road (50 g);15;17,25
+Ashton Artisan's Blend (50 g);18,5;21,3
+Ashton Consummate Gentleman (50 g);17,95;20,65
+Ashton Gold Rush (50 g);17,95;20,65
+Ashton Guilty Pleasure (50 g);17,95;20,65
+Ashton Rainy Day (50 g);17,95;20,65
+Ashton Smooth Sailing (50 g);17,95;20,65
+Ashton Winding Road (50 g);17,95;20,65
 Astleys Nº 1 Mixture (50 g);22,8;26,2
 Astleys Nº 109 Medium Flake (50 g);29,2;33,6
 Astleys Nº 2 Mixture (50 g);23,5;27
@@ -1138,12 +1138,12 @@ Capstan Gold Navy Cut (50 g);10,9;12,55
 Capstan Original Navy Cut (50 g);10,9;12,55
 Cellini Clásico (50 g);5,3;6,1
 Cellini Forte (50 g);5,3;6,1
-Chacom Nº 1 (50 g);15,8;18,15
-Chacom Nº 2 (50 g);15,8;18,15
-Chacom Nº 3 (50 g);15,8;18,15
-Chacom Nº 4 (50 g);15,8;18,15
-Chacom No 5 (50 g);17,4;20
-Chacom No 6 (50 g);17,8;20,45
+Chacom Nº 1 (50 g);17,95;20,65
+Chacom Nº 2 (50 g);17,95;20,65
+Chacom Nº 3 (50 g);17,95;20,65
+Chacom Nº 4 (50 g);17,95;20,65
+Chacom No 5 (50 g);19,2;22,1
+Chacom No 6 (50 g);19,2;22,1
 Chaos Baby Lou (100 g);6,5;7,5
 Chaos Baby Noah (50 g);2,95;3,4
 Chaos Crazy Goblin (100 g);6,5;7,5
@@ -1241,10 +1241,10 @@ Colts Original (70 g);6;6,9
 Colts Red (100 g);8;9,2
 Colts Red (20 g);2;2,3
 Colts Yellow (40 g);3,5;4
-Comoys Cornish Mixture (50 g);15,8;18,15
-Comoys English  Mixture (50 g);15,8;18,15
-Comoys Irish Mixture (50 g);15,8;18,15
-Comoys Scottish Mixture (50 g);15,8;18,15
+Comoys Cornish Mixture (50 g);18,4;21,15
+Comoys English  Mixture (50 g);18,4;21,15
+Comoys Irish Mixture (50 g);18,4;21,15
+Comoys Scottish Mixture (50 g);18,4;21,15
 Condor (50 g);5,95;6,85
 Cornell & Diehl Autumm Evening 2 OZ (56,699 g);19,5;22,4
 Cornell & Diehl Bayou Morning 2 OZ (56,699 g);19,5;22,4
@@ -1632,7 +1632,7 @@ Dunhill Standard Mixture (50 g);9,95;11,45
 Dunhill Three Year Matured Virginia (50 g);9,95;11,45
 Dunhill Ye Old Signe (50 g);9,95;11,45
 Eastenders Original Blend (100 g);8,2;9,45
-Eastenders Original Blend (20 g);1,8;2,05
+Eastenders Original Blend (20 g);1,5;1,7
 Eastenders Original Blend (30 g);2,5;2,9
 Eastwood Original Blend (100 g);8,2;9,45
 Eastwood Original Blend (20 g);1,8;2,05
@@ -1838,12 +1838,12 @@ Frérot (1000 g);66,5;76,5
 Frérot (120 g);10,05;11,55
 Frérot (30 g);2,65;3,05
 Frérot (500 g);39,99;46
-Fribourg & Treyer 34th Mixture (50 g);15,85;18,25
-Fribourg & Treyer Cut Virginia Plug (Flake) (50 g);17,9;20,6
-Fribourg & Treyer Special Brown Flake (50 g);21;24,15
-Fribourg & Treyer Vintage (Flake) (50 g);19;21,85
-Fribourg & Treyer Waterloo 2 (50 g);15,85;18,25
-Fribourg & Treyer Wingate Mixture (50 g);16,7;19,2
+Fribourg & Treyer 34th Mixture (50 g);18,4;21,15
+Fribourg & Treyer Cut Virginia Plug (Flake) (50 g);21,2;24,4
+Fribourg & Treyer Special Brown Flake (50 g);24,5;28,2
+Fribourg & Treyer Vintage (Flake) (50 g);21,95;25,25
+Fribourg & Treyer Waterloo 2 (50 g);18,95;21,8
+Fribourg & Treyer Wingate Mixture (50 g);18,95;21,8
 Fumari Amorosa (100 g);12;13,8
 Fumari Amorosa (200 g);12;13,8
 Fumari Amorosa (50 g);3,5;4
@@ -3845,12 +3845,12 @@ Wazir Orange Flavour (50 g);1,1;1,25
 Wazir Strawberry Flavour (50 g);1,1;1,25
 Wazir Tutti Frutti Flavour (50 g);1,1;1,25
 Wazir Two Apples Flavour (50 g);1,1;1,25
-Wessex Brown Flake (50 g);20;23
-Wessex Burley Flake (EX) (50 g);17,5;20,1
-Wessex Director's Choice (50 g);19,5;22,4
-Wessex Gold Flake (50 g);19;21,85
-Wessex Red Flake (50 g);17,5;20,1
-Wessex Tradition (50 g);17,5;20,1
+Wessex Brown Flake (50 g);23,5;27
+Wessex Burley Flake (EX) (50 g);23,5;27
+Wessex Director's Choice (50 g);20,8;23,9
+Wessex Gold Flake (50 g);21,8;25,05
+Wessex Red Flake (50 g);18,8;21,6
+Wessex Tradition (50 g);18,5;21,3
 WO Larsen Wøl Edition 2023 (100 g);20,15;23,15
 WØL Edition 2021 (100 g);20;23
 WØL Edition 2022 (100 g);20,1;23,1
