@@ -745,6 +745,8 @@ Anda Blyat Strong Cono Verde (200 g);22,5;25,9
 Anda Blyat Strong Cono Verde (50 g);6,5;7,5
 Anda Blyat Strong Mentido (200 g);22,5;25,9
 Anda Blyat Strong Mentido (50 g);6,5;7,5
+Anda Blyat Strong Optimus Leim (200 g);22,5;25,9
+Anda Blyat Strong Optimus Leim (50 g);6,5;7,5
 Anda Blyat Strong Temptation (200 g);22,5;25,9
 Anda Blyat Strong Temptation (50 g);6,5;7,5
 Anda Chupala (200 g);17,5;20,1
@@ -762,6 +764,8 @@ Anda Sour Dia (200 g);17,5;20,1
 Anda Sour Dia (50 g);4,95;5,7
 Anda Temptation (200 g);17,5;20,1
 Anda Temptation (50 g);4,95;5,7
+Anda Temptation Mandingo (200 g);17,5;20,1
+Anda Temptation Mandingo (50 g);4,95;5,7
 Anda Temtation (950 g);75;86,25
 Anda Tiki Taka (200 g);17,5;20,1
 Anda Tiki Taka (50 g);4,95;5,7
@@ -1167,10 +1171,6 @@ Clan Highland Gold (50 g);4,5;5,2
 Clan Hollandia (40 g);5,3;6,1
 Clan Raw Blend (40 g);3,8;4,35
 Clan Vintage ED.LIMITADA (40 g);7;8,05
-Classic Line Double App (50 g);4,2;4,85
-Classic Line Lmn Mnt (50 g);4,2;4,85
-Classic Line O. Mnt (50 g);4,2;4,85
-Classic Line Royal Grp (50 g);4,2;4,85
 Cleopatra Molasses Amaretto (250 g);10,5;12,1
 Cleopatra Molasses Amaretto (50 g);2,15;2,45
 Cleopatra Molasses Apple (250 g);10,5;12,1
@@ -1669,6 +1669,8 @@ Forever Gold Island (200 g);18,5;21,3
 Forever Gold Island (50 g);4,85;5,6
 Forever Gold Kekoko (200 g);18,5;21,3
 Forever Gold Kekoko (50 g);4,85;5,6
+Forever Gold Lemshock (200 g);18,5;21,3
+Forever Gold Lemshock (50 g);4,85;5,6
 Forever Gold Monkey (200 g);18,5;21,3
 Forever Gold Monkey (50 g);4,85;5,6
 Forever Gold Monkey Edición Limitada (50 g);4,85;5,6
@@ -2889,7 +2891,15 @@ Savinelli Cavendish (Braun-Brown) (50 g);18;20,7
 Savinelli English Mixture (Grün-Green)(50 g);18;20,7
 Savinelli Leonardo (100 g);28;32,2
 Savinelli The Balkans (Gelb - Yellow) (50 g);18;20,7
+Sayes! Dominika (100 g);11,95;13,75
+Sayes! Ginbrew (100 g);11,95;13,75
 Sayes! Noir Bry (100 g);11,95;13,75
+Sayes! Passika (100 g);11,95;13,75
+Sayes! Pinkman (100 g);11,95;13,75
+Sayes! Raspi (100 g);11,95;13,75
+Sayes! Rokman (100 g);11,95;13,75
+Sayes! Shak (100 g);11,95;13,75
+Sayes! Spayz (100 g);11,95;13,75
 Sayes! Zola (100 g);11,95;13,75
 Scaferlati Caporal  (40 g);7,5;8,6
 Scottish Corner Aberdeen Edition (12 g);1,1;1,25
@@ -3104,6 +3114,10 @@ Starbuzz Bold Tropikool (100 g);9,95;11,45
 Starbuzz Bold Wet Meli Freeze (100 g);9,95;11,45
 Starbuzz Bold White Freeze (100 g);9,95;11,45
 Starbuzz Bold Yellow Mist (100 g);9,95;11,45
+Starbuzz Classic Line Double App (50 g);4,2;4,85
+Starbuzz Classic Line Lmn Mnt (50 g);4,2;4,85
+Starbuzz Classic Line O. Mnt (50 g);4,2;4,85
+Starbuzz Classic Line Royal Grp (50 g);4,2;4,85
 Starbuzz Regular Anjou Chill (100 g);9,95;11,45
 Starbuzz Regular Blue Dew (100 g);9,95;11,45
 Starbuzz Regular Blue Gee (100 g);9,95;11,45
