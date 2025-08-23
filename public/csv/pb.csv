@@ -1067,9 +1067,9 @@ Cannibal Great (180 g);13,9;16
 Cannibal Great (45 g);3,3;3,8
 Cannibal Great (60 g);4,5;5,2
 Cannibal Heartless (45 g);3,3;3,8
-Cannibal Lion (180 g);13,9;16
+Cannibal Lion (180 g);15,9;18,3
 Cannibal Lion (45 g);3,3;3,8
-Cannibal Lion (50 g);3,95;4,55
+Cannibal Lion (50 g);4,5;5,2
 Cannibal Mybro (180 g);13,9;16
 Cannibal Mybro (50 g);3,95;4,55
 Cannibal Philigrana (180 g);13,9;16
@@ -1312,6 +1312,7 @@ Dozaj Black Double Manza (50 g);4,95;5,7
 Dozaj Black Explosion (200 g);18,5;21,3
 Dozaj Black Explosion (50 g);4,95;5,7
 Dozaj Black Infiniti (50 g);4,95;5,7
+Dozaj Black Kyoto (200 g);18,5;21,3
 Dozaj Black Kyoto (50 g);4,95;5,7
 Dozaj Black Max (200 g);18,5;21,3
 Dozaj Black Max (50 g);4,95;5,7
@@ -1364,6 +1365,7 @@ Dozaj Land of Fire (50 g);4,5;5,2
 Dozaj Lava (50 g);4,5;5,2
 Dozaj Lio (200 g);15,95;18,35
 Dozaj Lio (50 g);4,5;5,2
+Dozaj Lio (950 g);69,95;80,45
 Dozaj Marshall (50 g);4,5;5,2
 Dozaj Mito (200 g);15,95;18,35
 Dozaj Mito (50 g);4,5;5,2
@@ -1380,6 +1382,7 @@ Dozaj Royal Style (200 g);15,95;18,35
 Dozaj Royal Style (50 g);4,5;5,2
 Dozaj Solo (200 g);15,95;18,35
 Dozaj Solo (50 g);4,5;5,2
+Dozaj Solo (950 g);69,95;80,45
 Dozaj Sweet Night (50 g);4,5;5,2
 Dozaj Timeless (50 g);4,5;5,2
 Dozaj Tokyo (200 g);15,95;18,35
@@ -2304,49 +2307,49 @@ Mr. Shisha Summer Sunset (200 g);16;18,4
 Mr. Shisha Summer Sunset (50 g);4,5;5,2
 Mr. Shisha Tropical (100 g);7,5;8,6
 Mr. Shisha Tropical (50 g);4,5;5,2
-Musth Aluva (200 g);31,5;36,2
-Musth Amazonia (125 g);21,9;25,2
-Musth Amazonia (200 g);31,5;36,2
-Musth APL Drops (200 g);31,5;36,2
-Musth Bam Mam (125 g);21,9;25,2
-Musth Bam Mam (200 g);31,5;36,2
-Musth Bass Hlls (200 g);31,5;36,2
-Musth Berri Hols (200 g);31,5;36,2
-Musth Blvck Bros (125 g);21,9;25,2
-Musth Blvck Bros (200 g);31,5;36,2
-Musth Chisi Pi (125 g);21,9;25,2
-Musth Chry Col (125 g);21,9;25,2
-Musth Cosmos (200 g);31,5;36,2
-Musth Djumngo (125 g);21,9;25,2
-Musth Djumngo (200 g);31,5;36,2
-Musth Eclipse (200 g);31,5;36,2
-Musth Exotic Pum (125 g);21,9;25,2
-Musth Gap Fut (125 g);21,9;25,2
-Musth Kendi Co (125 g);21,9;25,2
-Musth Kendi Co (200 g);31,5;36,2
-Musth Koko Dream (200 g);31,5;36,2
-Musth Milric (200 g);31,5;36,2
-Musth Morocco (125 g);21,9;25,2
-Musth Morocco (200 g);31,5;36,2
-Musth Neptune (200 g);31,5;36,2
-Musth Ornj Team (125 g);21,9;25,2
-Musth Parapap (125 g);21,9;25,2
-Musth Parapap (200 g);31,5;36,2
-Musth Pinkman (200 g);31,5;36,2
-Musth Plombir (125 g);21,9;25,2
-Musth Plombir (200 g);31,5;36,2
-Musth Raspi (125 g);21,9;25,2
-Musth Raspi (200 g);31,5;36,2
-Musth Red Gape (125 g);21,9;25,2
-Musth Sea Backtrn Ti (125 g);21,9;25,2
-Musth Space FLV (200 g);31,5;36,2
-Musth Space Invaders (200 g);31,5;36,2
-Musth Stellar (200 g);31,5;36,2
-Musth Straw Lych (200 g);31,5;36,2
-Musth Uranus (200 g);31,5;36,2
-Musth Violet (125 g);21,9;25,2
-Musth Violet CO (200 g);31,5;36,2
-Musth White Sod (125 g);21,9;25,2
+Musth Aluva (200 g);32,3;37,15
+Musth Amazonia (125 g);22,6;26
+Musth Amazonia (200 g);32,3;37,15
+Musth APL Drops (200 g);32,3;37,15
+Musth Bam Mam (125 g);22,6;26
+Musth Bam Mam (200 g);32,3;37,15
+Musth Bass Hlls (200 g);32,3;37,15
+Musth Berri Hols (200 g);32,3;37,15
+Musth Blvck Bros (125 g);22,6;26
+Musth Blvck Bros (200 g);32,3;37,15
+Musth Chisi Pi (125 g);22,6;26
+Musth Chry Col (125 g);22,6;26
+Musth Cosmos (200 g);32,3;37,15
+Musth Djumngo (125 g);22,6;26
+Musth Djumngo (200 g);32,3;37,15
+Musth Eclipse (200 g);32,3;37,15
+Musth Exotic Pum (125 g);22,6;26
+Musth Gap Fut (125 g);22,6;26
+Musth Kendi Co (125 g);22,6;26
+Musth Kendi Co (200 g);32,3;37,15
+Musth Koko Dream (200 g);32,3;37,15
+Musth Milric (200 g);32,3;37,15
+Musth Morocco (125 g);22,6;26
+Musth Morocco (200 g);32,3;37,15
+Musth Neptune (200 g);32,3;37,15
+Musth Ornj Team (125 g);22,6;26
+Musth Parapap (125 g);22,6;26
+Musth Parapap (200 g);32,3;37,15
+Musth Pinkman (200 g);32,3;37,15
+Musth Plombir (125 g);22,6;26
+Musth Plombir (200 g);32,3;37,15
+Musth Raspi (125 g);22,6;26
+Musth Raspi (200 g);32,3;37,15
+Musth Red Gape (125 g);22,6;26
+Musth Sea Backtrn Ti (125 g);22,6;26
+Musth Space FLV (200 g);32,3;37,15
+Musth Space Invaders (200 g);32,3;37,15
+Musth Stellar (200 g);32,3;37,15
+Musth Straw Lych (200 g);32,3;37,15
+Musth Uranus (200 g);32,3;37,15
+Musth Violet (125 g);22,6;26
+Musth Violet CO (200 g);32,3;37,15
+Musth White Sod (125 g);22,6;26
 Musthave Atmosphere (200 g);28;32,2
 Musthave Blarry (200 g);23,5;27
 Musthave Co-La (100 g);11,95;13,75
@@ -2711,6 +2714,8 @@ Revoshi Chao Bella (50 g);4,35;5
 Revoshi Chao Bella (995 g);75;86,25
 Revoshi D'App Strng (50 g);4,35;5
 Revoshi D'App Strng (995 g);54;62,1
+Revoshi Darmita (200 g);18;20,7
+Revoshi Darmita (50 g);4,8;5,5
 Revoshi Eskimo C (50 g);4,35;5
 Revoshi Eskimo Cndy (50 g);4,35;5
 Revoshi Eskimo L (50 g);4,35;5
@@ -2771,6 +2776,10 @@ Revoshi LM (50 g);4,35;5
 Revoshi Lmn (50 g);4,35;5
 Revoshi Lmn-Mnt (50 g);4,35;5
 Revoshi M (50 g);4,35;5
+Revoshi Manda (200 g);15,95;18,35
+Revoshi Manda (50 g);4,35;5
+Revoshi Marbella (200 g);15,95;18,35
+Revoshi Marbella (50 g);4,35;5
 Revoshi Mnt (50 g);4,35;5
 Revoshi Mulan Sword (200 g);15,95;18,35
 Revoshi Mulan Sword (25 g);1,85;2,15
@@ -2794,6 +2803,8 @@ Revoshi Pancho Villa (50 g);4,35;5
 Revoshi Panonino (200 g);15,95;18,35
 Revoshi Panonino (25 g);1,85;2,15
 Revoshi Panonino (50 g);4,35;5
+Revoshi Qui-Qui (200 g);15,95;18,35
+Revoshi Qui-Qui (50 g);4,35;5
 Revoshi Racy Colombian (200 g);15,95;18,35
 Revoshi Racy Colombian (25 g);1,85;2,15
 Revoshi Racy Colombian (50 g);4,35;5
@@ -2816,6 +2827,8 @@ Revoshi Thanks Engels (25 g);1,85;2,15
 Revoshi Thanks Engels (50 g);4,35;5
 Revoshi The Shuffle (200 g);18;20,7
 Revoshi The Shuffle (50 g);4,8;5,5
+Revoshi Thrilla in Manila (200 g);18;20,7
+Revoshi Thrilla in Manila (50 g);4,8;5,5
 Revoshi Txele (200 g);15,95;18,35
 Revoshi Txele (50 g);4,35;5
 Revoshi Vaina (200 g);15,95;18,35
