@@ -759,6 +759,7 @@ Anda Mentido (50 g);4,95;5,7
 Anda Mentido (950 g);75;86,25
 Anda Optimus Leim (200 g);17,5;20,1
 Anda Optimus Leim (50 g);4,95;5,7
+Anda Optimus Leim (950 g);75;86,25
 Anda Red & Green (200 g);17,5;20,1
 Anda Red & Green (50 g);4,95;5,7
 Anda Sour Dia (200 g);17,5;20,1
@@ -767,6 +768,7 @@ Anda Temptation (200 g);17,5;20,1
 Anda Temptation (50 g);4,95;5,7
 Anda Temptation Mandingo (200 g);17,5;20,1
 Anda Temptation Mandingo (50 g);4,95;5,7
+Anda Temptation Mandingo (950 g);75;86,25
 Anda Temtation (950 g);75;86,25
 Anda Tiki Taka (200 g);17,5;20,1
 Anda Tiki Taka (50 g);4,95;5,7
@@ -943,6 +945,7 @@ Blackburn Glacial Tot (100 g);15,95;18,35
 Blackburn Green Stoner (100 g);15,95;18,35
 Blackburn Green T (100 g);15,95;18,35
 Blackburn Haribon (100 g);15,95;18,35
+Blackburn Kane Myata (100 g);15,95;18,35
 Blackburn Kram Shok (100 g);15,95;18,35
 Blackburn Lemn Shok (100 g);15,95;18,35
 Blackburn Malibu (100 g);15,95;18,35
@@ -2340,7 +2343,9 @@ Musth Plombir (125 g);22,6;26
 Musth Plombir (200 g);32,3;37,15
 Musth Raspi (125 g);22,6;26
 Musth Raspi (200 g);32,3;37,15
+Musth Rd Ti (125 g);22,6;26
 Musth Red Gape (125 g);22,6;26
+Musth Rocketman (125 g);22,6;26
 Musth Sea Backtrn Ti (125 g);22,6;26
 Musth Space FLV (200 g);32,3;37,15
 Musth Space Invaders (200 g);32,3;37,15
@@ -2349,6 +2354,7 @@ Musth Straw Lych (200 g);32,3;37,15
 Musth Uranus (200 g);32,3;37,15
 Musth Violet (125 g);22,6;26
 Musth Violet CO (200 g);32,3;37,15
+Musth Wet Mel (125 g);22,6;26
 Musth White Sod (125 g);22,6;26
 Musthave Atmosphere (200 g);28;32,2
 Musthave Blarry (200 g);23,5;27
@@ -2870,6 +2876,16 @@ Samuel Gawith Navy Flake (50 g);24,6;28,3
 Samuel Gawith Perfection Mixture (50 g);24,6;28,3
 Samuel Gawith Sam's Flake (50 g);24,6;28,3
 Samuel Gawith Squadron Leader (50 g);24,6;28,3
+Sapphire Crown Alpine Straw (100 g);15,95;18,35
+Sapphire Crown Apl Strudl (100 g);15,95;18,35
+Sapphire Crown Ba Na2 (100 g);15,95;18,35
+Sapphire Crown Froostyle (100 g);15,95;18,35
+Sapphire Crown Hazel Crush (100 g);15,95;18,35
+Sapphire Crown Indian Stuff (100 g);15,95;18,35
+Sapphire Crown Love Above (100 g);15,95;18,35
+Sapphire Crown Love Under Tonik (100 g);15,95;18,35
+Sapphire Crown Persik (100 g);15,95;18,35
+Sapphire Crown Yozo Hani (100 g);15,95;18,35
 Savacco 6IX Blend (200 g);14,95;17,2
 Savacco 6IX Blend (50 g);3,95;4,55
 Savacco Assasins Green (200 g);14,95;17,2
@@ -3047,7 +3063,6 @@ Sillem's Grün/Green (100 g);24,4;28,05
 Sillem's Linea Epoque Antique (100 g);28;32,2
 Sillem's Rot/Red (100 g);24,4;28,05
 Sillem's Schwarz/Black (100 g);24,4;28,05
-Sindbad Mint Water Pipe Tobacco (40 g);2,3;2,65
 Sioux Original Red (100 g);7,6;8,75
 Sioux Original Red (20 g);1,5;1,7
 Sioux Original Red lata (40 g);3,5;4
@@ -3511,6 +3526,7 @@ WØL Edition 2021 (100 g);20;23
 WØL Edition 2022 (100 g);20,1;23,1
 WØL Edition 2024 (100 g);20,5;23,6
 Wøl Edition 2025 (100 g);24,5;28,2
+WØL Edition 2026 (100 g);25;28,75
 Ziggy Amazon Breeze (250 g);20,3;23,35
 Ziggy Amazon Breeze (50 g);4,25;4,9
 Ziggy Beach Crush (250 g);20,3;23,35
