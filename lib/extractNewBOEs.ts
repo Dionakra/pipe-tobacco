@@ -1,6 +1,7 @@
 import fs from "fs"
 import BOEService from "./services/BOEService"
 import BOEEntry from "./models/BOEEntry"
+import { Console } from "console"
 
 
 const BOES_PATH = __dirname + "/../public/boe.json"
@@ -16,6 +17,7 @@ async function main() {
 
   const boeService: BOEService = new BOEService()
   const boes = await boeService.getNewEntries(lastBoeId)
+
 
   for (const boe of boes) {
     console.info(`Nueva entrada del BOE obtenida: ${boe.id}`)

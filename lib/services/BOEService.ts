@@ -29,7 +29,7 @@ export default class BOEService {
     }
 
     private extractEntries(html: string): BOEEntry[] {
-        const regex = /<h3>Ministerio.*?(\d{2})\/(\d{2})\/(\d{4}).*?<li class="puntoHTML">.*?href=".*?id=(.*?)"/gms;
+        const regex = /<p class="linea-dem">Ministerio.*?(\d{2})\/(\d{2})\/(\d{4}).*?<li class="puntoHTML">.*?href=".*?id=(.*?)"/gms;
         const entries: BOEEntry[] = []
 
         let m;
