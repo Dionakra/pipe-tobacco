@@ -7,7 +7,7 @@ const shishaBrands: string[] = ["187", "Adalya", "Afendi", "Al-Waha", "Al Fakher
     "Layalina", "Kooliche", "Kismet", "Khaleej", "Kalout", "Kalam", "John Brooks", "Indian Summer", "Ibiza Essence", "Hookain", "Holster", "Haze", "Hater", "Fumari", "Forever", "Flame", "Eternal", "Ernest", "Erasmus",
     "Element", "Dumanji", "Duft", "Dschinni", "Drugoy", "Dozaj", "Delta", "Del Mar", "Darkside", "Dark Smoke", "Cleopatra Molasses", "Chronos", "Chaos", "Chillma", "Capital", "Cannibal", "Candelas",
     "Camino", "Camel Vapeleaf Bolsa", "Sindbad Mint Water Pipe Tobacco", "Capìtal Bra Lecker Lecker", "Mayflower", "Tabacco Way - D'Ora", "Kaja", "Afzal", "Inferno Angel Vice", "Elixyr", "Inferno", "Sayes!", "Classic Line",
-    "Sapphire", "Harbour Red"]
+    "Sapphire", "Harbour Red", "Kingstreet", "Stral"]
 const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Van Dijck", "Trucco", "Troost", "Trébol", "Touareg", "Tilbury", "Texas Republic", "Thomas Radford", "Sweet Dublin", "Sting", "Stanwell", "Stanley", "Stanislaw",
     "St. Bruno", "Special Star", "Solani", "Smokers Freedom", "Smokers Choice", "Skull", "Skandinavik", "Sioux Original", "Sillem's", "Selesta", "Scottish Corner", "Scaferlati", "Savinelli", "Samuel Gawith", "Sailor´s Pride",
     "Sahara", "Sacramento", "Robert Lewis", "Retro", "Redfield", "Red Wolf", "Rattray's", "Planta", "El Abuelo", "Peterson", "Peter Clark", "Olsen", "Oboe", "Nording", "Moon Habana", "Missisipi", "Mcconnell", "Master Cut",
