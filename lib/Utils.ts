@@ -4,18 +4,21 @@ const shishaBrands: string[] = ["187", "Adalya", "Afendi", "Al-Waha", "Al Fakher
     "Arábica Molasses", "Revoshi", "Social Smoke", "Ziggy", "Azure", "Anda", "Apocalypse", "Arabica Molasses", "Blackburn", "Blaze", "Blue Horse", "Zomo", "Zain", "Wazir", "Vipo Hookah Tobacco", "True Passion",
     "Trifecta", "Torres", "Titanium", "Tipsy", "Tarifa", "Tangiers", "Taboo", "Tabaco para pipa de agua Savacco", "Surfari", "Street Smoke", "Starline", "Starbuzz", "Springwater", "Shisha", "Serbetli", "Sebero",
     "SB Starbuzz", "Savacco", "Privilege", "Prestige", "Overdozz", "Os", "Neo", "Nash", "Nativo", "Natur", "Nameless", "Nakhla", "Musth", "Mr. Shisha", "Moe's", "Mazaya", "Marif", "Mammut", "Mala Vida", "Le Baron",
-    "Layalina", "Kooliche", "Kismet", "Khaleej", "Kalout", "Kalam", "John Brooks", "Indian Summer", "Ibiza Essence", "Hookain", "Holster", "Haze", "Hater", "Fumari", "Forever", "Flame", "Eternal", "Ernest", "Erasmus",
+    "Layalina", "Kooliche", "Kismet", "Khaleej", "Kalout", "Kalam", "John Brooks", "Ibiza Essence", "Hookain", "Holster", "Haze", "Hater", "Fumari", "Forever", "Flame", "Eternal", "Ernest", "Erasmus",
     "Element", "Dumanji", "Duft", "Dschinni", "Drugoy", "Dozaj", "Delta", "Del Mar", "Darkside", "Dark Smoke", "Cleopatra Molasses", "Chronos", "Chaos", "Chillma", "Capital", "Cannibal", "Candelas",
-    "Camino", "Camel Vapeleaf Bolsa", "Sindbad Mint Water Pipe Tobacco", "Capìtal Bra Lecker Lecker", "Mayflower", "Tabacco Way - D'Ora", "Kaja", "Afzal", "Inferno Angel Vice", "Elixyr", "Inferno", "Sayes!", "Classic Line",
-    "Sapphire", "Harbour Red", "Kingstreet", "Stral"]
-const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Van Dijck", "Trucco", "Troost", "Trébol", "Touareg", "Tilbury", "Texas Republic", "Thomas Radford", "Sweet Dublin", "Sting", "Stanwell", "Stanley", "Stanislaw",
-    "St. Bruno", "Special Star", "Solani", "Smokers Freedom", "Smokers Choice", "Skull", "Skandinavik", "Sioux Original", "Sillem's", "Selesta", "Scottish Corner", "Scaferlati", "Savinelli", "Samuel Gawith", "Sailor´s Pride",
-    "Sahara", "Sacramento", "Robert Lewis", "Retro", "Redfield", "Red Wolf", "Rattray's", "Planta", "El Abuelo", "Peterson", "Peter Clark", "Olsen", "Oboe", "Nording", "Moon Habana", "Missisipi", "Mcconnell", "Master Cut",
-    "Mark Adams", "Macbaren", "Mac Lintock", "Mac Baren", "Look Out", "Lince", "La Tribu", "La Pinta", "La Oveja Negra", "Kiowa", "Kingston", "Keops", "Kentucky Bird", "Jockey", "Holger Danske", "Hampton", "Half & Half",
-    "Golden Blend's", "Gladora Pesse Canoe", "G.L. Pease", "G. Hoggarth", "Fribourg & Treyer", "Frérot", "Exclusiv Mixture", "Erinmore", "El Puerto", "El Burladero", "El Bruc", "Eastwood", "Dunhill", "Duende",
-    "DJ Pipe Tobacco", "Davidoff", "Danske Club", "Danish Blend", "Dan Tobacco", "Cuzco", "Condor", "Comoys", "Colts", "Colonial Dan Tobacco", "Clan", "Chacom", "Cellini", "Capstan", "Calumé Pipa", "Bullbrand", "Brujito",
-    "Brookfield", "Brigg", "Bravo", "Borkum Riff", "Black V.", "Black Jack", "Big Chief", "Big Ben", "Bentley", "Bellini", "Bayside", "Barsdorf's Bester", "Bakerstreet", "Backwoods", "Astleys", "Ashton",
-    "Apache", "Amsterdamer", "Amphora", "American Street", "Alsbo", "Alpha", "Alonso", "Absolutely Special", "Eastenders", "Tabacco Way", "Baraka", "Cornell & Diehl", "Robert McConnell"]
+    "Camino", "Camel Vapeleaf Bolsa", "Sindbad Mint Water Pipe Tobacco", "Capìtal Bra Lecker Lecker", "Mayflower", "Kaja", "Afzal", "Inferno Angel Vice", "Elixyr", "Inferno", "Sayes!", "Classic Line",
+    "Sapphire", "Harbour Red", "Kingstreet", "Stral", "Special Star", "Hampton", "Alpha", "American Street", "Apache", "Backwoods", "Baraka", "Big Chief", "Black Jack", "El Puerto",
+    "Bravo", "Brujito", "Bullbrand", "Calumé Pipa", "DJ Pipe Tobacco", "Danish Blend", "Keops", "Kingston", "Kiowa", "La Oveja Negra", "La Tribu", "Lince", "Master Cut", "Planta",
+    "Mark Adams", "Moon Habana", "Oboe", "Olsen", "Peter Clark", "Sacramento", "Smokers Freedom", "Tabacco Way - D'Ora", "Tabacco Way - Brazilian Spirit Tobacco", "Tabacco Way - Be Happy",
+    "Touareg", "Trébol", "Van Dijck",]
+const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Trucco", "Troost", "Touareg", "Tilbury", "Texas Republic", "Thomas Radford", "Sweet Dublin", "Sting", "Stanwell", "Stanley", "Stanislaw",
+    "St. Bruno", "Special Star", "Solani", "Smokers Choice", "Skull", "Skandinavik", "Sioux Original", "Sillem's", "Selesta", "Scottish Corner", "Scaferlati", "Savinelli", "Samuel Gawith", "Sailor´s Pride",
+    "Sahara", "Robert Lewis", "Retro", "Redfield", "Red Wolf", "Rattray's", "El Abuelo", "Peterson", "Nording", "Missisipi", "Mcconnell",
+    "Macbaren", "Mac Lintock", "Mac Baren", "Look Out", "La Pinta", "Kentucky Bird", "Jockey", "Holger Danske", "Half & Half",
+    "Golden Blend's", "Gladora Pesse Canoe", "G.L. Pease", "G. Hoggarth", "Fribourg & Treyer", "Frérot", "Exclusiv", "Erinmore", "El Burladero", "El Bruc", "Eastwood", "Dunhill", "Duende",
+    "Davidoff", "Danske Club", "Dan Tobacco", "Cuzco", "Condor", "Comoys", "Colts", "Colonial Dan Tobacco", "Clan", "Chacom", "Cellini", "Capstan",
+    "Brookfield", "Brigg", "Borkum Riff", "Black V.", "Big Ben", "Bentley", "Bellini", "Bayside", "Barsdorf's Bester", "Bakerstreet", "Astleys", "Ashton",
+    "Amsterdamer", "Amphora", "Alsbo", "Alonso", "Absolutely Special", "Eastenders", "Tabacco Way - Doctor Pipe", "Cornell & Diehl", "Robert McConnell", "Indian Summer", "Doctor Pipe"]
 
 const brandMaps: Map<string | RegExp, string> = new Map<string | RegExp, string>([
     ["&amp;", "&"],
@@ -57,7 +60,8 @@ const brandMaps: Map<string | RegExp, string> = new Map<string | RegExp, string>
     [/ - Petaca\.$/g, ""],
     [/ - Lata\.$/g, ""],
     ["Cornell & Dihel", "Cornell & Diehl"],
-    ["Mcconnell", "Robert McConnell"]
+    ["Mcconnell", "Robert McConnell"],
+    ["Tabacco Way - Doctor Pipe", "Doctor Pipe"]
 ])
 
 export function parseTobacco(name: string, exhaustive: boolean = false): TobaccoBlendSize | undefined {
