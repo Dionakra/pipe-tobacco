@@ -76,14 +76,14 @@
           class="cursor-pointer rounded shadow-md border border-gray-100 hover:-translate-y-1 transition transform hover:shadow-lg m-2">
           <div class="p-2">
             <p class="pl-1 text-xl" v-html="tobacco.brand"></p>
-            <p class="pl-2 text-gray-600 " v-html="tobacco.blend"></p>
+            <p class="pl-1 text-gray-600 " v-html="tobacco.blend"></p>
 
             <div class="w-full grid grid-cols-2" v-for="size in tobacco.sizes.sort((a, b) => a.grams - b.grams)">
-              <div class="flex my-auto gap-2 px-2">
-                <img src="/size.svg" class="h-6 my-auto"> <span class="my-auto"> {{ size.grams }} g</span>
+              <div class="flex my-auto  px-2">
+                <span class="my-auto"> {{ size.grams }} g</span>
               </div>
-              <div class="flex my-auto gap-2 pl-2">
-                <img src="/price.svg" class="h-5 my-auto"> <span class="my-auto "> {{
+              <div class="flex my-auto gap-0.5 pl-2">
+                	&#8364; <span class="my-auto "> {{
                   size.currentPrice.toFixed(2) }}
                 </span>
               </div>
