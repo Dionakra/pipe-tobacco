@@ -9,7 +9,7 @@ const shishaBrands: string[] = ["187", "Adalya", "Afendi", "Al-Waha", "Al Fakher
     "Camino", "Camel Vapeleaf Bolsa", "Sindbad Mint Water Pipe Tobacco", "Capìtal Bra Lecker Lecker", "Mayflower", "Kaja", "Afzal", "Inferno Angel Vice", "Elixyr", "Inferno", "Sayes!", "Classic Line",
     "Sapphire", "Harbour Red", "Kingstreet", "Stral", "Special Star", "Hampton", "Alpha", "American Street", "Apache", "Backwoods", "Baraka", "Big Chief", "Black Jack", "El Puerto",
     "Bravo", "Brujito", "Bullbrand", "Calumé Pipa", "DJ Pipe Tobacco", "Danish Blend", "Keops", "Kingston", "Kiowa", "La Oveja Negra", "La Tribu", "Lince", "Master Cut", "Planta",
-    "Mark Adams", "Moon Habana", "Oboe", "Olsen", "Peter Clark", "Sacramento", "Smokers Freedom", "Tabacco Way - D'Ora", "Tabacco Way - Brazilian Spirit Tobacco", "Tabacco Way - Be Happy",
+    "Mark Adams", "Moon Habana", "Oboe", "Olsen", "Peter Clark", "Sacramento", "Smokers Freedom", "Tabacco Way - D'Ora", "Tabacco Way - Be Happy",
     "Touareg", "Trébol", "Van Dijck","Baroudeur"]
 const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Trucco", "Troost", "Touareg", "Tilbury", "Texas Republic", "Thomas Radford", "Sweet Dublin", "Sting", "Stanwell", "Stanley", "Stanislaw",
     "St. Bruno", "Special Star", "Solani", "Smokers Choice", "Skull", "Skandinavik", "Sioux Original", "Sillem's", "Selesta", "Scottish Corner", "Scaferlati", "Savinelli", "Samuel Gawith", "Sailor´s Pride",
@@ -18,7 +18,7 @@ const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Trucco", "Troost", "Toua
     "Golden Blend's", "Gladora Pesse Canoe", "G.L. Pease", "G. Hoggarth", "Fribourg & Treyer", "Frérot", "Exclusiv", "Erinmore", "El Burladero", "El Bruc", "Eastwood", "Dunhill", "Duende",
     "Davidoff", "Danske Club", "Dan Tobacco", "Cuzco", "Condor", "Comoys", "Colts", "Colonial Dan Tobacco", "Clan", "Chacom", "Cellini", "Capstan",
     "Brookfield", "Brigg", "Borkum Riff", "Black V.", "Big Ben", "Bentley", "Bellini", "Bayside", "Barsdorf's Bester", "Bakerstreet", "Astleys", "Ashton",
-    "Amsterdamer", "Amphora", "Alsbo", "Alonso", "Absolutely Special", "Eastenders", "Tabacco Way - Doctor Pipe", "Cornell & Diehl", "Robert McConnell", "Indian Summer", "Doctor Pipe", "Kopp"]
+    "Amsterdamer", "Amphora", "Alsbo", "Alonso", "Absolutely Special", "Eastenders", "Tabacco Way - Doctor Pipe", "Cornell & Diehl", "Robert McConnell", "Indian Summer", "Doctor Pipe", "Kopp", "Brazilian Spirit Tobacco"]
 
 const brandMaps: Map<string | RegExp, string> = new Map<string | RegExp, string>([
     ["&amp;", "&"],
@@ -62,7 +62,8 @@ const brandMaps: Map<string | RegExp, string> = new Map<string | RegExp, string>
     [/ - Lata\.$/g, ""],
     ["Cornell & Dihel", "Cornell & Diehl"],
     ["Mcconnell", "Robert McConnell"],
-    ["Tabacco Way - Doctor Pipe", "Doctor Pipe"]
+    ["Tabacco Way - Doctor Pipe", "Doctor Pipe"],
+    ["Tabacco Way - Brazilian Spirit Tobacco", "Brazilian Spirit Tobacco"]
 ])
 
 export function parseTobacco(name: string, exhaustive: boolean = false): TobaccoBlendSize | undefined {
