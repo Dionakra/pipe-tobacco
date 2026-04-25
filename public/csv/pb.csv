@@ -198,6 +198,7 @@ Al Fakher Big Blue (200 g);17,5;20,1
 Al Fakher Big Blue (250 g);19,95;22,95
 Al Fakher Big Blue (50 g);4,7;5,4
 Al Fakher Big Blue Green (50 g);4,7;5,4
+Al Fakher Big Coral (200 g);17,5;20,1
 Al Fakher Big Coral (50 g);4,7;5,4
 Al Fakher Big Green (1000 g);73,95;85,05
 Al Fakher Big Green (200 g);17,5;20,1
@@ -213,6 +214,8 @@ Al Fakher Big Yellow Green (250 g);19,95;22,95
 Al Fakher Big Yellow Green (50 g);4,7;5,4
 Al Fakher Black Mist (1000 g);73,95;85,05
 Al Fakher Black Mist (250 g);16,9;19,45
+Al Fakher Brisa Roja (200 g);17,5;20,1
+Al Fakher Brisa Roja (50 g);4,7;5,4
 Al Fakher Catwalk Melody (50 g);4,8;5,5
 Al Fakher Cinnasense (50 g);4,7;5,4
 Al Fakher Crimson Crush (100 g);8,5;9,8
@@ -261,6 +264,7 @@ Al Fakher Nº 18 (50 g);2,9;3,35
 Al Fakher Polar Freeze (100 g);9,95;11,45
 Al Fakher Polar Freeze (200 g);19,95;22,95
 Al Fakher Red Green Smash (50 g);4,7;5,4
+Al Fakher Red Patch (200 g);17,5;20,1
 Al Fakher Red Patch (50 g);4,7;5,4
 Al Fakher Red Smash (50 g);4,7;5,4
 Al Fakher Runway Rhapsody (50 g);4,8;5,5
@@ -277,7 +281,9 @@ Al Fakher The Double Crunch (50 g);4,7;5,4
 Al Fakher The Double Crunch (5000 g);225;258,75
 Al Fakher The Double Crunch (900 g);69,95;80,45
 Al Fakher Tropic Treat (50 g);4,8;5,5
+Al Fakher Twiwi (200 g);17,5;20,1
 Al Fakher Twiwi (50 g);4,7;5,4
+Al Fakher White Pod (200 g);17,5;20,1
 Al Fakher White Pods  (50 g);4,7;5,4
 Al Fakher Wicked Emerald (100 g);8,5;9,8
 Al Fakher Winter Wonder (200 g);18,5;21,3
@@ -442,6 +448,7 @@ Al Sultan Molasses Water Melon Flavour (50 g);2,5;2,9
 Al Sultan Molasses Water Melon Flavour Bote (250 g);12;13,8
 Al Sultan Molasses Watermelon and Mint Flavour (50 g);2,5;2,9
 Al Waha Ali Baba (200 g);15,45;17,75
+Al Waha Ali Baba (50 g);3,85;4,45
 Al Waha Kaktus Jack (200 g);15,45;17,75
 Al Waha Kaktus Jack (50 g);3,85;4,45
 Al Waha Ringle Rangle (200 g);15,45;17,75
@@ -491,6 +498,7 @@ Alsbo Sungold (50 g);7,8;8,95
 Alsbo Whisky (50 g);4,7;5,4
 Al-Waha  Fresh Pea (50 g);3,85;4,45
 Al-Waha 66 (200 g);15,45;17,75
+Al-Waha 66 (50 g);3,85;4,45
 Al-Waha Amor (200 g);15,45;17,75
 Al-Waha Amor (50 g);3,85;4,45
 Al-Waha Big Boy (200 g);15,95;18,35
@@ -504,7 +512,9 @@ Al-Waha Casper (200 g);15,95;18,35
 Al-Waha Casper (50 g);4,2;4,85
 Al-Waha Casper Groz (50 g);3,85;4,45
 Al-Waha Dirty Thirty (200 g);15,45;17,75
+Al-Waha Dirty Thirty (50 g);3,85;4,45
 Al-Waha Dólar (200 g);15,45;17,75
+Al-Waha Dólar (50 g);3,85;4,45
 Al-Waha Dólar Groz (50 g);3,85;4,45
 Al-Waha Fck 66 (200 g);15,45;17,75
 Al-Waha Fck 66 (50 g);3,85;4,45
@@ -518,10 +528,12 @@ Al-Waha Fresh Loco (50 g);3,85;4,45
 Al-Waha Fresh Mang Tang (200 g);15,45;17,75
 Al-Waha Fresh Mang Tang (50 g);3,85;4,45
 Al-Waha Fresh Mang Tang Groz (50 g);3,85;4,45
+Al-Waha Fresh Mara (50 g);3,85;4,45
 Al-Waha Fresh Mara Groz (50 g);3,85;4,45
 Al-Waha Fresh Mary (200 g);15,45;17,75
 Al-Waha Fresh Pea (200 g);15,45;17,75
 Al-Waha Freshy Cherr (200 g);15,45;17,75
+Al-Waha Freshy Cherr (50 g);3,85;4,45
 Al-Waha Freshy Red Groz (50 g);3,85;4,45
 Al-Waha Friday 13 (200 g);15,45;17,75
 Al-Waha Friday 13 (50 g);3,85;4,45
@@ -537,8 +549,10 @@ Al-Waha Hot'n Cold (50 g);3,85;4,45
 Al-Waha Lazourdi (200 g);15,45;17,75
 Al-Waha Lazourdi (50 g);3,85;4,45
 Al-Waha Lazourdi Groz (50 g);3,85;4,45
-Al-Waha Lcorce (200 g);15,45;17,75
+Al-Waha Lcorce (200 g);15,95;18,35
+Al-Waha Lcorce (50 g);4,2;4,85
 Al-Waha Lem Min (200 g);15,45;17,75
+Al-Waha Lem Min (50 g);3,85;4,45
 Al-Waha Libella Swing (200 g);15,45;17,75
 Al-Waha Libella Swing (50 g);3,85;4,45
 Al-Waha Libuma (200 g);15,45;17,75
@@ -564,6 +578,7 @@ Al-Waha Sakura (50 g);3,85;4,45
 Al-Waha Sodala (200 g);15,45;17,75
 Al-Waha Sodala (50 g);3,85;4,45
 Al-Waha Sweet Africa (200 g);15,45;17,75
+Al-Waha Sweet Africa (50 g);3,85;4,45
 Al-Waha Sweet Africa Groz (50 g);3,85;4,45
 Al-Waha The Devil (200 g);15,45;17,75
 Al-Waha The Devil (50 g);3,85;4,45
@@ -601,6 +616,8 @@ Anda Blyat Strong Swiet Swirl (200 g);22,5;25,9
 Anda Blyat Strong Swiet Swirl (50 g);6,5;7,5
 Anda Blyat Strong Temptation (200 g);22,5;25,9
 Anda Blyat Strong Temptation (50 g);6,5;7,5
+Anda Blyat Strong Tiki Taka (200 g);22,5;25,9
+Anda Blyat Strong Tiki Taka (50 g);6,5;7,5
 Anda Casinada (200 g);17,5;20,1
 Anda Casinada (50 g);4,95;5,7
 Anda Chupala (50 g);4,95;5,7
@@ -614,6 +631,8 @@ Anda Mentido (950 g);75;86,25
 Anda Optimus Leim (200 g);17,5;20,1
 Anda Optimus Leim (50 g);4,95;5,7
 Anda Optimus Leim (950 g);75;86,25
+Anda Ptit Suis (200 g);17,5;20,1
+Anda Ptit Suis (50 g);4,95;5,7
 Anda Red & Green (200 g);17,5;20,1
 Anda Red & Green (50 g);4,95;5,7
 Anda Sour Dia (200 g);17,5;20,1
@@ -632,16 +651,6 @@ Anda Tropido (50 g);4,95;5,7
 Anda Tropido (950 g);75;86,25
 Apache Red Wide Cut Tobacco (20 g);1,4;1,6
 Apache Yellow Wide Cut Tobacco (20 g);1,4;1,6
-Apocalypse Babyelia (40 g);3,15;3,6
-Apocalypse Baron Rouge  (40 g);3,15;3,6
-Apocalypse Godfather (40 g);3,15;3,6
-Apocalypse Halep Boom (40 g);3,15;3,6
-Apocalypse King Leonidas (40 g);3,15;3,6
-Apocalypse La Force  (40 g);3,15;3,6
-Apocalypse Odin (40 g);3,15;3,6
-Apocalypse Ommy Shelby (40 g);3,15;3,6
-Apocalypse Yakuza (50 g);3,7;4,25
-Apocalypse Yodda (40 g);3,15;3,6
 AQM Babbel (50 g);3,3;3,8
 AQM Black Box (50 g);3,85;4,45
 AQM Black&White (50 g);3,3;3,8
@@ -881,16 +890,17 @@ Bravo Pipe (100 g);8;9,2
 Bravo Pipe (150 g);12;13,8
 Bravo Pipe (20 g);1,6;1,85
 Bravo Pipe (60 g);5,1;5,85
+Bravo Pipe (999 g);75;86,25
 Bravo Pipe Tobacco (150 g);6,5;7,5
 Bravo Pipe Tobacco Special Cut (50 g);3,75;4,3
 Bravo Pipe Tobacco Special Cut (500 g);19,9;22,9
 Brigg Original Lata (50 g);3,6;4,15
 Brigg Regular (30 g);2,2;2,55
 Brigg Regular Lata (50 g);3,6;4,15
-Brookfield No. 1 (200 g);17,9;20,6
-Brookfield No. 1 (50 g);4,9;5,65
-Brookfield No. 2 (50 g);4,9;5,65
-Brookfield No. 4 (50 g);4,9;5,65
+Brookfield No. 1 (200 g);18,3;21,05
+Brookfield No. 1 (50 g);5;5,75
+Brookfield No. 2 (50 g);5;5,75
+Brookfield No. 4 (50 g);5;5,75
 Brujito Tabaco de Pipa bolsa (50 g);4;4,6
 Brujito Tabaco de Pipa bolsa (80 g);6,4;7,35
 Bullbrand Regular Blend (40 g);2,8;3,2
@@ -924,10 +934,11 @@ Cannibal Heartless (45 g);3,3;3,8
 Cannibal Lion (180 g);15,9;18,3
 Cannibal Lion (45 g);3,3;3,8
 Cannibal Lion (50 g);4,5;5,2
-Cannibal Mybro (180 g);13,9;16
-Cannibal Mybro (50 g);3,95;4,55
+Cannibal Mybro (180 g);15,9;18,3
+Cannibal Mybro (50 g);4,5;5,2
 Cannibal Philigrana (180 g);13,9;16
 Cannibal Philigrana (50 g);3,95;4,55
+Cannibal Ripping (180 g);13,9;16
 Cannibal Ripping (45 g);3,3;3,8
 Cannibal Ripping (60 g);4,5;5,2
 Cannibal Scary (45 g);3,3;3,8
@@ -950,21 +961,21 @@ Cannibal Wild (180 g);15,9;18,3
 Cannibal Wild (50 g);4,5;5,2
 Cannibal Wild (60 g);4,5;5,2
 Capital Bra 365 Tage (200 g);17,5;20,1
-Capital Bra 365 Tage (50 g);4,8;5,5
+Capital Bra 365 Tage (50 g);4,95;5,7
 Capital Bra Black Annab (200 g);17,5;20,1
-Capital Bra Black Annab (50 g);4,8;5,5
+Capital Bra Black Annab (50 g);4,95;5,7
 Capital Bra Blody Nane (200 g);17,5;20,1
-Capital Bra Blody Nane (50 g);4,8;5,5
+Capital Bra Blody Nane (50 g);4,95;5,7
 Capital Bra Huba Ola (200 g);17,5;20,1
-Capital Bra Huba Ola (50 g);4,8;5,5
+Capital Bra Huba Ola (50 g);4,95;5,7
 Capìtal Bra Lecker Lecker (200 g);17,5;20,1
-Capital Bra Lecker Lecker (50 g);4,8;5,5
+Capital Bra Lecker Lecker (50 g);4,95;5,7
 Capital Bra Naughty Girl (200 g);17,5;20,1
-Capital Bra Naughty Girl (50 g);4,8;5,5
+Capital Bra Naughty Girl (50 g);4,95;5,7
 Capital Bra Pomshwk (200 g);17,5;20,1
-Capital Bra Pomshwk (50 g);4,8;5,5
+Capital Bra Pomshwk (50 g);4,95;5,7
 Capital Bra Wann Dann (200 g);17,5;20,1
-Capital Bra Wann Dann (50 g);4,8;5,5
+Capital Bra Wann Dann (50 g);4,95;5,7
 Capstan Gold Navy Cut (50 g);10,9;12,55
 Capstan Original Navy Cut (50 g);11,4;13,1
 Cellini Clásico (50 g);5,3;6,1
@@ -984,7 +995,6 @@ Chaos Memento (50 g);2,95;3,4
 Chaos Mr. Roboto (50 g);2,95;3,4
 Chaos Passionata (50 g);2,95;3,4
 Chaos Policeman (50 g);2,95;3,4
-Chillma (100 g);12,9;14,85
 Chronos 12 O' Clock (50 g);3,95;4,55
 Chronos Devil's Hour (50 g);3,95;4,55
 Chronos Kairos (200 g);13,8;15,85
@@ -1033,9 +1043,9 @@ Cleopatra Molasses Water Melon (250 g);10,5;12,1
 Cleopatra Molasses Water Melon (50 g);2,15;2,45
 Cleopatra Molasses Watermelon With Mint (250 g);10,5;12,1
 Cleopatra Molasses Watermelon With Mint (50 g);2,15;2,45
-Colts Blue (70 g);6;6,9
+Colts Blue (70 g);6,2;7,15
 Colts Dutch Blend (40 g);3,6;4,15
-Colts Original (70 g);6;6,9
+Colts Original (70 g);6,2;7,15
 Colts Red (100 g);8,3;9,55
 Colts Red (20 g);2,1;2,4
 Colts Yellow (40 g);3,6;4,15
@@ -1080,21 +1090,21 @@ Danish Blend Sweet Rum & Mapl (40 g);2,8;3,2
 Danish Blend Sweet Vanilla (40 g);2,8;3,2
 Danske Club Black Luxury (50 g);8,5;9,8
 Danske Club White Luxury (50 g);2,7;3,1
-Darkside B Monster Base (30 g);3,85;4,45
-Darkside Barvy O Base (30 g);3,85;4,45
-Darkside Blackery Base (30 g);3,85;4,45
-Darkside Bnpapa Base (30 g);3,85;4,45
-Darkside Darkside Hola Base (30 g);3,85;4,45
-Darkside Falling Star Base (30 g);3,85;4,45
-Darkside Generis Rsp Base (30 g);3,85;4,45
-Darkside I Granny Base (30 g);3,85;4,45
-Darkside Kalee Grap Base (30 g);3,85;4,45
-Darkside Lm Blast Base (30 g);3,85;4,45
-Darkside Mg Assi Base (30 g);3,85;4,45
-Darkside Skyline Base (30 g);3,85;4,45
-Darkside Space Ichi Base (30 g);3,85;4,45
-Darkside Supernova Base (30 g);3,85;4,45
-Darkside Tear Base (30 g);3,85;4,45
+Darkside B Monster Base (30 g);2;2,3
+Darkside Barvy O Base (30 g);2;2,3
+Darkside Blackery Base (30 g);2;2,3
+Darkside Bnpapa Base (30 g);2;2,3
+Darkside Darkside Hola Base (30 g);2;2,3
+Darkside Falling Star Base (30 g);2;2,3
+Darkside Generis Rsp Base (30 g);2;2,3
+Darkside I Granny Base (30 g);2;2,3
+Darkside Kalee Grap Base (30 g);2;2,3
+Darkside Lm Blast Base (30 g);2;2,3
+Darkside Mg Assi Base (30 g);2;2,3
+Darkside Skyline Base (30 g);2;2,3
+Darkside Space Ichi Base (30 g);2;2,3
+Darkside Supernova Base (30 g);2;2,3
+Darkside Tear Base (30 g);2;2,3
 Davidoff 50 LE Pipa Tobacco (100 g);26,5;30,5
 Davidoff Argentina Pipe Tobacco (50 g);10,5;12,1
 Davidoff Brazil Pipe Tobacco (50 g);10,5;12,1
@@ -1125,6 +1135,8 @@ Dozaj Black Booster (50 g);4,95;5,7
 Dozaj Black Chester (50 g);4,95;5,7
 Dozaj Black Cia (200 g);18,5;21,3
 Dozaj Black Cia (50 g);4,95;5,7
+Dozaj Black Code (200 g);18,5;21,3
+Dozaj Black Code (50 g);4,95;5,7
 Dozaj Black Dark Purple (200 g);18,5;21,3
 Dozaj Black Dark Purple (50 g);4,95;5,7
 Dozaj Black Double Manza (50 g);4,95;5,7
@@ -1139,10 +1151,12 @@ Dozaj Black Max (200 g);18,5;21,3
 Dozaj Black Max (50 g);4,95;5,7
 Dozaj Black Nube (200 g);18,5;21,3
 Dozaj Black Nube (50 g);4,95;5,7
+Dozaj Black Paradox (50 g);4,95;5,7
 Dozaj Black Prime (200 g);18,5;21,3
 Dozaj Black Prime (50 g);4,95;5,7
 Dozaj Black R-Gasm (200 g);18,5;21,3
 Dozaj Black R-Gasm (50 g);4,95;5,7
+Dozaj Black S.O.S. (50 g);4,95;5,7
 Dozaj Black Suka (200g);18,5;21,3
 Dozaj Black Suka (50 g);4,95;5,7
 Dozaj Black Terry Miss You (50 g);4,95;5,7
@@ -1166,6 +1180,7 @@ Dozaj Eternal (50 g);4,5;5,2
 Dozaj Euphoria (200 g);15,95;18,35
 Dozaj Euphoria (50 g);4,5;5,2
 Dozaj Euphoria (950 g);69,95;80,45
+Dozaj Excalibur (50 g);4,5;5,2
 Dozaj Filomena (200 g);15,95;18,35
 Dozaj Filomena (50 g);4,5;5,2
 Dozaj Furious (50 g);4,5;5,2
@@ -1179,30 +1194,42 @@ Dozaj Krasava (200 g);15,95;18,35
 Dozaj Krasava (50 g);4,5;5,2
 Dozaj Lambada (200 g);15,95;18,35
 Dozaj Lambada (50 g);4,5;5,2
+Dozaj Land of Fire (50 g);4,5;5,2
 Dozaj Lava (50 g);4,5;5,2
 Dozaj Lio (200 g);15,95;18,35
 Dozaj Lio (50 g);4,5;5,2
 Dozaj Lio (950 g);69,95;80,45
 Dozaj Mangolia (200 g);15,95;18,35
 Dozaj Mangolia (50 g);4,5;5,2
+Dozaj Marshall (50 g);4,5;5,2
 Dozaj Mito (200 g);15,95;18,35
+Dozaj Mito (50 g);4,5;5,2
 Dozaj Old School (200 g);15,95;18,35
 Dozaj Old School (50 g);4,5;5,2
 Dozaj Orko (200 g);15,95;18,35
+Dozaj Orko (50 g);4,5;5,2
 Dozaj Purple (200 g);15,95;18,35
 Dozaj Purple (50 g);4,5;5,2
 Dozaj Purple (950 g);69,95;80,45
+Dozaj R.I.P. Nairobi (200 g);15,95;18,35
+Dozaj R.I.P. Nairobi (50 g);4,5;5,2
 Dozaj Rich (50 g);4,5;5,2
+Dozaj Rio Lady (50 g);4,5;5,2
 Dozaj Royal Style (200 g);15,95;18,35
+Dozaj Royal Style (50 g);4,5;5,2
 Dozaj Solo (200 g);15,95;18,35
 Dozaj Solo (50 g);4,5;5,2
 Dozaj Solo (950 g);69,95;80,45
+Dozaj Sweet Night (50 g);4,5;5,2
+Dozaj Timeless (50 g);4,5;5,2
 Dozaj Tokyo (200 g);15,95;18,35
 Dozaj Tokyo (50 g);4,5;5,2
 Dozaj Tokyo (950 g);69,95;80,45
 Dozaj Uff (200g);15,95;18,35
 Dozaj Uff (50 g);4,5;5,2
 Dozaj Uff (950 g);69,95;80,45
+Dozaj Utopia (50 g);4,5;5,2
+Dozaj Vip 44 (50 g);4,5;5,2
 Drugoy Smoke B Chill (50 g);4,5;5,2
 Drugoy Smoke Bigway (50 g);4,5;5,2
 Drugoy Smoke Blue Mix (50 g);4,5;5,2
@@ -1266,39 +1293,53 @@ Dumanji Brazz (50 g);4,5;5,2
 Dumanji Breech (200 g);16,2;18,65
 Dumanji Breech (50 g);4,5;5,2
 Dumanji Cane Na3ne (200 g);16,2;18,65
+Dumanji Cane Na3ne (50 g);4,5;5,2
+Dumanji Cool-Cheeto (50 g);4,5;5,2
 Dumanji Dark Cnane Black (200 g);19;21,85
 Dumanji Dark Cnane Black (50 g);5,5;6,3
 Dumanji Darktic Black (200 g);19;21,85
 Dumanji Darktic Black (50 g);5,5;6,3
+Dumanji Eve Ice (50 g);4,5;5,2
+Dumanji French Riviera (50 g);4,5;5,2
 Dumanji Galactic (200 g);16,2;18,65
 Dumanji Galactic (200g);16,2;18,65
 Dumanji Galactic (50 g);4,5;5,2
+Dumanji Heaven (50 g);4,5;5,2
 Dumanji Kush (200 g);16,2;18,65
+Dumanji Kush Asia (200 g);16,2;18,65
 Dumanji Kush Asia (50 g);4,5;5,2
+Dumanji Kush Na3ne (200 g);16,2;18,65
+Dumanji Kush Na3ne (50 g);4,5;5,2
 Dumanji Le Blue (50 g);4,5;5,2
+Dumanji Meridian (200 g);16,2;18,65
 Dumanji Meridian (50 g);4,5;5,2
 Dumanji Na3ne (1000 g);70;80,5
 Dumanji Na3ne (200 g);16,2;18,65
+Dumanji Na3ne (50 g);4,5;5,2
 Dumanji Obscure (200 g);16,2;18,65
 Dumanji Obscure (50 g);4,5;5,2
 Dumanji Papaoutai (200 g);16,2;18,65
+Dumanji Pink Kiss (200 g);16,2;18,65
 Dumanji Pink Kiss (50 g);4,5;5,2
 Dumanji Sahara (200 g);16,2;18,65
 Dumanji Sahara (50 g);4,5;5,2
+Dumanji Sun Beach (50 g);4,5;5,2
 Dumanji Touty Red (50 g);4,5;5,2
 Dumanji Tsunami (50 g);4,5;5,2
-Eastenders Original Blend (100 g);8,2;9,45
+Dumanji Vin-Cheeto (200 g);16,2;18,65
+Dumanji Winter Night (50 g);4,5;5,2
+Eastenders Original Blend (100 g);7,9;9,1
 Eastenders Original Blend (20 g);1,5;1,7
 Eastenders Original Blend (30 g);2,5;2,9
 Eastenders Original Blend Bote Cartón (100 g);7;8,05
-Eastwood Original Blend (100 g);8,2;9,45
+Eastwood Original Blend (100 g);7,9;9,1
 Eastwood Original Blend (20 g);1,8;2,05
 Eastwood Original Blend (200 g);15,75;18,1
 Eastwood Original Blend (30 g);2,5;2,9
 Eastwood Original Blend (40 g);3,6;4,15
 Eastwood Original Blend (999 g);70;80,5
 Eastwood Special Edition (20 g);1,5;1,7
-Eastwood Virginia Blend (100 g);8,2;9,45
+Eastwood Virginia Blend (100 g);7,9;9,1
 Eastwood Virginia Blend (20 g);1,8;2,05
 Eastwood Virginia Tobacco (20 g);1,8;2,05
 El Puerto (85 g);6,9;7,95
@@ -1306,10 +1347,12 @@ Element Amazon (40 g);4,1;4,7
 Element Amur (40 g);4,1;4,7
 Element Bise (40 g);4,1;4,7
 Element Bora (40 g);4,1;4,7
+Element Brickfielder (40 g);4,1;4,7
 Element Chinook (40 g);4,1;4,7
 Element Colorado (40 g);4,1;4,7
 Element Columbia (40 g);4,1;4,7
 Element Congo (40 g);4,1;4,7
+Element Euprates (40 g);4,1;4,7
 Element Fohn Wind (40 g);4,1;4,7
 Element Ganges (40 g);4,1;4,7
 Element Gibli (40 g);4,1;4,7
@@ -1322,6 +1365,7 @@ Element Niagara (40 g);4,1;4,7
 Element Nile (40 g);4,1;4,7
 Element Okavango (40 g);4,1;4,7
 Element Orinoco (40 g);4,1;4,7
+Element Rio Grande (40 g);4,1;4,7
 Element Samoon (40 g);4,1;4,7
 Element Sirocco (40 g);4,1;4,7
 Element Southerly Buster (40 g);4,1;4,7
@@ -1329,6 +1373,7 @@ Element Tennessee (40 g);4,1;4,7
 Element Tigris (40 g);4,1;4,7
 Element Volga (40 g);4,1;4,7
 Element Volta (40 g);4,1;4,7
+Element Xlokk (40 g);4,1;4,7
 Element Yangtze (40 g);4,1;4,7
 Element Zonda (40 g);4,1;4,7
 Elixyr Ice Pipe (120 g);10;11,5
@@ -1372,8 +1417,8 @@ Eternal Smoke Lush Lit (50 g);2,95;3,4
 Eternal Smoke Passion Lit (50 g);2,95;3,4
 Eternal Smoke Red Lips (50 g);2,95;3,4
 Eternal Smoke Wild Lit (50 g);2,95;3,4
-Exclusiv Mixture No. 2 (50 g);5,4;6,2
-Exclusiv Mixture No. 6 (50 g);5,4;6,2
+Exclusiv Mixture No. 2 (50 g);5,5;6,3
+Exclusiv Mixture No. 6 (50 g);5,5;6,3
 Flame Flamingo (75 g);5,9;6,8
 Flame Hawaii Cool (75 g);5,9;6,8
 Flame Jericho (75 g);5,9;6,8
@@ -1407,6 +1452,7 @@ Forever Gold Crazy Izu (200 g);19;21,85
 Forever Gold Crazy Izu (50 g);4,95;5,7
 Forever Gold Dark Blue (100 g);9,5;10,9
 Forever Gold Dark Blue (200 g);19;21,85
+Forever Gold Dark Blue (50 g);4,95;5,7
 Forever Gold Drácula (200 g);19;21,85
 Forever Gold Drácula (50 g);4,95;5,7
 Forever Gold Dragon Daddy (200 g);19;21,85
@@ -1427,6 +1473,7 @@ Forever Gold Go with The Flow (200 g);19;21,85
 Forever Gold Go with The Flow (50 g);4,95;5,7
 Forever Gold Green (100 g);9,5;10,9
 Forever Gold Heaven (50 g);4,95;5,7
+Forever Gold Hurricane (200 g);19;21,85
 Forever Gold Island (200 g);19;21,85
 Forever Gold Island (50 g);4,95;5,7
 Forever Gold Kekoko (200 g);19;21,85
@@ -1437,6 +1484,7 @@ Forever Gold Monkey (200 g);19;21,85
 Forever Gold Monkey (50 g);4,95;5,7
 Forever Gold Mow (100 g);9,5;10,9
 Forever Gold Mow (200 g);19;21,85
+Forever Gold Mow (50 g);4,95;5,7
 Forever Gold Oh La Lá (200 g);19;21,85
 Forever Gold Oh La Lá (50 g);4,95;5,7
 Forever Gold Piggy BBQ Bangkok (200 g);19;21,85
@@ -1510,7 +1558,7 @@ Gladora Tobacco Pesse Canoe Tin Latakia Flake #40 (50g);14,9;17,15
 Gladora Tobacco Pesse Canoe Tin Oriental Flake (50g);14,3;16,45
 Gladora Tobacco Pesse Canoe Yellow (50g);8,9;10,25
 Golden Blend S Amaretto (50 g);4,1;4,7
-Golden Blend's Nº 1 (50 g);5,2;6
+Golden Blend's Nº 1 (50 g);5,3;6,1
 Half & Half (50 g);8,1;9,3
 Hampton (20 g);1,7;1,95
 Hampton (30 g);2,65;3,05
@@ -1740,6 +1788,7 @@ Inferno Skyfall (200 g);18,5;21,3
 Inferno Skyfall (50 g);4,95;5,7
 Jockey Original Red (20 g);1,7;1,95
 Jockey Original Red (200 g);14,95;17,2
+Jockey Original Red (400 g);28,5;32,8
 Kaja 1St Sin (100 g);15,95;18,35
 Kaja 2Late (100 g);15,95;18,35
 Kaja 3. 14 CH (100 g);15,95;18,35
@@ -1799,7 +1848,7 @@ Kentucky Bird (50 g);7,2;8,3
 Keops Original Blend (100 g);7,6;8,75
 Keops Pipe Tobacco American Blend (50 g);3,5;4
 Kingston Red (10 g);1;1,15
-Kingston Red (100 g);8,2;9,45
+Kingston Red (100 g);7,9;9,1
 Kingston Red Pipa (55 g);3,95;4,55
 Kingston Special Edition (100 g);7;8,05
 Kingstreet (19 g);1,65;1,9
@@ -1866,6 +1915,7 @@ Layalina Peach (50 g);3;3,45
 Layalina Raspberry Lemon (50 g);3;3,45
 Layalina Strawberry (50 g);3;3,45
 Layalina Watermelon (50 g);3;3,45
+Le Baron (100 g);6,9;7,95
 Le Baron (150 g);10,5;12,1
 Lince Tabaco de Pipa (50 g);4;4,6
 Lince Tabaco de pipa bolsa (50 g);4;4,6
@@ -1918,11 +1968,7 @@ Mala Vida Shisha pna clada (50 g);2,95;3,4
 Mala Vida Shisha swet mlon (50 g);2,95;3,4
 Mala Vida Shisha vanlla cinamn (50 g);2,95;3,4
 Mala Vida Shisha wtermlon mnt (50 g);2,95;3,4
-Mammut Blu Smoke (50 g);3;3,45
-Mammut Green Smoke (50 g);3;3,45
-Mammut Ocher Smoke (50 g);3;3,45
-Mammut Pink Smoke (50 g);3;3,45
-Mammut Red Smoke (50 g);3;3,45
+Mammut Yelow Smoke (50 g);3;3,45
 Marif Chm (50 g);2,95;3,4
 Marif Cm (50 g);2,95;3,4
 Marif Daem (50 g);2,95;3,4
@@ -1993,61 +2039,61 @@ Moon Habana Luxury (60 g);5,7;6,55
 Moon Habana New Mixture (70 g);5,9;6,8
 Moon Habana Tabaco de pipa (100 g);8,3;9,55
 Moon Habana Tabaco Pipa (70 g);5,9;6,8
-Mr. Shisha 1000K (200 g);16;18,4
-Mr. Shisha 1000K (50 g);4,5;5,2
+Mr. Shisha 1000K (200 g);17;19,55
+Mr. Shisha 1000K (50 g);4,85;5,6
 Mr. Shisha Adan (100 g);7,5;8,6
-Mr. Shisha Babilonia (200 g);16;18,4
-Mr. Shisha Babilonia (50 g);4,5;5,2
-Mr. Shisha Boss Mode (50 g);4,5;5,2
-Mr. Shisha Camdown (200 g);16;18,4
-Mr. Shisha Camdown (50 g);4,5;5,2
-Mr. Shisha Coolio (200 g);16;18,4
-Mr. Shisha Coolio (50 g);4,5;5,2
-Mr. Shisha Dosman (200 g);16;18,4
-Mr. Shisha Dosman (50 g);4,5;5,2
-Mr. Shisha Ginja Laim (200 g);16;18,4
-Mr. Shisha Ginja Laim (50 g);4,5;5,2
+Mr. Shisha Babilonia (200 g);17;19,55
+Mr. Shisha Babilonia (50 g);4,85;5,6
+Mr. Shisha Boss Mode (50 g);4,85;5,6
+Mr. Shisha Camdown (200 g);17;19,55
+Mr. Shisha Camdown (50 g);4,85;5,6
+Mr. Shisha Coolio (200 g);17;19,55
+Mr. Shisha Coolio (50 g);4,85;5,6
+Mr. Shisha Dosman (200 g);17;19,55
+Mr. Shisha Dosman (50 g);4,85;5,6
+Mr. Shisha Ginja Laim (200 g);17;19,55
+Mr. Shisha Ginja Laim (50 g);4,85;5,6
 Mr. Shisha Got Dozen (100 g);7,5;8,6
-Mr. Shisha Got Dozen (50 g);4,5;5,2
-Mr. Shisha Guayna (200 g);16;18,4
-Mr. Shisha Guayna (50 g);4,5;5,2
-Mr. Shisha Habana (50 g);4,5;5,2
-Mr. Shisha Habibi (200 g);16;18,4
-Mr. Shisha Habibi (50 g);4,5;5,2
-Mr. Shisha Harlem Frap (200 g);16;18,4
-Mr. Shisha Harlem Frap (50 g);4,5;5,2
-Mr. Shisha Haselnat (200 g);16;18,4
-Mr. Shisha Haselnat (50 g);4,5;5,2
-Mr. Shisha Jheez (200 g);16;18,4
-Mr. Shisha Jheez (50 g);4,5;5,2
-Mr. Shisha Lamint Amal (200 g);16;18,4
-Mr. Shisha Lamint Amal (50 g);4,5;5,2
+Mr. Shisha Got Dozen (50 g);4,85;5,6
+Mr. Shisha Guayna (200 g);17;19,55
+Mr. Shisha Guayna (50 g);4,85;5,6
+Mr. Shisha Habana (50 g);4,85;5,6
+Mr. Shisha Habibi (200 g);17;19,55
+Mr. Shisha Habibi (50 g);4,85;5,6
+Mr. Shisha Harlem Frap (200 g);17;19,55
+Mr. Shisha Harlem Frap (50 g);4,85;5,6
+Mr. Shisha Haselnat (200 g);17;19,55
+Mr. Shisha Haselnat (50 g);4,85;5,6
+Mr. Shisha Jheez (200 g);17;19,55
+Mr. Shisha Jheez (50 g);4,85;5,6
+Mr. Shisha Lamint Amal (200 g);17;19,55
+Mr. Shisha Lamint Amal (50 g);4,85;5,6
 Mr. Shisha Late Night (100 g);7,5;8,6
-Mr. Shisha Late Night (200 g);16;18,4
-Mr. Shisha Late Night (50 g);4,5;5,2
-Mr. Shisha Lxmxn (200 g);16;18,4
-Mr. Shisha Lxmxn (50 g);4,5;5,2
-Mr. Shisha Lym (200 g);16;18,4
-Mr. Shisha Lym (50 g);4,5;5,2
-Mr. Shisha Malibu (50 g);4,5;5,2
-Mr. Shisha Melo Crush (200 g);16;18,4
-Mr. Shisha Melo Crush (50 g);4,5;5,2
+Mr. Shisha Late Night (200 g);17;19,55
+Mr. Shisha Late Night (50 g);4,85;5,6
+Mr. Shisha Lxmxn (200 g);17;19,55
+Mr. Shisha Lxmxn (50 g);4,85;5,6
+Mr. Shisha Lym (200 g);17;19,55
+Mr. Shisha Lym (50 g);4,85;5,6
+Mr. Shisha Malibu (50 g);4,85;5,6
+Mr. Shisha Melo Crush (200 g);17;19,55
+Mr. Shisha Melo Crush (50 g);4,85;5,6
 Mr. Shisha Oriental Desert (100 g);7,5;8,6
-Mr. Shisha Otai (200 g);16;18,4
-Mr. Shisha Otai (50 g);4,5;5,2
-Mr. Shisha Passion Love (200 g);16;18,4
-Mr. Shisha Passion Love (50 g);4,5;5,2
-Mr. Shisha Pomaye (200 g);16;18,4
-Mr. Shisha Pomaye (50 g);4,5;5,2
-Mr. Shisha Pomaye (950 g);73;83,95
-Mr. Shisha Rock N Roll (50 g);4,5;5,2
-Mr. Shisha Scattman (200 g);16;18,4
-Mr. Shisha Scattman (50 g);4,5;5,2
-Mr. Shisha Sosiomen (200 g);16;18,4
-Mr. Shisha Sosiomen (50 g);4,5;5,2
-Mr. Shisha Summer Sunset (200 g);16;18,4
-Mr. Shisha Summer Sunset (50 g);4,5;5,2
-Mr. Shisha Tropical (50 g);4,5;5,2
+Mr. Shisha Otai (200 g);17;19,55
+Mr. Shisha Otai (50 g);4,85;5,6
+Mr. Shisha Passion Love (200 g);17;19,55
+Mr. Shisha Passion Love (50 g);4,85;5,6
+Mr. Shisha Pomaye (200 g);17;19,55
+Mr. Shisha Pomaye (50 g);4,85;5,6
+Mr. Shisha Pomaye (950 g);75;86,25
+Mr. Shisha Rock N Roll (50 g);4,85;5,6
+Mr. Shisha Scattman (200 g);17;19,55
+Mr. Shisha Scattman (50 g);4,85;5,6
+Mr. Shisha Sosiomen (200 g);17;19,55
+Mr. Shisha Sosiomen (50 g);4,85;5,6
+Mr. Shisha Summer Sunset (200 g);17;19,55
+Mr. Shisha Summer Sunset (50 g);4,85;5,6
+Mr. Shisha Tropical (50 g);4,85;5,6
 Musth Aluva (200 g);32,3;37,15
 Musth Amazonia (125 g);22,6;26
 Musth Amazonia (200 g);32,3;37,15
@@ -2066,6 +2112,7 @@ Musth Cosmos (125 g);22,6;26
 Musth Cosmos (200 g);32,3;37,15
 Musth Djumngo (125 g);22,6;26
 Musth Djumngo (200 g);32,3;37,15
+Musth Eclipse (125 g);22,6;26
 Musth Eclipse (200 g);32,3;37,15
 Musth Exotic Pum (125 g);22,6;26
 Musth Exotic Pum (200 g);32,3;37,15
@@ -2105,6 +2152,7 @@ Musth Space Invaders (125 g);22,6;26
 Musth Space Invaders (200 g);32,3;37,15
 Musth Stellar (200 g);32,3;37,15
 Musth Straw Lych (200 g);32,3;37,15
+Musth Straw Lynch (125 g);22,6;26
 Musth Swt Pech (125 g);22,6;26
 Musth Tarxun (125 g);22,6;26
 Musth Unicorn (125 g);22,6;26
@@ -2112,22 +2160,17 @@ Musth Uranus (200 g);32,3;37,15
 Musth Violet (125 g);22,6;26
 Musth Violet CO (200 g);32,3;37,15
 Musth Wet Mel (125 g);22,6;26
+Musth Wet Mel (200 g);32,3;37,15
 Musth White Sod (125 g);22,6;26
 Musth White Sod (200 g);32,3;37,15
 Musth Ylkah (125 g);22,6;26
-Musthave Blarry (200 g);23,5;27
 Musthave Co-La (100 g);11,95;13,75
 Musthave Cuba (100 g);11,95;13,75
 Musthave Curant (100 g);11,95;13,75
-Musthave India (200 g);28;32,2
 Musthave Mel-Shak (100 g);11,95;13,75
-Musthave Morocco (200 g);28;32,2
-Musthave Patch (200 g);23,5;27
 Musthave Pynkman (100 g);11,95;13,75
 Musthave Raspi (100 g);11,95;13,75
 Musthave Rocketman (100 g);11,95;13,75
-Musthave Straw Lych (200 g);28;32,2
-Musthave Team Oran (200 g);23,5;27
 Musthave Tropic (100 g);11,95;13,75
 Nakhla Coral Red (50 g);2,7;3,1
 Nakhla Double Red (250 g);16,95;19,5
@@ -2371,42 +2414,42 @@ Peterson Sunset Breeze (50 g);9,25;10,65
 Peterson Sweet Killarney (50 g);9,25;10,65
 Peterson University Flake (50 g);11,25;12,95
 Planta Tobacco Year Anno MMXVI (100 g);18;20,7
-Privilege Breathe picadura shisha lata (200 g);15,5;17,8
-Privilege Breathe picadura shisha lata (50 g);4,1;4,7
-Privilege Dance picadura shisha lata (200 g);15,5;17,8
-Privilege Dance picadura shisha lata (50 g);4,1;4,7
-Privilege Discover picadura shisha lata (200 g);15,5;17,8
-Privilege Discover picadura shisha lata (50 g);4,1;4,7
-Privilege Dive picadura shisha lata (200 g);15,5;17,8
-Privilege Dive picadura shisha lata (50 g);4,1;4,7
-Privilege Dream picadura shisha lata (200 g);15,5;17,8
-Privilege Dream picadura shisha lata (50 g);4,1;4,7
-Privilege Enjoy picadura shisha lata (200 g);15,5;17,8
-Privilege Enjoy picadura shisha lata (50 g);4,1;4,7
-Privilege Fight picadura shisha lata (200 g);15,5;17,8
-Privilege Fight picadura shisha lata (50 g);4,1;4,7
-Privilege Love picadura shisha lata (200 g);15,5;17,8
-Privilege Love picadura shisha lata (50 g);4,1;4,7
-Privilege Read picadura shisha lata (200 g);15,5;17,8
-Privilege Read picadura shisha lata (50 g);4,1;4,7
-Privilege Smoke Break lata (200 g);15,5;17,8
-Privilege Smoke Break lata (50 g);4,1;4,7
-Privilege Smoke Feel (200 g);15,5;17,8
-Privilege Smoke Feel (50 g);4,1;4,7
-Privilege Smoke Jump (200 g);15,5;17,8
-Privilege Smoke Jump (50 g);4,1;4,7
-Privilege Smoke Kiss (50 g);4,1;4,7
-Privilege Smoke Like lata (200 g);15,5;17,8
-Privilege Smoke Like lata (50 g);4,1;4,7
-Privilege Smoke Live (200 g);15,5;17,8
-Privilege Smoke Live (50 g);4,1;4,7
-Privilege Smoke Play (200 g);15,5;17,8
-Privilege Smoke Play (50 g);4,1;4,7
-Privilege Smoke Shake (50 g);4,1;4,7
-Privilege Smoke Show (50 g);4,1;4,7
-Privilege Smoke Stop (50 g);4,1;4,7
-Privilege Travel picadura shisha lata (200 g);15,5;17,8
-Privilege Travel picadura shisha lata (50 g);4,1;4,7
+Privilege Breathe picadura shisha lata (200 g);16;18,4
+Privilege Breathe picadura shisha lata (50 g);4,3;4,95
+Privilege Dance picadura shisha lata (200 g);16;18,4
+Privilege Dance picadura shisha lata (50 g);4,3;4,95
+Privilege Discover picadura shisha lata (200 g);16;18,4
+Privilege Discover picadura shisha lata (50 g);4,3;4,95
+Privilege Dive picadura shisha lata (200 g);16;18,4
+Privilege Dive picadura shisha lata (50 g);4,3;4,95
+Privilege Dream picadura shisha lata (200 g);16;18,4
+Privilege Dream picadura shisha lata (50 g);4,3;4,95
+Privilege Enjoy picadura shisha lata (200 g);16;18,4
+Privilege Enjoy picadura shisha lata (50 g);4,3;4,95
+Privilege Fight picadura shisha lata (200 g);16;18,4
+Privilege Fight picadura shisha lata (50 g);4,3;4,95
+Privilege Love picadura shisha lata (200 g);16;18,4
+Privilege Love picadura shisha lata (50 g);4,3;4,95
+Privilege Read picadura shisha lata (200 g);16;18,4
+Privilege Read picadura shisha lata (50 g);4,3;4,95
+Privilege Smoke Break lata (200 g);16;18,4
+Privilege Smoke Break lata (50 g);4,3;4,95
+Privilege Smoke Feel (200 g);16;18,4
+Privilege Smoke Feel (50 g);4,3;4,95
+Privilege Smoke Jump (200 g);16;18,4
+Privilege Smoke Jump (50 g);4,3;4,95
+Privilege Smoke Kiss (50 g);4,3;4,95
+Privilege Smoke Like lata (200 g);16;18,4
+Privilege Smoke Like lata (50 g);4,3;4,95
+Privilege Smoke Live (200 g);16;18,4
+Privilege Smoke Live (50 g);4,3;4,95
+Privilege Smoke Play (200 g);16;18,4
+Privilege Smoke Play (50 g);4,3;4,95
+Privilege Smoke Shake (50 g);4,3;4,95
+Privilege Smoke Show (50 g);4,3;4,95
+Privilege Smoke Stop (50 g);4,3;4,95
+Privilege Travel picadura shisha lata (200 g);16;18,4
+Privilege Travel picadura shisha lata (50 g);4,3;4,95
 Rattray's  Hal O'The Wind British Collection (100 g);26;29,9
 Rattray's Br. Col. Black Mallory (100 g);24,4;28,05
 Rattray's British Collection 7 Old Gowrie (50 g);17;19,55
@@ -2425,14 +2468,17 @@ Rattray's British Collection Red Rapparee (100 g);28;32,2
 Rattray's British Collection Red Rapparee Tobacco (50 g);17;19,55
 Rattray's Year Of The Dragon (100 g);26,5;30,5
 Redfield Green (20 g);1,8;2,05
-Redfield Red (100 g);8,2;9,45
+Redfield Red (100 g);7,9;9,1
 Redfield Red (20 g);1,8;2,05
 Revoshi A-Easy (200 g);15,95;18,35
 Revoshi Anibal Fang (200 g);15,95;18,35
+Revoshi Anibal Fang (25 g);1,85;2,15
 Revoshi Anibal Fang (50 g);4,35;5
 Revoshi Antep Dream (200 g);15,95;18,35
+Revoshi Antep Dream (25 g);1,85;2,15
 Revoshi Antep Dream (50 g);4,35;5
 Revoshi A-Strong (200 g);15,95;18,35
+Revoshi A-Strong (25 g);1,85;2,15
 Revoshi Blackbeard Soul (200 g);15,95;18,35
 Revoshi Blackbeard Soul (25 g);1,85;2,15
 Revoshi Blackbeard Soul (50 g);4,35;5
@@ -2452,11 +2498,13 @@ Revoshi Carmitta (995 g);69,95;80,45
 Revoshi Chao Bella (200 g);15,95;18,35
 Revoshi Chao Bella (25 g);1,85;2,15
 Revoshi Chao Bella (50 g);4,35;5
+Revoshi Chao Bella (995 g);69,95;80,45
 Revoshi D'App Strng (50 g);4,35;5
 Revoshi D'App Strng (995 g);69,95;80,45
 Revoshi Darmita (200 g);18;20,7
 Revoshi Darmita (50 g);4,8;5,5
 Revoshi Eskimo C (50 g);4,35;5
+Revoshi Eskimo Cndy (50 g);4,35;5
 Revoshi Eskimo L (50 g);4,35;5
 Revoshi Eskimo L (995 g);69,95;80,45
 Revoshi Eskimo Loka (200 g);15,95;18,35
@@ -2473,13 +2521,16 @@ Revoshi Eskimo Vtrmln (50 g);4,35;5
 Revoshi Eskimo Wtrmln (995 g);69,95;80,45
 Revoshi Eskimo-A (200 g);15,95;18,35
 Revoshi Eskimo-C (200 g);15,95;18,35
+Revoshi Eskimo-C (25 g);1,85;2,15
 Revoshi Eskimo-L (200 g);15,95;18,35
+Revoshi Eskimo-L (25 g);1,85;2,15
 Revoshi Eskimo-P'A (25 g);1,85;2,15
 Revoshi Eskimo-W (200g);15,95;18,35
 Revoshi Eskimo-W (25 g);1,85;2,15
 Revoshi Float Like Butterfly (200 g);18;20,7
 Revoshi Float Like Butterfly (50 g);4,8;5,5
 Revoshi Free Spartacus (200 g);15,95;18,35
+Revoshi Free Spartacus (25 g);1,85;2,15
 Revoshi Free Spartacus (50 g);4,35;5
 Revoshi Funny Bunny (200 g);15,95;18,35
 Revoshi Funny Bunny (25 g);1,85;2,15
@@ -2489,6 +2540,7 @@ Revoshi G Jager (200 g);15,95;18,35
 Revoshi G Jager (25 g);1,85;2,15
 Revoshi G Jager (50 g);4,35;5
 Revoshi Ghandi Spir (200 g);15,95;18,35
+Revoshi GM (200 g);15,95;18,35
 Revoshi GM (50 g);4,35;5
 Revoshi GP (50 g);4,35;5
 Revoshi Green Jager (200 g);15,95;18,35
@@ -2501,6 +2553,7 @@ Revoshi Kak de la Trshkv (25 g);1,85;2,15
 Revoshi Kak dela Trshkv (50 g);4,35;5
 Revoshi Kak dela Trshkv (995 g);69,95;80,45
 Revoshi Kazak (200 g);15,95;18,35
+Revoshi Kazak (25 g);1,85;2,15
 Revoshi Kazak (50 g);4,35;5
 Revoshi L (200 g);15,95;18,35
 Revoshi L (50 g);4,35;5
@@ -2526,9 +2579,11 @@ Revoshi Mulan Sword (25 g);1,85;2,15
 Revoshi Mulan Sword (50 g);4,35;5
 Revoshi Nana (200g);15,95;18,35
 Revoshi Nana (50g);4,35;5
+Revoshi Nana (995 g);69,95;80,45
 Revoshi O (200 g);15,95;18,35
 Revoshi O (50 g);4,35;5
 Revoshi Ola Zapata (200 g);15,95;18,35
+Revoshi Ola Zapata (25 g);1,85;2,15
 Revoshi Ola Zapata (50 g);4,35;5
 Revoshi OM (200 g);15,95;18,35
 Revoshi --OM-- (25 g);1,85;2,15
@@ -2579,6 +2634,7 @@ Revoshi Vaina (200 g);15,95;18,35
 Revoshi Vaina (50 g);4,35;5
 Revoshi Vaina (995 g);69,95;80,45
 Revoshi Vamos Ernesto (200 g);15,95;18,35
+Revoshi Vamos Ernesto (25 g);1,85;2,15
 Revoshi Vamos Ernesto (50 g);4,35;5
 Revoshi What's My Name? (200 g);18;20,7
 Revoshi What's My Name? (50 g);4,8;5,5
@@ -2598,6 +2654,7 @@ Rodeo By Gawith, Hoggarth & Co (50 g);19,9;22,9
 Sacramento (20 g);1,5;1,7
 Sacramento (40 g);2,9;3,35
 Sahara International Blend (100 g);8,1;9,3
+Sailor´s Pride Blond Virginia (40 g);2,9;3,35
 Sailor´s Pride Blossom Gold (40 g);2,9;3,35
 Sailor´s Pride English Delight (40 g);2,9;3,35
 Sailor´s Pride Kentucky (40 g);2,9;3,35
@@ -2621,13 +2678,27 @@ Samuel Gawith Sam's Flake (50 g);26,5;30,5
 Samuel Gawith Squadron Leader (50 g);24,6;28,3
 Sapphire Crown Alpine Straw (100 g);15,95;18,35
 Sapphire Crown Apl Strudl (100 g);15,95;18,35
+Sapphire Crown Aprl (100 g);15,95;18,35
 Sapphire Crown Ba Na2 (100 g);15,95;18,35
+Sapphire Crown Code Red (100 g);15,95;18,35
+Sapphire Crown Crownberri (100 g);15,95;18,35
 Sapphire Crown Froostyle (100 g);15,95;18,35
+Sapphire Crown Green T & Co (100 g);15,95;18,35
 Sapphire Crown Hazel Crush (100 g);15,95;18,35
 Sapphire Crown Indian Stuff (100 g);15,95;18,35
+Sapphire Crown Italimisu (100 g);15,95;18,35
+Sapphire Crown Kraven (100 g);15,95;18,35
+Sapphire Crown Ladan (100 g);15,95;18,35
+Sapphire Crown Lelo (100 g);15,95;18,35
 Sapphire Crown Love Above (100 g);15,95;18,35
 Sapphire Crown Love Under Tonik (100 g);15,95;18,35
+Sapphire Crown Mejumi (100 g);15,95;18,35
+Sapphire Crown Mng Maduro (100 g);15,95;18,35
 Sapphire Crown Persik (100 g);15,95;18,35
+Sapphire Crown Pineberri (100 g);15,95;18,35
+Sapphire Crown Sun Grande (100 g);15,95;18,35
+Sapphire Crown Tropic Jus (100 g);15,95;18,35
+Sapphire Crown Velvet (100 g);15,95;18,35
 Sapphire Crown Yozo Hani (100 g);15,95;18,35
 Savacco 6IX Blend (200 g);14,95;17,2
 Savacco 6IX Blend (50 g);3,95;4,55
@@ -2765,7 +2836,15 @@ Serbetli Hard Line Pops (40 g);4,5;5,2
 Serbetli Hard Line Redbera (40 g);4,5;5,2
 Serbetli Hard Line Supremo (40 g);4,5;5,2
 Serbetli Hard Line Sweet Oney (40 g);4,5;5,2
+Serbetli Limton Grill (200 g);18,5;21,3
+Serbetli Nestja (200 g);18,5;21,3
+Serbetli Panepol (200 g);18,5;21,3
+Serbetli Pops (200 g);18,5;21,3
+Serbetli Shisha Green Mix (200 g);14;16,1
 Serbetli Shisha Green Mix (50 g);3,8;4,35
+Serbetli Shisha Icbodrumm (200 g);14;16,1
+Serbetli Shisha Stra Shark (200 g);14;16,1
+Serbetli Shisha Stra Shark (50 g);3,8;4,35
 Shisha Kartel Big Bagman (200 g);17,95;20,65
 Shisha Kartel Big Bagman (50 g);4,95;5,7
 Shisha Kartel Blood Bath (50 g);4,5;5,2
@@ -2857,8 +2936,8 @@ Special Star American Blend Tabaco de Pipa (85 g);6,95;8
 Special Star Negro (90 g);4;4,6
 Springwater Pipa (50 g);2,75;3,15
 St. Bruno Ready Rubbed (50 g);8,9;10,25
-Stanley Original Blend (100 g);8,2;9,45
-Stanley Original Blend (20 g);1,8;2,05
+Stanley Original Blend (100 g);7,5;8,6
+Stanley Original Blend (20 g);1,5;1,7
 Stanley Original Blend (500 g);35;40,25
 Stanley Original Blend (999 g);69;79,35
 Stanwell Kir & Apple (50 g);5,2;6
@@ -2882,6 +2961,28 @@ Starbuzz Classic Line Double App (50 g);4,2;4,85
 Starbuzz Classic Line Lmn Mnt (50 g);4,2;4,85
 Starbuzz Classic Line O. Mnt (50 g);4,2;4,85
 Starbuzz Classic Line Royal Grp (50 g);4,2;4,85
+Starbuzz Egyptian Pharos picadura shisha lata (100 g);9,95;11,45
+Starbuzz Exotic Blue Mist (100 g);9,95;11,45
+Starbuzz Exotic Blue Surfer Picadura Shisha Lata (100 g);9,95;11,45
+Starbuzz Exotic Cosmopolitan Picadura Shisha Lata (100 g);9,95;11,45
+Starbuzz Exotic Cucu Jumbo picadura shisha bote (1000 g);96,95;111,5
+Starbuzz Exotic Fuzzy Naval (100 g);9,95;11,45
+Starbuzz Exotic Geisha (100 g);9,95;11,45
+Starbuzz Exotic Green Savior (100 g);9,95;11,45
+Starbuzz Exotic Irish Kiss (100 g);9,95;11,45
+Starbuzz Exotic Jack The Ripper Picadura Shisha Lata (100 g);9,95;11,45
+Starbuzz Exotic Lebanese Bomb Shell (100 g);9,95;11,45
+Starbuzz Exotic Mighty Freeze Picadura Shisha Lata (100 g);9,95;11,45
+Starbuzz Exotic Mijoti Picadura Shisha Lata (100 g);9,95;11,45
+Starbuzz Exotic Pink (100 g);9,95;11,45
+Starbuzz Exotic Pink Chica Picadura Shisha Lata (100 g);9,95;11,45
+Starbuzz Exotic Pink picadura shisha bote (1000 g);96,95;111,5
+Starbuzz Exotic Pirate's Cave (100 g);9,95;11,45
+Starbuzz Exotic Pumpkin Pie (100 g);9,5;10,9
+Starbuzz Exotic Queen Of Sex (100 g);9,95;11,45
+Starbuzz Exotic Winter Fresh (100 g);9,95;11,45
+Starbuzz French Buzz picadura shisha lata (100 g);9,95;11,45
+Starbuzz Pineana Freeze Shisha (100 g);9,95;11,45
 Starbuzz Regular Anjou Chill (100 g);9,95;11,45
 Starbuzz Regular Blue Dew (100 g);9,95;11,45
 Starbuzz Regular Blue Gee (100 g);9,95;11,45
@@ -2904,6 +3005,7 @@ Starbuzz Regular White Delight (100 g);9,95;11,45
 Starbuzz Regular White Nec (100 g);9,95;11,45
 Starbuzz Regular Yellow Freeze (100 g);9,95;11,45
 Starbuzz Regular Yellow T (100 g);9,95;11,45
+Starbuzz Sexy Beach picadura shisha lata (100 g);9,95;11,45
 Starbuzz Vintage Cheers! (80 g);8,95;10,3
 Starbuzz Vintage Dark Winilla (80 g);8,95;10,3
 Starbuzz Vintage Delhi T (80 g);8,95;10,3
@@ -2930,6 +3032,7 @@ Starbuzz Vintage Plus Timisue (50 g);4,3;4,95
 Starbuzz Vintage Plus Tokyo Kick (50 g);4,3;4,95
 Starbuzz Vintage Plus White Mist® (50 g);4,3;4,95
 Starbuzz Vintage Timisue (80 g);8,95;10,3
+Starbuzz White Bear picadura shisha lata (100 g);9,95;11,45
 Starline Asian Blaze (200 g);19,49;22,4
 Starline Asian Blaze (50 g);4,99;5,75
 Starline Belgian Morning (200 g);19,49;22,4
@@ -2944,6 +3047,7 @@ Starline Exotic Mix (50 g);4,99;5,75
 Starline French Puff (200 g);19,49;22,4
 Starline French Puff (50 g);4,99;5,75
 Starline Grainy Red (50 g);4,99;5,75
+Starline Mellow Yellow (50 g);4,99;5,75
 Starline Purple Dreams (50 g);4,99;5,75
 Starline Summer Fizz (50 g);4,99;5,75
 Starline Sunny Burst (50 g);4,99;5,75
@@ -2958,10 +3062,16 @@ Stral Alberino (200 g);17,9;20,6
 Stral Alberino (50 g);5;5,75
 Stral Black Mln (200 g);17,9;20,6
 Stral Black Mln (50 g);5;5,75
+Stral Huwa (200 g);17,9;20,6
+Stral Huwa (50 g);5;5,75
 Stral Kiva (200 g);17,9;20,6
 Stral Kiva (50 g);5;5,75
 Stral Lit Schi (200 g);17,9;20,6
 Stral Lit Schi (50 g);5;5,75
+Stral Mancoton (200 g);17,9;20,6
+Stral Mancoton (50 g);5;5,75
+Stral Ness Ti (200 g);17,9;20,6
+Stral Ness Ti (50 g);5;5,75
 Stral The Rza (200 g);17,9;20,6
 Stral The Rza (50 g);5;5,75
 Stral Tik Tok (200 g);17,9;20,6
@@ -2974,6 +3084,7 @@ Street Smoke Barista (50 g);4,55;5,25
 Street Smoke Bartender (50 g);4,55;5,25
 Street Smoke Beach With A P (200 g);17,5;20,1
 Street Smoke Beach With A P (50 g);4,55;5,25
+Street Smoke Blue Beast (50 g);4,55;5,25
 Street Smoke Booty (50 g);4,55;5,25
 Street Smoke Bro (50 g);4,55;5,25
 Street Smoke Desert Dream (200 g);17,5;20,1
@@ -2983,6 +3094,7 @@ Street Smoke Green Craze (50 g);4,55;5,25
 Street Smoke Gypsy Queen (50 g);4,55;5,25
 Street Smoke Habibo (200 g);17,5;20,1
 Street Smoke Habibo (50 g);4,55;5,25
+Street Smoke Machine (50 g);4,55;5,25
 Street Smoke MBA P (50 g);4,55;5,25
 Street Smoke Mic Drop (200 g);17,5;20,1
 Street Smoke Mic Drop (50 g);4,55;5,25
@@ -2992,6 +3104,7 @@ Street Smoke Namaste (50 g);4,55;5,25
 Street Smoke Red Charm (50 g);4,55;5,25
 Street Smoke Russian Roulette (50 g);4,55;5,25
 Street Smoke Scar (50 g);4,55;5,25
+Street Smoke Street Love (50 g);4,55;5,25
 Street Smoke The Boss (200 g);17,5;20,1
 Street Smoke The Boss (50 g);4,55;5,25
 Street Smoke Yummy (50 g);4,55;5,25
@@ -3021,110 +3134,118 @@ Tabacco Way - Doctor Pipe - Scottish Mixture (50 g) - Petaca;6,55;7,55
 Tabacco Way - D'Ora - Golden Virginia (150 g);15;17,25
 Tabacco Way - D'Ora - Golden Virginia (250 g);24,5;28,2
 Tabacco Way - D'Ora - Golden Virginia (50 g);5,1;5,85
-Taboo Alien Twist (200 g);15,9;18,3
-Taboo Alien Twist (50 g);4,3;4,95
-Taboo Alpine Spirit (200 g);15,9;18,3
-Taboo Alpine Spirit (50 g);4,3;4,95
-Taboo American Pay (200 g);15,9;18,3
+Taboo Alien Twist (200 g);16,5;19
+Taboo Alien Twist (50 g);4,5;5,2
+Taboo Alpine Spirit (200 g);16,5;19
+Taboo Alpine Spirit (50 g);4,5;5,2
+Taboo American Pay (200 g);16,5;19
 Taboo American Pay (25 g);1,95;2,25
-Taboo American Pay (50 g);4,3;4,95
-Taboo Bahama Mama (200 g);15,9;18,3
-Taboo Bahama Mama (50 g);4,3;4,95
-Taboo Bikini Sunset (200 g);15,9;18,3
-Taboo Bikini Sunset (50 g);4,3;4,95
-Taboo Black Banaloco (50g);4,3;4,95
-Taboo Black Crunch (50g);4,3;4,95
-Taboo Black Limousine (200 g);15,9;18,3
-Taboo Black Limousine (50 g);4,3;4,95
-Taboo Black Splash (50g);4,3;4,95
-Taboo Black Vanla Sky (50g);4,3;4,95
-Taboo Black Volcano (50 g);4,3;4,95
-Taboo Blizzardina (200 g);15,9;18,3
-Taboo Blizzardina (50 g);4,3;4,95
-Taboo Blue Bay (200 g);15,9;18,3
+Taboo American Pay (50 g);4,5;5,2
+Taboo Bahama Mama (200 g);16,5;19
+Taboo Bahama Mama (50 g);4,5;5,2
+Taboo Bikini Sunset (200 g);16,5;19
+Taboo Bikini Sunset (50 g);4,5;5,2
+Taboo Black Banaloco (50g);4,5;5,2
+Taboo Black Crunch (50g);4,5;5,2
+Taboo Black Limousine (200 g);16,5;19
+Taboo Black Limousine (50 g);4,5;5,2
+Taboo Black Splash (50g);4,5;5,2
+Taboo Black Vanla Sky (50g);4,5;5,2
+Taboo Black Volcano (50 g);4,5;5,2
+Taboo Blizzardina (200 g);16,5;19
+Taboo Blizzardina (50 g);4,5;5,2
+Taboo Blue Bay (200 g);16,5;19
 Taboo Blue Bay (25 g);1,95;2,25
-Taboo Blue Bay (50 g);4,3;4,95
-Taboo Brutal Choice (200 g);15,9;18,3
-Taboo Brutal Choice (50 g);4,3;4,95
-Taboo Car Melo (50 g);4,3;4,95
-Taboo Caribbean Cruise (200 g);15,9;18,3
-Taboo Caribbean Cruise (50 g);4,3;4,95
-Taboo Casanova Dream (200 g);15,9;18,3
-Taboo Casanova Dream (50 g);4,3;4,95
-Taboo Cinna Mill (200 g);15,9;18,3
-Taboo Cinna Mill (50 g);4,3;4,95
-Taboo Cool Sunrise (200 g);15,9;18,3
-Taboo Cool Sunrise (50 g);4,3;4,95
-Taboo Copa Cabana (200 g);15,9;18,3
-Taboo Copa Cabana (50 g);4,3;4,95
-Taboo Cumulus (200 g);15,9;18,3
-Taboo Cumulus (50 g);4,3;4,95
-Taboo Dancing Queen (200 g);15,9;18,3
-Taboo Dancing Queen (50 g);4,3;4,95
-Taboo Dancing Queen (950 g);69,5;79,9
-Taboo Darkum (200 g);15,9;18,3
-Taboo Darkum (50 g);4,3;4,95
-Taboo Five O'Clock (200 g);15,9;18,3
-Taboo Five O'Clock (50 g);4,3;4,95
-Taboo French Kss (200 g);15,9;18,3
-Taboo French Kss (50 g);4,3;4,95
-Taboo French Kss (950 g);69,5;79,9
-Taboo Game Over (200 g);15,9;18,3
-Taboo Game Over (50 g);4,3;4,95
-Taboo Golden Eye  (200 g);15,9;18,3
-Taboo Golden Eye  (50 g);4,3;4,95
-Taboo Hakuna Matata (200 g);15,9;18,3
-Taboo Hakuna Matata (50 g);4,3;4,95
-Taboo Indian Summer (200 g);15,9;18,3
-Taboo Indian Summer (50 g);4,3;4,95
-Taboo Irish Dream (200 g);15,9;18,3
-Taboo Irish Dream (50 g);4,3;4,95
-Taboo Italian Passion (200 g);15,9;18,3
-Taboo Italian Passion (50 g);4,3;4,95
-Taboo Jungle (200 g);15,9;18,3
-Taboo Jungle (50 g);4,3;4,95
-Taboo Lucky (50 g);4,3;4,95
-Taboo Mambo (200 g);15,9;18,3
-Taboo Mambo (50 g);4,3;4,95
-Taboo Misguided (200 g);15,9;18,3
-Taboo Misguided (50 g);4,3;4,95
-Taboo Moonwalk (200 g);15,9;18,3
-Taboo Moonwalk (50 g);4,3;4,95
-Taboo Mystic China (50 g);4,3;4,95
-Taboo Over The Rainbow (200 g);15,9;18,3
-Taboo Over The Rainbow (50 g);4,3;4,95
-Taboo Pocamel (200 g);15,9;18,3
-Taboo Pocamel (50 g);4,3;4,95
-Taboo Power of Love (200 g);15,9;18,3
-Taboo Power of Love (50 g);4,3;4,95
-Taboo Promise (200 g);15,9;18,3
-Taboo Promise (50 g);4,3;4,95
-Taboo Red Blast (200 g);15,9;18,3
-Taboo Red Blast (50 g);4,3;4,95
-Taboo Red Fusion (200 g);15,9;18,3
-Taboo Red Fussion (50 g);4,3;4,95
-Taboo Richman (200 g);15,9;18,3
-Taboo Richman (50 g);4,3;4,95
-Taboo Rim Shot (200 g);15,9;18,3
-Taboo Rim Shot (50 g);4,3;4,95
-Taboo Seduction (200 g);15,9;18,3
-Taboo Seduction (50 g);4,3;4,95
+Taboo Blue Bay (50 g);4,5;5,2
+Taboo Brutal Choice (200 g);16,5;19
+Taboo Brutal Choice (50 g);4,5;5,2
+Taboo Car Melo (50 g);4,5;5,2
+Taboo Caribbean Cruise (200 g);16,5;19
+Taboo Caribbean Cruise (50 g);4,5;5,2
+Taboo Casanova Dream (200 g);16,5;19
+Taboo Casanova Dream (50 g);4,5;5,2
+Taboo Cinna Mill (200 g);16,5;19
+Taboo Cinna Mill (50 g);4,5;5,2
+Taboo Cool Sunrise (200 g);16,5;19
+Taboo Cool Sunrise (50 g);4,5;5,2
+Taboo Copa Cabana (200 g);16,5;19
+Taboo Copa Cabana (50 g);4,5;5,2
+Taboo Cumulus (200 g);16,5;19
+Taboo Cumulus (50 g);4,5;5,2
+Taboo Dancing Queen (200 g);16,5;19
+Taboo Dancing Queen (50 g);4,5;5,2
+Taboo Dancing Queen (950 g);71,9;82,7
+Taboo Darkum (200 g);16,5;19
+Taboo Darkum (50 g);4,5;5,2
+Taboo Five O'Clock (200 g);16,5;19
+Taboo Five O'Clock (50 g);4,5;5,2
+Taboo French Kiss (200 g);16,5;19
+Taboo French Kiss (50 g);4,5;5,2
+Taboo French Kss (200 g);16,5;19
+Taboo French Kss (50 g);4,5;5,2
+Taboo French Kss (950 g);71,9;82,7
+Taboo Game Over (200 g);16,5;19
+Taboo Game Over (50 g);4,5;5,2
+Taboo Golden Eye  (200 g);16,5;19
+Taboo Golden Eye  (50 g);4,5;5,2
+Taboo Hakuna Matata (200 g);16,5;19
+Taboo Hakuna Matata (50 g);4,5;5,2
+Taboo Indian Summer (200 g);16,5;19
+Taboo Indian Summer (50 g);4,5;5,2
+Taboo Irish Dream (200 g);16,5;19
+Taboo Irish Dream (50 g);4,5;5,2
+Taboo Italian Passion (200 g);16,5;19
+Taboo Italian Passion (50 g);4,5;5,2
+Taboo Jungle (200 g);16,5;19
+Taboo Jungle (50 g);4,5;5,2
+Taboo Lucky (50 g);4,5;5,2
+Taboo Mambo (200 g);16,5;19
+Taboo Mambo (50 g);4,5;5,2
+Taboo Misguided (200 g);16,5;19
+Taboo Misguided (50 g);4,5;5,2
+Taboo Moonwalk (200 g);16,5;19
+Taboo Moonwalk (50 g);4,5;5,2
+Taboo Mystic China (200 g);16,5;19
+Taboo Mystic China (50 g);4,5;5,2
+Taboo Over The Rainbow (200 g);16,5;19
+Taboo Over The Rainbow (25 g);1,95;2,25
+Taboo Over The Rainbow (50 g);4,5;5,2
+Taboo Over The Rainbow (950 g);71,9;82,7
+Taboo Pocamel (200 g);16,5;19
+Taboo Pocamel (50 g);4,5;5,2
+Taboo Power of Love (200 g);16,5;19
+Taboo Power of Love (50 g);4,5;5,2
+Taboo Promise (200 g);16,5;19
+Taboo Promise (50 g);4,5;5,2
+Taboo Red Blast (200 g);16,5;19
+Taboo Red Blast (50 g);4,5;5,2
+Taboo Red Fusion (200 g);16,5;19
+Taboo Red Fussion (50 g);4,5;5,2
+Taboo Richman (200 g);16,5;19
+Taboo Richman (50 g);4,5;5,2
+Taboo Rim Shot (200 g);16,5;19
+Taboo Rim Shot (50 g);4,5;5,2
+Taboo Seduction (200 g);16,5;19
+Taboo Seduction (25 g);1,95;2,25
+Taboo Seduction (50 g);4,5;5,2
+Taboo Sexy Green (200 g);16,5;19
 Taboo Sexy Green (25 g);1,95;2,25
-Taboo Sxy Green (200 g);15,9;18,3
+Taboo Sexy Green (50 g);4,5;5,2
+Taboo Sxy Green (200 g);16,5;19
 Taboo Sxy Green (25 g);1,95;2,25
-Taboo Sxy Green (50 g);4,3;4,95
-Taboo Sxy Green (950 g);69,5;79,9
-Taboo Talisman (200 g);15,9;18,3
-Taboo Talisman (50 g);4,3;4,95
-Taboo Tropical Storm (200 g);15,9;18,3
-Taboo Tropical Storm (50 g);4,3;4,95
-Taboo Tuxedo (200 g);15,9;18,3
-Taboo Tuxedo (50 g);4,3;4,95
-Taboo Unicorn Dust (200 g);15,9;18,3
-Taboo Unicorn Dust (50 g);4,3;4,95
-Taboo Waterfall (200 g);15,9;18,3
-Taboo Waterfall (50 g);4,3;4,95
-Taboo Waterfall (950 g);69,5;79,9
+Taboo Sxy Green (50 g);4,5;5,2
+Taboo Sxy Green (950 g);71,9;82,7
+Taboo Talisman (200 g);16,5;19
+Taboo Talisman (50 g);4,5;5,2
+Taboo Tropical Storm (200 g);16,5;19
+Taboo Tropical Storm (50 g);4,5;5,2
+Taboo Tuxedo (200 g);16,5;19
+Taboo Tuxedo (50 g);4,5;5,2
+Taboo Unicorn Dust (200 g);16,5;19
+Taboo Unicorn Dust (50 g);4,5;5,2
+Taboo Waterfall (200 g);16,5;19
+Taboo Waterfall (50 g);4,5;5,2
+Taboo Waterfall (950 g);71,9;82,7
 Tangiers 10 (250 g);37;42,55
 Tangiers 111 (250 g);37;42,55
 Tangiers 113 (250 g);37;42,55
@@ -3144,7 +3265,10 @@ Tangiers 24 (250 g);37;42,55
 Tangiers 27 (250 g);37;42,55
 Tangiers 3 (250 g);37;42,55
 Tangiers 34 (250 g);37;42,55
+Tangiers 35 (250 g);37;42,55
 Tangiers 38 (250 g);37;42,55
+Tangiers 4 (250 g);37;42,55
+Tangiers 5 (250 g);37;42,55
 Tangiers 51 (250 g);37;42,55
 Tangiers 57 (250 g);37;42,55
 Tangiers 58 (250 g);37;42,55
@@ -3198,6 +3322,7 @@ Trébol Tabaco de  Pipa (80 g);7;8,05
 Trifecta L'Emont Me (50 g);3,95;4,55
 Trifecta Me Lone Melanje (50 g);3,95;4,55
 Trifecta Moro Zest (50 g);3,95;4,55
+Trifecta Pum King Something (50 g);3,95;4,55
 Trifecta Ruby (50 g);3,95;4,55
 Trifecta Serendipity (50 g);3,95;4,55
 Trifecta Vertigo (50 g);3,95;4,55
