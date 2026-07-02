@@ -7,6 +7,15 @@ export interface Tobacco {
         lastUpdate: string
         priceHistory: PriceHistory[]
     }[]
+    blend_type: string | null
+    contents: string[] | null
+    flavoring: string[] | null
+    cut: string | null
+    country: string | null
+    strength: string | null
+    flavoring_profile: string | null
+    room_note: string | null
+    taste: string | null
 }
 
 export interface PriceHistory {

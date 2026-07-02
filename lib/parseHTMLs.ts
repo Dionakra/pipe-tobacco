@@ -4,7 +4,7 @@ import BOEDocumentExtractor from "./services/BOEDocumentExtractor"
 import { Tobacco, TobaccoPrice } from "./models/Tobacco"
 import { parseTobacco } from "./Utils"
 
-const BASE_PATH = __dirname + "/../public"
+const BASE_PATH = __dirname + "/../data"
 const BOE_PATH = BASE_PATH + "/boe.json"
 const HTML_PATH = BASE_PATH + "/html/"
 const CSV_PATH = BASE_PATH + "/csv"
@@ -61,7 +61,7 @@ function updateTobaccos(tobaccos: Tobacco[], tobaccoPrices: TobaccoPrice[], boe?
     let tobaccoIndex = tobaccos.findIndex(t => t.brand == tp.brand && t.blend == tp.blend)
     if (tobaccoIndex == -1) {
       console.info(`  Adding new tobacco: ${tp.brand} ${tp.blend} ${tp.grams}`)
-      const tobacco = {
+      const tobacco:Tobacco = {
         brand: tp.brand,
         blend: tp.blend,
         sizes: [{
@@ -69,7 +69,16 @@ function updateTobaccos(tobaccos: Tobacco[], tobaccoPrices: TobaccoPrice[], boe?
           currentPrice: tp.price,
           lastUpdate: date,
           priceHistory: [{ date: date, price: tp.price }]
-        }]
+        }],
+        blend_type: null,
+        contents: null,
+        flavoring: null,
+        cut: null,
+        country: null,
+        strength: null,
+        flavoring_profile: null,
+        room_note: null,
+        taste: null
       }
       tobaccos.push(tobacco)
     } else {

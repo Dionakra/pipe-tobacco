@@ -5,9 +5,14 @@
     "build": "vite build",
     "serve": "vite preview",
     "boe": "ts-node lib/extractNewBOEs.ts",
-    "parse": "ts-node lib/parseHTMLs.ts"
+    "parse": "ts-node lib/parseHTMLs.ts",
+    "predev": "node scripts/generate-logos.js",
+    "prebuild": "node scripts/generate-logos.js && node scripts/enrich-tobaccos.js",
+    "enrich": "node scripts/enrich-tobaccos.js",
+    "deploy": "npm run build && firebase deploy --only hosting"
   },
   "dependencies": {
+    "firebase": "^9.23.0",
     "vue": "^3.0.5"
   },
   "devDependencies": {
@@ -18,6 +23,7 @@
     "autoprefixer": "^10.2.6",
     "postcss": "^8.3.5",
     "sharp": "^0.33.4",
+    "svgo": "^3.3.2",
     "tailwindcss": "^2.2.4",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.5",

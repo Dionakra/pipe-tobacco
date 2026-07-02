@@ -4,8 +4,8 @@ import BOEEntry from "./models/BOEEntry"
 import { Console } from "console"
 
 
-const BOES_PATH = __dirname + "/../public/boe.json"
-const HTML_PATH = __dirname + "/../public/html/"
+const BOES_PATH = __dirname + "/../data/boe.json"
+const HTML_PATH = __dirname + "/../data/html/"
 
 main()
 

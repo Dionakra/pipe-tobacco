@@ -1,11 +1,16 @@
-name: Auto actualizar BOEs
+name: Auto actualizar precios
+
 on:
   schedule:
     - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  run:
-    name: Actualizar BOE
+  update:
+    name: Actualizar precios de tabacos
     runs-on: ubuntu-latest
     steps:
       - name: Descargar repo
@@ -19,8 +24,8 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
-      - name: Obtener lista completa de tabacos
-        run: sh get-tobaccos.sh
+      - name: Obtener lista completa de tabacos (CSV)
+        run: bash get-tobaccos.sh
 
       - name: Obtener nuevos BOEs
         run: npm run boe
@@ -28,12 +33,15 @@ jobs:
       - name: Extraer precios de los BOEs
         run: npm run parse
 
+      - name: Enriquecer con propiedades de tabacos
+        run: npm run enrich
+
       - name: Guardar cambios
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: github-actions
-          author_email: actions@github.com
-          message: 'Actualizados precios de pipas'
-          add: '*'
+          author_name: github-actions[bot]
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: 'chore: actualizados precios de tabacos de pipa'
+          add: 'public data'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
