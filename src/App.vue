@@ -3,44 +3,110 @@
     <!-- Header -->
     <header class="bg-white border-b border-stone-200 sticky top-0 z-40">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center gap-3">
-            <div class="h-9 w-9 rounded-lg bg-tobacco-50 flex items-center justify-center">
+        <div class="flex items-center justify-between h-16 gap-2">
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="h-9 w-9 rounded-lg bg-tobacco-50 flex items-center justify-center flex-shrink-0">
               <img src="/logo.svg" class="h-6 w-6" alt="Pipa">
             </div>
-            <div>
-              <h1 class="text-base font-bold text-stone-900 leading-tight tracking-tight">Tabacos de Pipa</h1>
-              <p class="text-xs text-stone-500">Evolución de precios en España</p>
+            <div class="min-w-0">
+              <h1 class="text-base font-bold text-stone-900 leading-tight tracking-tight truncate">Tabacos de Pipa</h1>
+              <p class="hidden sm:block text-[11px] text-stone-400 leading-snug">
+                Datos del
+                <a href="https://www.hacienda.gob.es/es-ES/Areas%20Tematicas/CMTabacos/Paginas/PreciosLabores.aspx"
+                  target="_blank" class="text-tobacco-600 hover:underline">Min. de Hacienda</a>,
+                el
+                <a href="https://www.boe.es/" target="_blank" class="text-tobacco-600 hover:underline">BOE</a>
+                y
+                <a href="https://www.tobaccoreviews.com/" target="_blank" class="text-tobacco-600 hover:underline">TobaccoReviews</a>
+              </p>
             </div>
           </div>
-          <div class="flex items-center gap-4">
-            <p class="hidden md:block text-xs text-stone-400 text-right leading-snug">
-              Datos del
-              <a href="https://www.hacienda.gob.es/es-ES/Areas%20Tematicas/CMTabacos/Paginas/PreciosLabores.aspx"
-                target="_blank" class="text-tobacco-600 hover:underline">Min. de Hacienda</a>
-              y el
-              <a href="https://www.boe.es/" target="_blank" class="text-tobacco-600 hover:underline">BOE</a>
-            </p>
-            <!-- Auth area -->
-            <div v-if="user" class="flex items-center gap-2">
-              <button @click="exportCSV" class="hidden sm:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-stone-100 text-stone-600 hover:bg-stone-200 transition-colors">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                CSV
+          <div class="flex items-center gap-2 flex-shrink-0">
+            <!-- Add stock button (Stock mode only; sits left of Bodega) -->
+            <button v-if="user && stockMode" @click="openAddStockModal" title="Añadir a bodega"
+              class="inline-flex items-center justify-center w-8 h-8 rounded-lg border border-stone-300 text-stone-600 hover:border-tobacco-400 hover:text-tobacco-600 hover:bg-tobacco-50 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+              </svg>
+            </button>
+            <!-- Stock / Selling mode switch (only when logged in) -->
+            <div v-if="user" class="inline-flex bg-stone-200 rounded-md p-0.5 gap-0.5">
+              <button @click="setStockMode(true)"
+                :class="stockMode ? 'bg-white text-tobacco-700 shadow-md' : 'text-stone-500 hover:text-stone-700'"
+                class="inline-flex flex-col items-center justify-center px-2 py-0.5 rounded text-xs font-semibold transition-all whitespace-nowrap leading-tight">
+                <span class="inline-flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                  Bodega
+                </span>
+                <span v-if="ownedCount()" class="text-[11px] font-semibold mt-0.5" :class="stockMode ? 'text-tobacco-600' : 'text-stone-500'">{{ ownedCount() }} · {{ formatKg(totalGrams()) }}</span>
               </button>
-              <img v-if="user.photoURL" :src="user.photoURL" :alt="user.displayName || ''"
-                class="h-8 w-8 rounded-full border border-stone-200" referrerpolicy="no-referrer">
-              <div v-else class="h-8 w-8 rounded-full bg-tobacco-100 flex items-center justify-center text-tobacco-700 font-bold text-xs">
-                {{ (user.displayName || user.email || '?')[0].toUpperCase() }}
-              </div>
-              <button @click="doLogout" class="p-1.5 rounded-lg text-stone-400 hover:text-stone-700 hover:bg-stone-100 transition-colors" title="Cerrar sesión">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                </svg>
+              <button @click="setStockMode(false)"
+                :class="!stockMode ? 'bg-white text-tobacco-700 shadow-md' : 'text-stone-500 hover:text-stone-700'"
+                class="px-2.5 py-1.5 rounded text-xs font-semibold transition-all whitespace-nowrap">
+                Venta
               </button>
             </div>
-            <button v-else-if="authReady" @click="showLoginModal = true"
+            <!-- Filters button -->
+            <button v-if="!showAnalytics" @click="showFiltersPanel = !showFiltersPanel"
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all"
+              :class="activeFilterCount > 0 || showFiltersPanel ? 'border-tobacco-400 text-tobacco-700 bg-tobacco-50' : 'border-stone-300 text-stone-600 bg-white hover:border-stone-400'">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+              </svg>
+              <span class="hidden sm:inline">Filtros</span>
+              <span class="inline-flex items-center justify-center min-w-[1.1rem] h-[1.1rem] px-1 rounded-full text-[10px] font-bold transition-colors"
+                :class="activeFilterCount > 0 ? 'bg-tobacco-500 text-white' : 'bg-transparent text-transparent'">{{ activeFilterCount > 0 ? activeFilterCount : '0' }}</span>
+            </button>
+            <!-- Analytics button (when logged in) -->
+            <button v-if="user" @click="showAnalytics = !showAnalytics"
+              class="inline-flex items-center justify-center w-8 h-8 rounded-lg border transition-all"
+              :class="showAnalytics ? 'border-tobacco-400 text-tobacco-700 bg-tobacco-50' : 'border-stone-300 text-stone-600 bg-white hover:border-stone-400'"
+              title="Hábitos de consumo">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </button>
+            <!-- Auth area: single user menu -->
+            <div v-if="user" class="relative">
+              <button @click="showUserMenu = !showUserMenu"
+                class="flex items-center rounded-full hover:ring-2 hover:ring-tobacco-200 transition-all"
+                :class="showUserMenu ? 'ring-2 ring-tobacco-300' : ''">
+                <img v-if="user.photoURL" :src="user.photoURL" :alt="user.displayName || ''"
+                  class="h-8 w-8 rounded-full border border-stone-200" referrerpolicy="no-referrer">
+                <div v-else class="h-8 w-8 rounded-full bg-tobacco-100 flex items-center justify-center text-tobacco-700 font-bold text-xs">
+                  {{ (user.displayName || user.email || '?')[0].toUpperCase() }}
+                </div>
+              </button>
+              <!-- User dropdown menu -->
+              <Transition enter-active-class="transition duration-150 ease-out" enter-from-class="opacity-0 -translate-y-1"
+                enter-to-class="opacity-100 translate-y-0" leave-active-class="transition duration-100 ease-in"
+                leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-1">
+                <div v-if="showUserMenu" class="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-stone-200 py-1 z-50">
+                  <div class="px-3 py-2 border-b border-stone-100">
+                    <p class="text-xs font-semibold text-stone-900 truncate">{{ user.displayName || 'Usuario' }}</p>
+                    <p class="text-[11px] text-stone-400 truncate">{{ user.email }}</p>
+                  </div>
+                  <button @click="exportCSV(); showUserMenu = false"
+                    class="w-full flex items-center gap-2 px-3 py-2 text-sm text-stone-700 hover:bg-stone-100 transition-colors">
+                    <svg class="w-4 h-4 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Descargar CSV
+                  </button>
+                  <button @click="doLogout(); showUserMenu = false"
+                    class="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                    </svg>
+                    Cerrar sesión
+                  </button>
+                </div>
+              </Transition>
+            </div>
+            <div v-if="user && showUserMenu" class="fixed inset-0 z-40" @click="showUserMenu = false"></div>
+            <button v-if="!user && authReady" @click="showLoginModal = true"
               class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-tobacco-500 text-white hover:bg-tobacco-600 transition-colors">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
@@ -50,123 +116,100 @@
           </div>
         </div>
       </div>
+
+      <!-- Filters dropdown panel -->
+      <Transition enter-active-class="transition duration-150 ease-out" enter-from-class="opacity-0 -translate-y-1"
+        enter-to-class="opacity-100 translate-y-0" leave-active-class="transition duration-100 ease-in"
+        leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-1">
+        <div v-if="showFiltersPanel" class="border-t border-stone-200 bg-white shadow-lg">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-3">
+            <!-- Region switch -->
+            <div class="flex justify-center">
+              <div class="inline-flex bg-stone-200 rounded-lg p-1 gap-1">
+                <button @click="setSelectedRegion('pb')"
+                  :class="selectedRegion === 'pb' ? 'bg-white text-tobacco-700 shadow-sm' : 'text-stone-600 hover:text-stone-900'"
+                  class="px-4 py-1.5 rounded-md text-sm font-semibold transition-all">
+                  Península e Illes Balears
+                </button>
+                <button @click="setSelectedRegion('cm')"
+                  :class="selectedRegion === 'cm' ? 'bg-white text-tobacco-700 shadow-sm' : 'text-stone-600 hover:text-stone-900'"
+                  class="px-4 py-1.5 rounded-md text-sm font-semibold transition-all">
+                  Ceuta y Melilla
+                </button>
+              </div>
+            </div>
+
+            <!-- Filters row -->
+            <div class="flex flex-wrap gap-2 justify-center items-center">
+              <!-- Brand -->
+              <div class="relative">
+                <select v-model="selectedBrand" aria-label="Fabricante"
+                  :class="selectedBrand ? 'border-tobacco-400 ring-1 ring-tobacco-400 text-stone-900 font-semibold' : 'border-stone-300 text-stone-500'"
+                  class="appearance-none bg-white border text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-tobacco-400 focus:border-tobacco-400 block w-44 pl-3 pr-9 py-2 cursor-pointer hover:border-stone-400 transition-colors">
+                  <option value="">Fabricante</option>
+                  <option v-for="brand in brands" :key="brand" :value="brand" class="text-stone-900 font-normal">{{ brand }}</option>
+                </select>
+                <button v-if="selectedBrand" @click.stop="selectedBrand = ''"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 h-5 w-5 flex items-center justify-center rounded-full bg-stone-100 text-stone-500 hover:bg-stone-200" aria-label="Limpiar">
+                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+                <svg v-else class="w-4 h-4 absolute right-2.5 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+
+              <div class="h-6 w-px bg-stone-200 mx-1"></div>
+
+              <!-- Sort -->
+              <div class="flex flex-wrap gap-1.5">
+                <button v-for="option in sortOptions" :key="option.value" @click="sort = option.value"
+                  :class="sort === option.value ? 'bg-tobacco-500 text-white border-tobacco-500' : 'bg-white text-stone-600 border-stone-300 hover:border-stone-400'"
+                  class="px-3 py-1.5 rounded-md text-xs font-semibold border transition-all whitespace-nowrap">
+                  {{ option.label }}
+                </button>
+              </div>
+            </div>
+
+            <!-- Property filters row -->
+            <div class="flex flex-wrap gap-2 justify-center items-center">
+              <div v-for="f in propertyFilters" :key="f.key" class="relative">
+                <select v-model="selectedProperties[f.key]" :aria-label="f.label"
+                  :class="selectedProperties[f.key] ? 'border-tobacco-400 ring-1 ring-tobacco-400 text-stone-900 font-semibold' : 'border-stone-300 text-stone-500'"
+                  class="appearance-none bg-white border text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-tobacco-400 focus:border-tobacco-400 block w-44 pl-3 pr-9 py-2 cursor-pointer hover:border-stone-400 transition-colors">
+                  <option value="">{{ f.label }}</option>
+                  <option v-for="val in propertyValues(f.key)" :key="val" :value="val" class="text-stone-900 font-normal">{{ val }}</option>
+                </select>
+                <button v-if="selectedProperties[f.key]" @click.stop="selectedProperties[f.key] = ''"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 h-5 w-5 flex items-center justify-center rounded-full bg-stone-100 text-stone-500 hover:bg-stone-200" aria-label="Limpiar">
+                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                </button>
+                <svg v-else class="w-4 h-4 absolute right-2.5 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Clear filters -->
+            <div v-if="hasActiveFilters" class="flex items-center justify-center text-sm">
+              <button @click="clearFilters"
+                class="text-xs text-tobacco-600 hover:text-tobacco-700 font-semibold underline underline-offset-2">
+                Limpiar filtros
+              </button>
+            </div>
+          </div>
+        </div>
+      </Transition>
     </header>
 
-    <!-- Filters -->
-    <div class="bg-white border-b border-stone-200 sticky top-16 z-30">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-3">
-        <!-- Region switch (always visible) -->
-        <div class="flex justify-center">
-          <div class="inline-flex bg-stone-200 rounded-lg p-1 gap-1">
-            <button @click="setSelectedRegion('pb')"
-              :class="selectedRegion === 'pb' ? 'bg-white text-tobacco-700 shadow-sm' : 'text-stone-600 hover:text-stone-900'"
-              class="px-4 py-1.5 rounded-md text-sm font-semibold transition-all">
-              Península e Illes Balears
-            </button>
-            <button @click="setSelectedRegion('cm')"
-              :class="selectedRegion === 'cm' ? 'bg-white text-tobacco-700 shadow-sm' : 'text-stone-600 hover:text-stone-900'"
-              class="px-4 py-1.5 rounded-md text-sm font-semibold transition-all">
-              Ceuta y Melilla
-            </button>
-          </div>
-        </div>
-
-        <!-- Mobile: filter button -->
-        <div class="md:hidden flex justify-center">
-          <button @click="showFiltersModal = true"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold border transition-all"
-            :class="activeFilterCount > 0 ? 'border-tobacco-400 text-tobacco-700 bg-tobacco-50' : 'border-stone-300 text-stone-600 bg-white'">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
-            </svg>
-            Filtros
-            <span v-if="activeFilterCount > 0" class="px-1.5 py-0.5 rounded-full text-[10px] bg-tobacco-500 text-white">{{ activeFilterCount }}</span>
-          </button>
-        </div>
-
-        <!-- Desktop: inline filters -->
-        <div class="hidden md:block space-y-3">
-          <!-- Filters row -->
-          <div class="flex flex-wrap gap-2 justify-center items-center">
-            <!-- Brand -->
-            <div class="relative">
-              <select v-model="selectedBrand" aria-label="Fabricante"
-                :class="selectedBrand ? 'border-tobacco-400 ring-1 ring-tobacco-400 text-stone-900 font-semibold' : 'border-stone-300 text-stone-500'"
-                class="appearance-none bg-white border text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-tobacco-400 focus:border-tobacco-400 block w-44 pl-3 pr-9 py-2 cursor-pointer hover:border-stone-400 transition-colors">
-                <option value="">Fabricante</option>
-                <option v-for="brand in brands" :key="brand" :value="brand" class="text-stone-900 font-normal">{{ brand }}</option>
-              </select>
-              <button v-if="selectedBrand" @click.stop="selectedBrand = ''"
-                class="absolute right-2 top-1/2 -translate-y-1/2 h-5 w-5 flex items-center justify-center rounded-full bg-stone-100 text-stone-500 hover:bg-stone-200" aria-label="Limpiar">
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-              <svg v-else class="w-4 h-4 absolute right-2.5 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
-
-            <div class="h-6 w-px bg-stone-200 mx-1 hidden md:block"></div>
-
-            <!-- Sort -->
-            <div class="flex flex-wrap gap-1.5">
-              <button v-for="option in sortOptions" :key="option.value" @click="sort = option.value"
-                :class="sort === option.value ? 'bg-tobacco-500 text-white border-tobacco-500' : 'bg-white text-stone-600 border-stone-300 hover:border-stone-400'"
-                class="px-3 py-1.5 rounded-md text-xs font-semibold border transition-all whitespace-nowrap">
-                {{ option.label }}
-              </button>
-            </div>
-
-            <!-- My tobaccos toggle (only when logged in) -->
-            <template v-if="user">
-              <div class="h-6 w-px bg-stone-200 mx-1 hidden md:block"></div>
-              <button @click="onlyMyTobaccos = !onlyMyTobaccos"
-                :class="onlyMyTobaccos ? 'bg-tobacco-500 text-white border-tobacco-500' : 'bg-white text-stone-600 border-stone-300 hover:border-stone-400'"
-                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold border transition-all whitespace-nowrap">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                </svg>
-                Mis tabacos
-                <span v-if="ownedCount()" class="ml-0.5 px-1.5 py-0.5 rounded-full text-[10px]" :class="onlyMyTobaccos ? 'bg-white/25' : 'bg-stone-100 text-stone-500'">{{ ownedCount() }} · {{ formatKg(totalGrams()) }}</span>
-              </button>
-            </template>
-          </div>
-
-          <!-- Property filters row -->
-          <div class="flex flex-wrap gap-2 justify-center items-center">
-            <div v-for="f in propertyFilters" :key="f.key" class="relative">
-              <select v-model="selectedProperties[f.key]" :aria-label="f.label"
-                :class="selectedProperties[f.key] ? 'border-tobacco-400 ring-1 ring-tobacco-400 text-stone-900 font-semibold' : 'border-stone-300 text-stone-500'"
-                class="appearance-none bg-white border text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-tobacco-400 focus:border-tobacco-400 block w-44 pl-3 pr-9 py-2 cursor-pointer hover:border-stone-400 transition-colors">
-                <option value="">{{ f.label }}</option>
-                <option v-for="val in propertyValues(f.key)" :key="val" :value="val" class="text-stone-900 font-normal">{{ val }}</option>
-              </select>
-              <button v-if="selectedProperties[f.key]" @click.stop="selectedProperties[f.key] = ''"
-                class="absolute right-2 top-1/2 -translate-y-1/2 h-5 w-5 flex items-center justify-center rounded-full bg-stone-100 text-stone-500 hover:bg-stone-200" aria-label="Limpiar">
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-              <svg v-else class="w-4 h-4 absolute right-2.5 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
-          </div>
-
-          <!-- Clear filters -->
-          <div v-if="hasActiveFilters" class="flex items-center justify-center text-sm">
-            <button @click="clearFilters"
-              class="text-xs text-tobacco-600 hover:text-tobacco-700 font-semibold underline underline-offset-2">
-              Limpiar filtros
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Click-outside backdrop for filters panel -->
+    <div v-if="showFiltersPanel" class="fixed inset-0 z-30" @click="showFiltersPanel = false"></div>
 
     <!-- Grid -->
-    <main class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-6 flex-1">
+    <main v-if="!showAnalytics" class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-6 flex-1">
       <div v-if="!loaded" class="flex justify-center py-24">
         <div class="animate-spin rounded-full h-10 w-10 border-2 border-stone-200 border-t-tobacco-500"></div>
       </div>
@@ -183,7 +226,6 @@
       <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         <div v-for="tobacco in pageContent" :key="tobacco.brand + tobacco.blend" @click="selectedTobacco = tobacco"
           class="group relative bg-white rounded-xl border border-stone-200 hover:border-stone-300 hover:shadow-md cursor-pointer transition-all duration-150 overflow-hidden flex flex-col">
-
           <!-- Logo watermark background -->
           <img v-if="logos.includes(tobacco.brand)" :src="`/logos/${tobacco.brand}.svg`" aria-hidden="true" loading="lazy" decoding="async"
             class="pointer-events-none absolute inset-0 w-full h-full object-contain p-4 opacity-[0.05] group-hover:opacity-[0.08] transition-opacity duration-150 select-none"
@@ -197,6 +239,32 @@
                 <span v-if="isRecent(tobacco)" class="flex-shrink-0 h-2 w-2 rounded-full bg-tobacco-500" title="Actualizado recientemente"></span>
               </div>
               <p class="text-xs text-stone-500 mt-0.5 truncate">{{ tobacco.blend || '—' }}</p>
+            </div>
+            <!-- Right actions: favourite + inventory -->
+            <div class="relative flex-shrink-0 flex items-start gap-1">
+              <!-- Favourite heart (when logged in) -->
+              <button v-if="user" @click.stop="toggleFavourite(tobacco)" title="Marcar como favorito"
+                class="p-1 rounded transition-colors"
+                :class="isFavourite(tobacco) ? 'text-red-500 hover:text-red-600' : 'text-stone-300 hover:text-red-400 hover:bg-red-50'">
+                <svg class="w-4 h-4" :fill="isFavourite(tobacco) ? 'currentColor' : 'none'" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </button>
+              <!-- Inventory grams badge (when logged in & has grams) -->
+              <button v-if="user && getGrams(tobacco) > 0" @click.stop="openInventoryModal(tobacco)"
+                class="inline-flex items-center gap-1 text-[10px] font-bold px-1.5 py-0.5 rounded bg-tobacco-50 text-tobacco-700 hover:bg-tobacco-100 transition-colors">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+                {{ getGrams(tobacco) }} g
+              </button>
+              <!-- Inventory add button (when logged in & no grams) -->
+              <button v-else-if="user" @click.stop="openInventoryModal(tobacco)"
+                class="p-1 rounded text-stone-300 hover:text-tobacco-600 hover:bg-tobacco-50 transition-colors" title="Añadir al inventario">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+              </button>
             </div>
           </div>
 
@@ -243,23 +311,79 @@
               {{ latestUpdate(tobacco) }}
             </span>
             <div class="flex items-center gap-2">
-              <!-- Inventory grams badge (when logged in & has grams) -->
-              <button v-if="user && getGrams(tobacco) > 0" @click.stop="openInventoryModal(tobacco)"
-                class="inline-flex items-center gap-1 text-[10px] font-bold px-1.5 py-0.5 rounded bg-tobacco-50 text-tobacco-700 hover:bg-tobacco-100 transition-colors">
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                </svg>
-                {{ getGrams(tobacco) }} g
-              </button>
-              <!-- Inventory button (when logged in & no grams) -->
-              <button v-else-if="user" @click.stop="openInventoryModal(tobacco)"
-                class="p-1 rounded text-stone-300 hover:text-tobacco-600 hover:bg-tobacco-50 transition-colors" title="Añadir al inventario">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                </svg>
-              </button>
-              <span v-else class="text-[10px] font-medium group-hover:text-tobacco-600 transition-colors">Ver historial →</span>
+              <span v-if="!user" class="text-[10px] font-medium group-hover:text-tobacco-600 transition-colors">Ver historial →</span>
               <span v-if="user" class="text-[10px] font-medium group-hover:text-tobacco-600 transition-colors">Historial →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Analytics view -->
+    <main v-if="showAnalytics && user" class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-6 flex-1">
+      <!-- Header row -->
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h2 class="text-xl font-bold text-stone-900">Hábitos de consumo</h2>
+          <p class="text-sm text-stone-500 mt-0.5">Análisis de tu bodega y favoritos</p>
+        </div>
+        <button @click="showAnalytics = false"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold border border-stone-300 text-stone-600 bg-white hover:border-stone-400 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Volver
+        </button>
+      </div>
+
+      <!-- Empty state -->
+      <div v-if="analyticsItems.length === 0" class="text-center py-24 text-stone-400">
+        <svg class="w-14 h-14 mx-auto mb-4 text-stone-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+        </svg>
+        <p class="text-lg font-semibold text-stone-500">Tu bodega está vacía</p>
+        <p class="text-sm mt-1">Añade tabacos a tu bodega o márcalos como favoritos para ver tus hábitos de consumo.</p>
+      </div>
+
+      <div v-else class="space-y-6">
+        <!-- Mode toggle -->
+        <div class="flex justify-center">
+          <div class="inline-flex bg-stone-200 rounded-lg p-1 gap-1">
+            <button @click="analyticsMode = 'count'"
+              :class="analyticsMode === 'count' ? 'bg-white text-tobacco-700 shadow-md' : 'text-stone-600 hover:text-stone-900'"
+              class="px-4 py-1.5 rounded-md text-sm font-semibold transition-all">
+              Por número de mezclas
+            </button>
+            <button @click="analyticsMode = 'grams'"
+              :class="analyticsMode === 'grams' ? 'bg-white text-tobacco-700 shadow-md' : 'text-stone-600 hover:text-stone-900'"
+              class="px-4 py-1.5 rounded-md text-sm font-semibold transition-all">
+              Por gramos (ponderado)
+            </button>
+          </div>
+        </div>
+        <p v-if="analyticsMode === 'grams'" class="text-center text-xs text-stone-400">
+          Los gramos se normalizan de 0 a 1 (el máximo = 1.0). Los favoritos siempre cuentan como 1.0.
+        </p>
+        <p v-else class="text-center text-xs text-stone-400">
+          Cada mezcla cuenta como 1, independientemente de los gramos.
+        </p>
+
+        <!-- Dimensions -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div v-for="dim in analyticsDimensions" :key="dim.key"
+            class="bg-white rounded-xl border border-stone-200 p-4">
+            <h3 class="text-sm font-bold text-stone-900 mb-3">{{ dim.label }}</h3>
+            <div v-if="dim.values.length === 0" class="text-xs text-stone-400">Sin datos</div>
+            <div v-else class="space-y-2">
+              <div v-for="row in dim.values" :key="row.value" class="flex items-center gap-2">
+                <span class="w-28 text-xs font-medium text-stone-700 truncate flex-shrink-0" :title="row.value">{{ row.value }}</span>
+                <div class="flex-1 bg-stone-100 rounded-full h-3 overflow-hidden relative">
+                  <div class="h-3 rounded-full transition-all duration-300 bg-tobacco-500"
+                    :style="{ width: row.pct + '%' }"></div>
+                </div>
+                <span class="w-12 text-right text-xs font-bold text-stone-600 tabular-nums flex-shrink-0">{{ row.pct.toFixed(0) }}%</span>
+                <span class="w-20 text-right text-[10px] text-stone-400 tabular-nums flex-shrink-0 whitespace-nowrap">{{ row.count }} · {{ row.grams }}g</span>
+              </div>
             </div>
           </div>
         </div>
@@ -442,7 +566,7 @@
                     <p class="text-xs text-stone-500 truncate">{{ inventoryEditingTobacco.blend || '—' }}</p>
                   </div>
                 </div>
-                <label class="block text-sm font-semibold text-stone-700 mb-1.5">Gramos en stock</label>
+                <label class="block text-sm font-semibold text-stone-700 mb-1.5">Gramos en bodega</label>
                 <input v-model="inventoryGramsInput" type="number" min="0" step="1" inputmode="numeric"
                   class="w-full px-3 py-2.5 border border-stone-200 rounded-lg text-lg font-bold text-stone-900 text-center focus:outline-none focus:ring-2 focus:ring-tobacco-400 focus:border-tobacco-400"
                   placeholder="0" @keyup.enter="saveInventory()">
@@ -465,111 +589,90 @@
       </div>
     </Transition>
 
-    <!-- Mobile Filters Modal -->
+    <!-- Add Stock Modal -->
     <Transition enter-active-class="transition duration-200 ease-out" enter-from-class="opacity-0"
       enter-to-class="opacity-100" leave-active-class="transition duration-150 ease-in"
       leave-from-class="opacity-100" leave-to-class="opacity-0">
-      <div v-if="showFiltersModal" class="fixed inset-0 z-50 md:hidden">
-        <div class="absolute inset-0 bg-stone-900/75" @click="showFiltersModal = false"></div>
+      <div v-if="showAddStockModal" class="fixed inset-0 z-50">
+        <div class="absolute inset-0 bg-stone-900/75" @click="showAddStockModal = false"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
-          <div class="flex min-h-full items-end sm:items-center justify-center p-0 sm:p-4">
-            <div class="relative w-full max-w-md bg-white rounded-t-2xl sm:rounded-2xl shadow-2xl overflow-hidden max-h-[85vh] flex flex-col">
-              <!-- Header -->
-              <div class="flex items-center justify-between px-5 py-4 border-b border-stone-100 flex-shrink-0">
-                <h3 class="text-base font-bold text-stone-900">Filtros</h3>
-                <button @click="showFiltersModal = false"
-                  class="h-8 w-8 flex items-center justify-center rounded-full text-stone-400 hover:text-stone-700 hover:bg-stone-100 transition-colors">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
+          <div class="flex min-h-full items-center justify-center p-4">
+            <div class="relative w-full max-w-sm bg-white rounded-2xl shadow-2xl overflow-hidden">
+              <button @click="showAddStockModal = false"
+                class="absolute right-4 top-4 h-8 w-8 flex items-center justify-center rounded-full text-stone-400 hover:text-stone-700 hover:bg-stone-100 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <div class="px-6 pt-8 pb-6">
+                <h3 class="text-lg font-bold text-stone-900">Añadir a bodega</h3>
+                <p class="text-sm text-stone-500 mt-1">Registra un tabaco en tu inventario, aunque no se venda en España.</p>
 
-              <!-- Body -->
-              <div class="px-5 py-4 space-y-4 overflow-y-auto">
-                <!-- Brand -->
-                <div class="relative">
-                  <label class="block text-xs font-semibold text-stone-500 mb-1.5">Fabricante</label>
-                  <select v-model="selectedBrand" aria-label="Fabricante"
-                    :class="selectedBrand ? 'border-tobacco-400 ring-1 ring-tobacco-400 text-stone-900 font-semibold' : 'border-stone-300 text-stone-500'"
-                    class="appearance-none bg-white border text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-tobacco-400 focus:border-tobacco-400 block w-full pl-3 pr-9 py-2.5 cursor-pointer hover:border-stone-400 transition-colors">
-                    <option value="">Fabricante</option>
-                    <option v-for="brand in brands" :key="brand" :value="brand" class="text-stone-900 font-normal">{{ brand }}</option>
-                  </select>
-                  <button v-if="selectedBrand" @click.stop="selectedBrand = ''"
-                    class="absolute right-2 top-1/2 -translate-y-1/2 h-5 w-5 mt-3 flex items-center justify-center rounded-full bg-stone-100 text-stone-500 hover:bg-stone-200" aria-label="Limpiar">
-                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                  <svg v-else class="w-4 h-4 absolute right-2.5 top-1/2 mt-3 text-stone-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </div>
+                <!-- Brand autocomplete -->
+                <label class="block text-sm font-semibold text-stone-700 mb-1.5 mt-5">Fabricante</label>
+                <input v-model="addStockBrand" type="text" list="add-stock-brands" autocomplete="off"
+                  placeholder="Ej. Peterson"
+                  class="w-full px-3 py-2.5 border border-stone-200 rounded-lg text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-tobacco-400 focus:border-tobacco-400"
+                  @input="onAddStockBrandInput">
+                <datalist id="add-stock-brands">
+                  <option v-for="b in addStockBrandOptions" :key="b" :value="b"></option>
+                </datalist>
 
-                <!-- Sort -->
-                <div>
-                  <label class="block text-xs font-semibold text-stone-500 mb-1.5">Ordenar por</label>
-                  <div class="flex flex-wrap gap-1.5">
-                    <button v-for="option in sortOptions" :key="option.value" @click="sort = option.value"
-                      :class="sort === option.value ? 'bg-tobacco-500 text-white border-tobacco-500' : 'bg-white text-stone-600 border-stone-300 hover:border-stone-400'"
-                      class="px-3 py-1.5 rounded-md text-xs font-semibold border transition-all whitespace-nowrap">
-                      {{ option.label }}
-                    </button>
+                <!-- Blend autocomplete -->
+                <label class="block text-sm font-semibold text-stone-700 mb-1.5 mt-4">Labor</label>
+                <input v-model="addStockBlend" type="text" list="add-stock-blends" autocomplete="off"
+                  placeholder="Ej. Irish Flake"
+                  class="w-full px-3 py-2.5 border border-stone-200 rounded-lg text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-tobacco-400 focus:border-tobacco-400">
+                <datalist id="add-stock-blends">
+                  <option v-for="b in addStockBlendOptions" :key="b" :value="b"></option>
+                </datalist>
+
+                <!-- Grams -->
+                <label class="block text-sm font-semibold text-stone-700 mb-1.5 mt-4">Gramos en bodega</label>
+                <input v-model="addStockGrams" type="number" min="0" step="1" inputmode="numeric"
+                  class="w-full px-3 py-2.5 border border-stone-200 rounded-lg text-lg font-bold text-stone-900 text-center focus:outline-none focus:ring-2 focus:ring-tobacco-400 focus:border-tobacco-400"
+                  placeholder="0" @keyup.enter="saveAddStock()">
+
+                <!-- Property preview when brand+blend match a known tobacco -->
+                <div v-if="addStockMatch" class="mt-4 rounded-lg border border-tobacco-100 bg-tobacco-50/40 p-3 space-y-1">
+                  <div class="flex items-center gap-1.5 mb-1">
+                    <span v-if="addStockMatch.source === 'catalog'" class="inline-flex items-center text-[10px] font-bold px-1.5 py-0.5 rounded bg-stone-100 text-stone-600">Vendido en España</span>
+                    <span v-else class="inline-flex items-center text-[10px] font-bold px-1.5 py-0.5 rounded bg-stone-100 text-stone-600">TobaccoReviews</span>
                   </div>
+                  <span v-for="p in cardProperties(addStockMatch.tobacco)" :key="p.key"
+                    class="inline-flex items-start text-[10px] rounded border border-tobacco-100 overflow-hidden w-full">
+                    <span class="px-1.5 py-0.5 bg-tobacco-50 text-tobacco-700 font-bold whitespace-nowrap flex-shrink-0 w-20 self-stretch">{{ p.label }}</span>
+                    <span class="px-1.5 py-0.5 bg-white text-stone-800 font-bold break-words">{{ p.value }}</span>
+                  </span>
                 </div>
+                <p v-else-if="addStockBrand && addStockBlend" class="text-[11px] text-stone-400 mt-3">
+                  No encontrado en el catálogo ni en TobaccoReviews. Se guardará como tabaco propio en tu inventario.
+                </p>
 
-                <!-- My tobaccos -->
-                <div v-if="user">
-                  <label class="block text-xs font-semibold text-stone-500 mb-1.5">Inventario</label>
-                  <button @click="onlyMyTobaccos = !onlyMyTobaccos"
-                    :class="onlyMyTobaccos ? 'bg-tobacco-500 text-white border-tobacco-500' : 'bg-white text-stone-600 border-stone-300 hover:border-stone-400'"
-                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold border transition-all whitespace-nowrap">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                    </svg>
-                    Mis tabacos
-                    <span v-if="ownedCount()" class="ml-0.5 px-1.5 py-0.5 rounded-full text-[10px]" :class="onlyMyTobaccos ? 'bg-white/25' : 'bg-stone-100 text-stone-500'">{{ ownedCount() }} · {{ formatKg(totalGrams()) }}</span>
+                <p v-if="authError" class="text-xs text-red-600 mt-3">{{ authError }}</p>
+
+                <div class="flex gap-2 mt-5">
+                  <button @click="showAddStockModal = false"
+                    class="flex-1 py-2.5 rounded-lg border border-stone-200 text-stone-600 font-semibold hover:bg-stone-50 transition-colors text-sm">
+                    Cancelar
+                  </button>
+                  <button @click="saveAddStock()" :disabled="!canSaveAddStock"
+                    class="flex-1 py-2.5 rounded-lg bg-tobacco-500 text-white font-semibold hover:bg-tobacco-600 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed">
+                    Guardar
                   </button>
                 </div>
-
-                <!-- Property filters -->
-                <div class="space-y-3">
-                  <label class="block text-xs font-semibold text-stone-500">Propiedades</label>
-                  <div v-for="f in propertyFilters" :key="f.key" class="relative">
-                    <select v-model="selectedProperties[f.key]" :aria-label="f.label"
-                      :class="selectedProperties[f.key] ? 'border-tobacco-400 ring-1 ring-tobacco-400 text-stone-900 font-semibold' : 'border-stone-300 text-stone-500'"
-                      class="appearance-none bg-white border text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-tobacco-400 focus:border-tobacco-400 block w-full pl-3 pr-9 py-2.5 cursor-pointer hover:border-stone-400 transition-colors">
-                      <option value="">{{ f.label }}</option>
-                      <option v-for="val in propertyValues(f.key)" :key="val" :value="val" class="text-stone-900 font-normal">{{ val }}</option>
-                    </select>
-                    <button v-if="selectedProperties[f.key]" @click.stop="selectedProperties[f.key] = ''"
-                      class="absolute right-2 top-1/2 -translate-y-1/2 h-5 w-5 flex items-center justify-center rounded-full bg-stone-100 text-stone-500 hover:bg-stone-200" aria-label="Limpiar">
-                      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                    <svg v-else class="w-4 h-4 absolute right-2.5 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Footer -->
-              <div class="px-5 py-3 border-t border-stone-100 flex gap-2 flex-shrink-0">
-                <button v-if="hasActiveFilters" @click="clearFilters"
-                  class="flex-1 py-2.5 rounded-lg border border-stone-200 text-stone-600 font-semibold hover:bg-stone-50 transition-colors text-sm">
-                  Limpiar
-                </button>
-                <button @click="showFiltersModal = false"
-                  class="flex-1 py-2.5 rounded-lg bg-tobacco-500 text-white font-semibold hover:bg-tobacco-600 transition-colors text-sm">
-                  Aplicar
-                </button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </Transition>
+
+    <!-- Mobile Filters Modal -->
+    <Transition enter-active-class="transition duration-200 ease-out" enter-from-class="opacity-0"
+      enter-to-class="opacity-100" leave-active-class="transition duration-150 ease-in"
+      leave-from-class="opacity-100" leave-to-class="opacity-0">
+      <div v-if="false" class="fixed inset-0 z-50 md:hidden">
       </div>
     </Transition>
   </div>
@@ -604,6 +707,21 @@ const PROPERTY_FILTERS: PropertyFilter[] = [
   { key: 'flavoring', label: 'Notas' },
   { key: 'room_note', label: 'Aroma' },
   { key: 'taste', label: 'Sabor' },
+]
+
+// Dimensions analyzed in the consumption-habits view.
+// `array` marks properties whose value is a list (each element counted
+// separately); `brand` is handled as a special dimension.
+const ANALYTICS_DIMENSIONS: { key: string, label: string, array?: boolean }[] = [
+  { key: 'brand', label: 'Fabricantes preferidos' },
+  { key: 'blend_type', label: 'Tipo' },
+  { key: 'contents', label: 'Contenidos', array: true },
+  { key: 'cut', label: 'Corte' },
+  { key: 'strength', label: 'Fuerza' },
+  { key: 'flavoring_profile', label: 'Aromatizante' },
+  { key: 'room_note', label: 'Aroma en sala' },
+  { key: 'taste', label: 'Sabor' },
+  { key: 'flavoring', label: 'Notas', array: true },
 ]
 
 const STRENGTH_ORDER: string[] = [
@@ -653,10 +771,20 @@ export default {
       inventory: Record<string, InventoryEntry>,
       showLoginModal: boolean,
       showInventoryModal: boolean,
-      showFiltersModal: boolean,
+      showFiltersPanel: boolean,
+      showAddStockModal: boolean,
+      showUserMenu: boolean,
+      showAnalytics: boolean,
+      analyticsMode: 'count' | 'grams',
       inventoryEditingTobacco?: Tobacco,
       inventoryGramsInput: string,
-      onlyMyTobaccos: boolean,
+      stockMode: boolean,
+      trTobaccos: any[],
+      trLoaded: boolean,
+      trLoading: boolean,
+      addStockBrand: string,
+      addStockBlend: string,
+      addStockGrams: string,
       authReady: boolean,
       authError: string
     } = {
@@ -678,10 +806,20 @@ export default {
       inventory: {},
       showLoginModal: false,
       showInventoryModal: false,
-      showFiltersModal: false,
+      showFiltersPanel: false,
+      showAddStockModal: false,
+      showUserMenu: false,
+      showAnalytics: false,
+      analyticsMode: 'count',
       inventoryEditingTobacco: undefined,
       inventoryGramsInput: '',
-      onlyMyTobaccos: false,
+      stockMode: false,
+      trTobaccos: [],
+      trLoaded: false,
+      trLoading: false,
+      addStockBrand: '',
+      addStockBlend: '',
+      addStockGrams: '',
       authReady: false,
       authError: ''
     }
@@ -708,12 +846,12 @@ export default {
     },
     hasActiveFilters(): boolean {
       return this.selectedBrand !== ""
-        || Object.values(this.selectedProperties).some(v => v) || this.onlyMyTobaccos
+        || Object.values(this.selectedProperties).some(v => v) || this.stockMode
     },
     activeFilterCount(): number {
       let n = 0
       if (this.selectedBrand !== "") n++
-      if (this.onlyMyTobaccos) n++
+      if (this.stockMode) n++
       for (const v of Object.values(this.selectedProperties)) {
         if (v) n++
       }
@@ -729,6 +867,99 @@ export default {
     },
     filteredCount(): number {
       return this.filterTobaccos().length
+    },
+    // --- Add Stock modal computeds ---
+    addStockBrandOptions(): string[] {
+      const set = new Set<string>()
+      for (const t of this.tobaccos) if (t.brand) set.add(t.brand)
+      for (const e of this.trTobaccos) if (e.brand) set.add(e.brand)
+      return [...set].sort((a, b) => a.localeCompare(b))
+    },
+    addStockBlendOptions(): string[] {
+      const brand = this.addStockBrand.trim().toLowerCase()
+      const set = new Set<string>()
+      for (const t of this.tobaccos) {
+        if ((!brand || t.brand?.toLowerCase() === brand) && t.blend) set.add(t.blend)
+      }
+      for (const e of this.trTobaccos) {
+        if ((!brand || e.brand?.toLowerCase() === brand) && e.blend) set.add(e.blend)
+      }
+      return [...set].sort((a, b) => a.localeCompare(b))
+    },
+    addStockMatch(): { tobacco: Tobacco, source: 'catalog' | 'tr' } | null {
+      const brand = this.addStockBrand.trim()
+      const blend = this.addStockBlend.trim()
+      if (!brand || !blend) return null
+      const id = tobaccoId(brand, blend)
+      const cat = this.catalogTobaccoMap()
+      if (cat[id]) return { tobacco: cat[id], source: 'catalog' }
+      const tr = this.trTobaccoMap()
+      if (tr[id]) return { tobacco: this.tobaccoFromTr(tr[id]), source: 'tr' }
+      return null
+    },
+    canSaveAddStock(): boolean {
+      return this.addStockBrand.trim() !== '' && (parseInt(this.addStockGrams) || 0) > 0
+    },
+    // --- Analytics ---
+    // Builds the list of tobaccos used for consumption-habits analysis.
+    // Includes every inventory entry that is either in stock (grams > 0) or
+    // favourited. Each item carries a `weight` used to aggregate preferences:
+    //   - count mode: every tobacco = 1
+    //   - grams mode: favourite → 1.0; otherwise grams normalized to the max
+    analyticsItems(): { tobacco: Tobacco, grams: number, favourite: boolean, weight: number }[] {
+      const catMap = this.catalogTobaccoMap()
+      const raw: { tobacco: Tobacco, grams: number, favourite: boolean }[] = []
+      for (const entry of Object.values(this.inventory)) {
+        const inStock = (entry.grams || 0) > 0
+        const isFav = !!entry.favourite
+        if (!inStock && !isFav) continue
+        const id = tobaccoId(entry.brand, entry.blend)
+        const tobacco = catMap[id] || this.stubFromEntry(entry)
+        raw.push({ tobacco, grams: entry.grams || 0, favourite: isFav })
+      }
+      const maxGrams = raw.reduce((m, i) => Math.max(m, i.grams), 0) || 1
+      return raw.map(item => ({
+        ...item,
+        weight: this.analyticsMode === 'count'
+          ? 1
+          : (item.favourite ? 1.0 : item.grams / maxGrams),
+      }))
+    },
+    // For each dimension, aggregates the weighted value frequencies and
+    // returns the top values sorted by weight, with a percentage.
+    // Null/undefined/empty values are skipped (not counted).
+    analyticsDimensions(): { key: string, label: string, values: { value: string, weight: number, pct: number, count: number, grams: number }[] }[] {
+      const items = this.analyticsItems
+      return ANALYTICS_DIMENSIONS.map(dim => {
+        const dimDef = ANALYTICS_DIMENSIONS.find(d => d.key === dim.key)!
+        // value -> { weight, count, grams }
+        const map = new Map<string, { weight: number, count: number, grams: number }>()
+        for (const item of items) {
+          const raw = (item.tobacco as any)[dim.key]
+          let values: string[]
+          if (dimDef.array && Array.isArray(raw)) {
+            values = raw.map(String)
+          } else if (Array.isArray(raw)) {
+            values = raw.map(String)
+          } else {
+            values = [raw == null ? '' : String(raw)]
+          }
+          for (const v of values) {
+            // Skip null/undefined/empty values
+            if (!v) continue
+            const cur = map.get(v) || { weight: 0, count: 0, grams: 0 }
+            cur.weight += item.weight
+            cur.count += 1
+            cur.grams += item.grams
+            map.set(v, cur)
+          }
+        }
+        const total = [...map.values()].reduce((a, b) => a + b.weight, 0) || 1
+        const values = [...map.entries()]
+          .map(([value, agg]) => ({ value, weight: agg.weight, pct: (agg.weight / total) * 100, count: agg.count, grams: agg.grams }))
+          .sort((a, b) => b.weight - a.weight)
+        return { key: dim.key, label: dim.label, values }
+      })
     }
   },
   methods: {
@@ -847,21 +1078,32 @@ export default {
     clearFilters() {
       this.currentPage = 1
       this.selectedBrand = ""
-      this.onlyMyTobaccos = false
+      this.stockMode = false
       for (const f of PROPERTY_FILTERS) {
         this.selectedProperties[f.key] = ''
       }
     },
     filterTobaccos(): Tobacco[] {
-      let filteredTobaccos = this.tobaccos
+      // In Stock Mode, the base list is the user's owned tobaccos — including
+      // ones not sold in Spain (synthesized from tr.json or minimal stubs).
+      let baseTobaccos = this.tobaccos
+      if (this.stockMode) {
+        baseTobaccos = this.buildStockTobaccos()
+      }
+
+      let filteredTobaccos = baseTobaccos
         .filter(t => {
           let res = true
           if (this.selectedBrand != "") {
             res = t.brand == this.selectedBrand
           }
-          if (res && this.onlyMyTobaccos) {
-            const grams = this.getGrams(t)
-            res = grams > 0
+          if (res && this.stockMode) {
+            // Keep tobaccos that are in stock or favourited.
+            const id = tobaccoId(t.brand, t.blend)
+            const entry = this.inventory[id]
+            const inStock = (entry?.grams || 0) > 0
+            const isFav = !!entry?.favourite
+            res = inStock || isFav
           }
           if (res) {
             for (const f of PROPERTY_FILTERS) {
@@ -937,13 +1179,26 @@ export default {
     async doLogout() {
       const { signOutUser } = await import('./auth')
       await signOutUser()
-      this.onlyMyTobaccos = false
+      this.stockMode = false
+      this.showAnalytics = false
       if (this.sort === 'grams') this.sort = ''
     },
     // --- Inventory ---
     getGrams(tobacco: Tobacco): number {
       const id = tobaccoId(tobacco.brand, tobacco.blend)
       return this.inventory[id]?.grams ?? 0
+    },
+    isFavourite(tobacco: Tobacco): boolean {
+      const id = tobaccoId(tobacco.brand, tobacco.blend)
+      return !!this.inventory[id]?.favourite
+    },
+    async toggleFavourite(tobacco: Tobacco) {
+      try {
+        const { toggleFavourite: tf } = await import('./inventory')
+        await tf(tobacco.brand, tobacco.blend, !this.isFavourite(tobacco))
+      } catch (e: any) {
+        this.authError = e?.message || 'Error al guardar favorito'
+      }
     },
     openInventoryModal(tobacco: Tobacco) {
       this.inventoryEditingTobacco = tobacco
@@ -962,13 +1217,166 @@ export default {
         this.authError = e?.message || 'Error al guardar'
       }
     },
+    // --- Stock mode & tr.json ---
+    async setStockMode(enabled: boolean) {
+      this.stockMode = enabled
+      if (enabled) {
+        await this.ensureTrLoaded()
+      }
+    },
+    async ensureTrLoaded() {
+      if (this.trLoaded || this.trLoading) return
+      this.trLoading = true
+      try {
+        const res = await fetch('/tr.json')
+        this.trTobaccos = await res.json()
+        this.trLoaded = true
+      } catch (e: any) {
+        // Non-fatal: stock mode still works for catalog/custom tobaccos
+        console.error('Failed to load tr.json', e)
+      } finally {
+        this.trLoading = false
+      }
+    },
+    // Build a catalog-keyed map by tobaccoId for fast lookup
+    catalogTobaccoMap(): Record<string, Tobacco> {
+      const map: Record<string, Tobacco> = {}
+      for (const t of this.tobaccos) {
+        if (!t.brand) continue
+        map[tobaccoId(t.brand, t.blend)] = t
+      }
+      return map
+    },
+    trTobaccoMap(): Record<string, any> {
+      const map: Record<string, any> = {}
+      for (const e of this.trTobaccos) {
+        if (!e.brand) continue
+        map[tobaccoId(e.brand, e.blend)] = e
+      }
+      return map
+    },
+    // In Stock Mode, the list of owned tobaccos — including ones not sold in
+    // Spain. Catalog tobaccos come from the active region; all others are
+    // rebuilt from the stored inventory entry (which carries its properties
+    // for non-catalog tobaccos), so the list is self-contained and updates
+    // reactively as soon as the inventory changes.
+    buildStockTobaccos(): Tobacco[] {
+      const catMap = this.catalogTobaccoMap()
+      const result: Tobacco[] = []
+      const seen = new Set<string>()
+      for (const entry of Object.values(this.inventory)) {
+        // Include tobaccos that are either in stock or favourited (so
+        // favourites show in the Bodega view even with 0 grams).
+        const inStock = (entry.grams || 0) > 0
+        const isFav = !!entry.favourite
+        if (!inStock && !isFav) continue
+        const id = tobaccoId(entry.brand, entry.blend)
+        if (seen.has(id)) continue
+        seen.add(id)
+        if (catMap[id]) {
+          result.push(catMap[id])
+        } else {
+          result.push(this.stubFromEntry(entry))
+        }
+      }
+      return result
+    },
+    stubFromEntry(entry: InventoryEntry): Tobacco {
+      return {
+        brand: entry.brand,
+        blend: entry.blend,
+        sizes: [],
+        blend_type: entry.blend_type ?? null,
+        contents: entry.contents ?? null,
+        flavoring: entry.flavoring ?? null,
+        cut: entry.cut ?? null,
+        country: entry.country ?? null,
+        strength: entry.strength ?? null,
+        flavoring_profile: entry.flavoring_profile ?? null,
+        room_note: entry.room_note ?? null,
+        taste: entry.taste ?? null,
+      }
+    },
+    tobaccoFromTr(entry: any): Tobacco {
+      return {
+        brand: entry.brand,
+        blend: entry.blend,
+        sizes: [],
+        blend_type: entry.blend_type ?? null,
+        contents: entry.contents ?? null,
+        flavoring: entry.flavoring ?? null,
+        cut: entry.cut ?? null,
+        country: entry.country ?? null,
+        strength: entry.strength ?? null,
+        flavoring_profile: entry.flavoring_profile ?? null,
+        room_note: entry.room_note ?? null,
+        taste: entry.taste ?? null,
+      }
+    },
+    stubTobacco(brand: string, blend: string): Tobacco {
+      return this.stubFromEntry({ brand, blend, grams: 0 })
+    },
+    // --- Add Stock modal ---
+    async openAddStockModal() {
+      this.authError = ''
+      this.addStockBrand = ''
+      this.addStockBlend = ''
+      this.addStockGrams = ''
+      this.showAddStockModal = true
+      await this.ensureTrLoaded()
+    },
+    onAddStockBrandInput() {
+      // Reset blend if it no longer belongs to the selected brand
+      // (keeps suggestions coherent)
+      if (this.addStockBlend && !this.addStockBlendOptions.includes(this.addStockBlend)) {
+        // keep user text — they may type a custom blend
+      }
+    },
+    async saveAddStock() {
+      const brand = this.addStockBrand.trim()
+      const blend = this.addStockBlend.trim()
+      const grams = parseInt(this.addStockGrams) || 0
+      if (!brand) {
+        this.authError = 'Indica un fabricante.'
+        return
+      }
+      if (grams <= 0) {
+        this.authError = 'Indica una cantidad de gramos.'
+        return
+      }
+      try {
+        const { setGramsByBrandBlend } = await import('./inventory')
+        // For non-catalog tobaccos, persist the descriptive properties so the
+        // card renders fully in Stock Mode without needing tr.json at runtime.
+        const match = this.addStockMatch
+        let properties: Record<string, any> | undefined
+        if (match && match.source === 'tr') {
+          const t = match.tobacco
+          properties = {
+            blend_type: t.blend_type,
+            contents: t.contents,
+            flavoring: t.flavoring,
+            cut: t.cut,
+            country: t.country,
+            strength: t.strength,
+            flavoring_profile: t.flavoring_profile,
+            room_note: t.room_note,
+            taste: t.taste,
+          }
+        }
+        await setGramsByBrandBlend(brand, blend, grams, properties)
+        this.showAddStockModal = false
+      } catch (e: any) {
+        this.authError = e?.message || 'Error al guardar'
+      }
+    },
     exportCSV() {
-      const rows = [['Fabricante', 'Labor', 'Gramos']]
+      const rows = [['Fabricante', 'Labor', 'Gramos', 'Favorito']]
       const entries = Object.values(this.inventory)
         .filter(e => e.grams > 0)
         .sort((a, b) => b.grams - a.grams)
       for (const e of entries) {
-        rows.push([e.brand, e.blend || '', String(e.grams)])
+        rows.push([e.brand, e.blend || '', String(e.grams), e.favourite ? 'sí' : 'no'])
       }
       const csv = rows.map(r =>
         r.map(field => {

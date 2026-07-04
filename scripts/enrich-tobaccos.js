@@ -395,10 +395,30 @@ function enrichFile(file, indexes) {
   saveJSON(file, tobaccos)
 }
 
+function buildPublicTr(tr) {
+  // Emit a trimmed, translated copy of tr.json for runtime use.
+  // Drops the heavy `image` field and applies the same Spanish translations
+  // used when enriching pb/cm, so the app shows consistent values.
+  // Skip entries with no brand/blend — they can't be matched and would break
+  // the runtime tobaccoId map (null.trim throws).
+  return tr
+    .filter((e) => e && e.brand && e.blend)
+    .map((e) => {
+      const out = { brand: e.brand, blend: e.blend }
+      for (const prop of PROPERTIES) {
+        out[prop] = translate(prop, e[prop] ?? null)
+      }
+      return out
+    })
+}
+
 function main() {
   console.log('Loading tr.json...')
   const tr = loadJSON('tr.json')
   console.log(`  ${tr.length} entries in tr.json`)
+
+  console.log('Writing public/tr.json (trimmed, translated)...')
+  saveJSON('tr.json', buildPublicTr(tr))
 
   const indexes = buildTrIndexes(tr)
 

@@ -6,7 +6,7 @@
     "serve": "vite preview",
     "boe": "ts-node lib/extractNewBOEs.ts",
     "parse": "ts-node lib/parseHTMLs.ts",
-    "predev": "node scripts/generate-logos.js",
+    "predev": "node scripts/generate-logos.js && node scripts/enrich-tobaccos.js",
     "prebuild": "node scripts/generate-logos.js && node scripts/enrich-tobaccos.js",
     "enrich": "node scripts/enrich-tobaccos.js",
     "deploy": "npm run build && firebase deploy --only hosting"
