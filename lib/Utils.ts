@@ -10,7 +10,7 @@ const shishaBrands: string[] = ["187", "Adalya", "Afendi", "Al-Waha", "Al Fakher
     "Sapphire", "Harbour Red", "Kingstreet", "Stral", "Special Star", "Hampton", "Alpha", "American Street", "Apache", "Backwoods", "Baraka", "Big Chief", "Black Jack", "El Puerto",
     "Bravo", "Brujito", "Bullbrand", "Calumé Pipa", "DJ Pipe Tobacco", "Danish Blend", "Keops", "Kingston", "Kiowa", "La Oveja Negra", "La Tribu", "Lince", "Master Cut", "Planta",
     "Mark Adams", "Moon Habana", "Oboe", "Olsen", "Peter Clark", "Sacramento", "Smokers Freedom", "Tabacco Way - D'Ora", "Tabacco Way - Be Happy",
-    "Touareg", "Trébol", "Van Dijck", "Baroudeur", "Missisipi", "Sioux Original", "Eastenders", "Eastwood", "Redfield", "Jockey", "Big Ben", "Frérot", "E-Hookah"]
+    "Touareg", "Trébol", "Van Dijck", "Baroudeur", "Missisipi", "Sioux Original", "Eastenders", "Eastwood", "Redfield", "Jockey", "Big Ben", "Frérot", "E-Hookah", "Ar�bica", "Cap�tal"]
 const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Trucco", "Troost", "Touareg", "Tilbury", "Texas Republic", "Thomas Radford", "Sweet Dublin", "Sting", "Stanwell", "Stanley", "Stanislaw",
     "St. Bruno", "Solani", "Smokers Choice", "Skull", "Skandinavik", "Sillem's", "Selesta", "Scottish Corner", "Scaferlati", "Savinelli", "Samuel Gawith", "Sailor's Pride",
     "Sahara", "Robert Lewis", "Retro", "Red Wolf", "Rattray's", "El Abuelo", "Peterson", "Nording", "Mcconnell",
@@ -22,9 +22,10 @@ const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Trucco", "Troost", "Toua
 
 const brandMaps: Map<string | RegExp, string> = new Map<string | RegExp, string>([
     ["&amp;", "&"],
-    ["WO Larsen Wøl", "W.O. Larsen"],
-    ["WØL", "W.O. Larsen"],
-    ["Wøl", "W.O. Larsen"],
+    ["WO Larsen W�l", "W.O. Larsen"],
+    ["W�L", "W.O. Larsen"],
+    ["W�l", "W.O. Larsen"],
+    ["W�l Edition", "W.O. Larsen Edition"],
     ['Sailor´s Pride', "Sailor's Pride"],
     ["Smoker´s Choice", "Smokers Choice"],
     ["T.Radford Sunday S Fant.", "Thomas Radford Sunday's Fantasy"],
@@ -77,8 +78,17 @@ const brandMaps: Map<string | RegExp, string> = new Map<string | RegExp, string>
     ["Mcconnell", "Robert McConnell"],
     ["Tabacco Way - Doctor Pipe", "Doctor Pipe"],
     ["Tabacco Way - Brazilian Spirit Tobacco", "Brazilian Spirit Tobacco"],
-    ["HU-Tobacco", "HU Tobacco"]
-
+    ["HU-Tobacco", "HU Tobacco"], 
+    ["Ar�bica", "Arábica"],
+    ["Calum�", "Calumé"],
+    ["Calumé�", "Calumé"],
+    ["Fr�rot", "Frérot"],
+    ["Sailor�s", "Sailor's"],
+    ["Smoker�s Choice", "Smokers Choice"],
+    ["Tr�bol", "Trébol"],
+    ["W�l", "W�l"],
+    ["Edici�n","Edición"],
+    ["N�", "N"]
 ])
 
 export function parseTobacco(name: string, exhaustive: boolean = false): TobaccoBlendSize | undefined {
