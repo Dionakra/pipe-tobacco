@@ -10,7 +10,7 @@ const shishaBrands: string[] = ["187", "Adalya", "Afendi", "Al-Waha", "Al Fakher
     "Sapphire", "Harbour Red", "Kingstreet", "Stral", "Special Star", "Hampton", "Alpha", "American Street", "Apache", "Backwoods", "Baraka", "Big Chief", "Black Jack", "El Puerto",
     "Bravo", "Brujito", "Bullbrand", "Calumé Pipa", "DJ Pipe Tobacco", "Danish Blend", "Keops", "Kingston", "Kiowa", "La Oveja Negra", "La Tribu", "Lince", "Master Cut", "Planta",
     "Mark Adams", "Moon Habana", "Oboe", "Olsen", "Peter Clark", "Sacramento", "Smokers Freedom", "Tabacco Way - D'Ora", "Tabacco Way - Be Happy",
-    "Touareg", "Trébol", "Van Dijck", "Baroudeur", "Missisipi", "Sioux Original", "Eastenders", "Eastwood", "Redfield", "Jockey", "Big Ben", "Frérot", "E-Hookah", "Ar�bica", "Cap�tal"]
+    "Touareg", "Trébol", "Van Dijck", "Baroudeur", "Missisipi", "Sioux Original", "Eastenders", "Eastwood", "Redfield", "Jockey", "Big Ben", "Frérot", "E-Hookah", "Ar�bica", "Cap�tal", "Hide Tobacco"]
 const pipeBrands: string[] = ["W.O. Larsen", "Wessex", "Trucco", "Troost", "Touareg", "Tilbury", "Texas Republic", "Thomas Radford", "Sweet Dublin", "Sting", "Stanwell", "Stanley", "Stanislaw",
     "St. Bruno", "Solani", "Smokers Choice", "Skull", "Skandinavik", "Sillem's", "Selesta", "Scottish Corner", "Scaferlati", "Savinelli", "Samuel Gawith", "Sailor's Pride",
     "Sahara", "Robert Lewis", "Retro", "Red Wolf", "Rattray's", "El Abuelo", "Peterson", "Nording", "Mcconnell",
